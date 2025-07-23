@@ -2,54 +2,44 @@
 
 ## Table of Contents
 
-- [Overview](##overview)
-
-- [Installation & Usage](##installation--usage)
-
-- [Functions exercises](##functions-exercises)
-
-      -  [List of Functions exercises](###list-of-functions-exercises)
-
-- [Array exercises](##array-exercises)
-
-      - [List of Array exercises](###list-of-array-exercises)
+- [Overview](#overview)
+- [Installation & Usage](#installation--usage)
+- [Functions exercises](#functions-exercises)
+  - [List of Functions exercises](#list-of-functions-exercises)
+- [Array exercises](#array-exercises)
+  - [List of Array exercises](#list-of-array-exercises)
+- [Resources](#resources)
 
 ## Overview
 
-This repository showcases my progress and solutions for various JavaScript challenges during learning from The Odin Project, with a focus on fundamental concepts like **functions**, **array** and **string manipulation**.
-
-These exercises were primarily assigned by [The Odin Project](https://www.theodinproject.com/). 
+This repository showcases my progress and solutions for various JavaScript challenges during learning from The Odin Project, with a focus on fundamental concepts like **functions**, **array methods** and **string manipulation**. This repo will be continuously updated with new exercises from various sources.
 
 ## Installation & Usage
 
-This repository can also serve for your own learning. Feel free to fork this repository and use it for your personal practice.
+1.  **Fork the repository:**
+    Begin by forking this repository to your own GitHub account. Click the "Fork" button on the top right of this page.
 
-* Fork the repository:
+2.  **Clone the repository:**
+    Open your terminal or command prompt and run the following command to clone the repository to your local machine:
 
-Begin by forking this repository to your own GitHub account. Click the "Fork" button on the top right of this page.
+    ```bash
+    `git clone https://github.com/dinruz/js-exercises-functions-arrays.git`
+    ```
 
-* Clone the repository:
+3.  **Navigate to the project directory:**
 
-Open your terminal or command prompt and run the following command to clone the repository to your PC:
+    ```bash
+    cd js-exercises-functions-arrays
+    ```
 
-```bash
-git clone https://github.com/dinruz/js-exercises-functions-arrays.git
-```
+4.  **Run a specific exercise:**
+    You can run any JavaScript exercise file using Node.js. Make sure you have Node.js installed on your system.
 
-Navigate to the project directory:
+    For example, to run the `01_camelize.js` array exercise:
 
-```bash
-cd js-exercises-functions-arrays
-```
-
-* Run a specific exercise:
-You can run any JavaScript exercise file using Node.js. Make sure you have Node.js installed on your system.
-
-For example, to run the unique.js array exercise:
-
-```bash
-node array-exercises/unique.js
-```
+    ```bash
+    node array-exercises/01_camelize.js
+    ```
 
 ## Functions exercises 
 
@@ -66,43 +56,40 @@ node array-exercises/unique.js
 
 <details>
   <summary><strong>Exercise 1: add7</strong></summary>
-  <div><br>&nbsp;<br></div> 
+
   <p>
     Write a function called **add7** that takes one number and returns that number + 7.
-
     Write function and test the output with *console.log*.
   </p>
 </details>
 
 <details>
   <summary><strong>Exercise 2: multiply</strong></summary>
-  <div><br>&nbsp;<br></div> 
+
   <p>
     Write a function called **multiply** that takes 2 numbers and returns their product.
-
     Write function and test the output with *console.log*.
   </p>
 </details>
 
 <details>
   <summary><strong>Exercise 3: capitalize</strong></summary>
-  <div><br>&nbsp;<br></div> 
+
   <p>
     Write a function called **capitalize** that takes a string and returns that string with only the first letter capitalized. 
-    
     Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
   </p>
 </details>
 
 <details>
   <summary><strong>Exercise 4: lastLetter </strong></summary>
-  <div><br>&nbsp;<br></div> 
+  
   <p>
     Write a function called **lastLetter** that takes a string and returns the very last letter of that string: lastLetter("abcd") should return "d".  
   </p>
 </details>
 
-<p><strong>Solutions:</strong> [add7.js](./functions-exercises/basicFunctions.js)</p>
+[Solutions: Function exercises 01-04](./functions-exercises/basicFunctions.js)
 
 ## Array Exercises
 
@@ -119,11 +106,10 @@ node array-exercises/unique.js
 
 <details>
   <summary><strong>Exercise 1: Camelize()</strong></summary>
-  <div><br>&nbsp;<br></div> 
   <p>
-    Write the function `camelize(str)` that changes dash-separated words like “my-short-string” into camel-cased “myShortString”. 
+  Write the function `camelize(str)` that changes dash-separated words like “my-short-string” into camel-cased “myShortString”. 
     
-    That is: removes all dashes, each word after dash becomes uppercased.
+  That is: removes all dashes, each word after dash becomes uppercased.
 
     Examples:
 
@@ -133,16 +119,18 @@ node array-exercises/unique.js
     camelize("-webkit-transition") == 'WebkitTransition';
     ```
   </p>
-    <p><strong>Solution:</strong> [camelize.js](./array-exercises/01_camelize.js)</p>
+
+[Solution: Camelize.js](./array-exercises/01_camelize.js)
+
 </details>
 
 <details>
   <summary><strong>Exercise 2: Filter range</strong></summary>
-  <div><br>&nbsp;<br></div> 
-  <p>
-    Write a function `filterRange(arr, a, b)` that gets an array `arr`, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.
 
-    For instance:
+  <p>
+  Write a function `filterRange(arr, a, b)` that gets an array `arr`, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.
+
+  For instance:
 
     ```javascript
     let arr = [5, 3, 8, 1];
@@ -151,31 +139,30 @@ node array-exercises/unique.js
     // alert( arr ); // 5,3,8,1 (not modified)
     ```
   </p>
-  <p><strong>Solution:</strong> [filterRange.js](./array-exercises/02_filterRange.js)</p>
+
+[Solution: filterRange.js](./array-exercises/02_filterRange.js)
+
 </details>
 
 <details>
   <summary><strong>Exercise 3: Filter range in place </strong></summary>
-  <div><br>&nbsp;<br></div> 
+  
   <p>
-    Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between a and b.
-    
-    The test is: `a ≤ arr[i] ≤ b`.
-    
-    The function should only modify the array. It should not return anything.
+  Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between a and b. The test is: `a ≤ arr[i] ≤ b`.
+  The function should only modify the array. It should not return anything.
 
     ```javascript
     let arr = [5, 3, 8, 1];
     filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
     // alert( arr ); // [3, 1]
     ```
-  </p>
-    <p><strong>Solution:</strong> [filterRangeInPlace.js](./array-exercises/03_filterRangeInPlace.js)</p>
+
+ [Solution: filterRangeInPlace.js](./array-exercises/03_filterRangeInPlace.js)</p>
 </details>
 
 <details>
   <summary><strong>Exercise 4: Sort in decreasing order </strong></summary>
-  <div><br>&nbsp;<br></div> 
+  
   <p>
 
     ```javascript
@@ -184,16 +171,17 @@ node array-exercises/unique.js
     // alert( arr ); // 8, 5, 2, 1, -10
     ```
   </p>
-  <p><strong>Solution:</strong> [sortInDecreasingOrder.js](./array-exercises/04_sortInDecreasingOrder.js)</p>
+
+[Solution: sortInDecreasingOrder.js](./array-exercises/04_sortInDecreasingOrder.js)
 </details>
 
 <details>
   <summary><strong>Exercise 5: Copy and sort array</strong></summary>
-  <div><br>&nbsp;<br></div> 
-  <p>
-    We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
 
-    Create a function `copySorted(arr)` that returns such a copy.
+  <p>
+  We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
+
+  Create a function `copySorted(arr)` that returns such a copy.
 
     ```javascript
 
@@ -204,16 +192,18 @@ node array-exercises/unique.js
 
     ```
   </p>
-  <p><strong>Solution:</strong> [copyAndSortArray.js](./array-exercises/05_copyAndSortArray.js)</p>
+
+ 
+ [Solution: copyAndSortArray.js](./array-exercises/05_copyAndSortArray.js)
 </details>
 
 <details>
   <summary><strong>Exercise 6: Shuffle an array</strong></summary>
-  <div><br>&nbsp;<br></div> 
-  <p>
-    Write the function `shuffle(array)` that shuffles (randomly reorders) elements of the array.
 
-    Multiple runs of shuffle may lead to different orders of elements. For instance:
+  <p>
+  Write the function `shuffle(array)` that shuffles (randomly reorders) elements of the array.
+  Multiple runs of shuffle may lead to different orders of elements. 
+  For instance:
 
     ```javascript
     let arr = [1, 2, 3];
@@ -225,31 +215,42 @@ node array-exercises/unique.js
     // arr = [3, 1, 2]
     // ...
     ```
-    All element orders should have an equal probability. 
+All element orders should have an equal probability. 
 
-    For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, with equal probability of each case.
+For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, with equal probability of each case.
   </p>
-  <p><strong>Solution:</strong> [shuffleAnArray.js](./array-exercises/06_shuffleAnArray.js)</p>
+
+ [Solution: shuffleAnArray.js](./array-exercises/06_shuffleAnArray.js)
 </details>
 
 
 <details>
   <summary><strong>Exercise 7: Filter unique array members </strong></summary>
-  <div><br>&nbsp;<br></div> 
+
   <p>
-    Let arr be an array. Create a function `unique(arr)` that should return an array with unique items of arr.
+Let arr be an array. Create a function `unique(arr)` that should return an array with unique items of arr.
+For instance:
 
-    For instance:
-
-    ```javascript
-    function unique(arr) {
+ ```javascript
+ 
+ function unique(arr) {
     /* your code */
     }
     let strings = ["Hare", "Krishna", "Hare", "Krishna",
     "Krishna", "Krishna", "Hare", "Hare", ":-O"
     ];
     alert( unique(strings) ); // Hare, Krishna, :-O
-    ```
-  </p>
-  <p><strong>Solution:</strong> [filterUnique.js](./array-exercises/07_filterUnique.js)</p>
+  ```
+</p>
+
+[Solution: filterUnique.js](./array-exercises/07_filterUnique.js)
 </details>
+
+## Resources
+
+## Resources
+
+This repository is built upon exercises and assignments primarily sourced from here:
+
+* [The Odin Project](https://www.theodinproject.com/)
+* [javascript.info](https://javascript.info/) 
