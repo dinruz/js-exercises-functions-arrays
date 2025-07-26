@@ -93,7 +93,7 @@ Write a function called **lastLetter** that takes a string and returns the very 
   
 </details>
 
-[Solutions: Function Exercises 01-04](./functions-exercises/basicFunctions.js)
+  [Solutions: Function Exercises 01-04](./functions-exercises/basicFunctions.js)
 
 <details>
   <summary><strong>Exercise 5: Function Add - variations </strong></summary>
@@ -138,6 +138,24 @@ Write a function `getUntilSix` and call it.
 It should simulate rolling a die repeatedly until the number 6 is rolled.
 
  [Solution: getUntilSix.js](./functions-exercises/08_getUntilSix.js) 
+ </details>
+
+<details>
+  <summary><strong>Exercise 9: display</strong></summary>
+  
+Write a function `displayProduct` for displaying perfumery products. It takes a name (mandatory string) and price (optional number, defaults to 0.00 EUR).
+
+If the product is complimentary, it's a free (gratis) item and you should input only its name. 
+However, the function must always print both the name and price, regardless of whether it's free or not.
+
+*Call the function twice:*
+
+I.  displayProduct('Java Eau de Parfum', 150)   
+II. displayProduct ('Scripted body lotion - sample') 
+
+ [Solution: displayProduct.js](./functions-exercises/09_displayProduct.js) 
+ </details>
+
 
 
 ## Array Exercises
