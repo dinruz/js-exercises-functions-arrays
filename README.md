@@ -119,8 +119,25 @@ Within this function, use a `for loop` to print all even numbers between start a
 
 </details>
 
+<details>
+  <summary><strong>Exercise 7: Roll the Dice</strong></summary>
+  
+Write a function `getDiceNumber(time)`. Argument represents the total number of times a standard dice should be rolled. Print the roll's sequence number and the result of that roll to the console (e.g., "1. dice number is: 3" etc.).
 
+Call the function which should roll the dice 8 times.
 
+ [Solution: rollDice.js](./functions-exercises/07_rollDice.js) 
+
+</details>
+
+<details>
+  <summary><strong>Exercise 8: Get until six 🎲</strong></summary>
+  
+Write a function `getUntilSix` and call it.
+
+It should simulate rolling a die repeatedly until the number 6 is rolled.
+
+ [Solution: getUntilSix.js](./functions-exercises/08_getUntilSix.js) 
 
 
 ## Array Exercises
