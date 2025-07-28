@@ -522,7 +522,29 @@ Create a new array `citiesWithS` that contains only the cities (from the origina
   ✔️ [Solution: formattingCities.js](./array-exercises/15_formattingCities.js)
 </details>
 
+<details>
+  <summary><strong>🟠 Exercise 16: Daily Income Analysis </strong></summary>
 
+Imagine you have an array of numbers representing daily incomes over a week. Some days were not good, resulting in negative or zero incomes. Create an array `dailyIncome` like this: [120, 80, -30, 150, 0, 90, 200].
+
+You need to perform the following analyses:
+
+  * Positive Incomes: Create a new array `positiveIncomes` containing only the incomes that are strictly greater than 0.  Calculate the sum of all positive incomes from the positiveIncomes array. 
+
+  * Indexes of Bad Income Days: Find all the indexes of the days when the income was less than or equal to 0. 
+
+Finally, log all the results to the console like this:
+
+ ```javascript
+ /*
+Original array - daily income for a week: 120,80,-30,150,0,90,200
+Positive incomes: 120,80,150,90,200, Total of positive incomes: 640
+Indexes of days with negative incomes: 2,4
+*/
+  ```
+
+  ✔️ [Solution: incomeAnalysis.js](./array-exercises/16_incomeAnalysis.js)
+</details>
 ---
 
 ## Resources 📚
