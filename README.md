@@ -419,8 +419,8 @@ Create a new array called `tempF`. Each element in the new array should be the c
 Output should look like this:
 
  ```javascript
- Temperature in Celsisus: 0,10,20,30,-5,15
- Temperature in Fahrenheit: 32,50,68,86,23,59
+ console.log(tempC); // expected: 0,10,20,30,-5,15
+ console.log(tempF); // expected: 32,50,68,86,23,59
   ```
 
   ✔️ [Solution: tempConversion.js](./array-exercises/10_tempConversion.js)
@@ -437,9 +437,9 @@ Create another new array `startWithA` that contains only the words that start wi
 Log all three arrays to the console. Output should look like this:
 
  ```javascript
- 'Original array: augmentation,desk,building,bed,affiliate,ant,sunshine,Ann'
- 'Only long words (>6 characters): augmentation,building,affiliate,sunshine'
- 'Words with an A: augmentation,affiliate,ant,Ann'
+ console.log(words);        // augmentation,desk,building,bed,affiliate,ant,sunshine,Ann
+ console.log(longWords);   //  augmentation,building,affiliate,sunshine
+ console.log(startWithA); //   augmentation,affiliate,ant,Ann
   ```
 
   ✔️ [Solution: filterWords.js](./array-exercises/11_filterWords.js)
@@ -456,8 +456,8 @@ Calculate the product of all numbers in the array amd store it in a variable `to
 Output should look like this:
 
  ```javascript
-  Array of numbers: 1,2,3,4,5
-  Total sum: 15, total product: 120
+  console.log('Array of numbers: ',numbers);// Array of numbers: 1,2,3,4,5
+ console.log('Total sum: ',totalSum, 'total product: ',totalProduct);// Total sum: 15, total product: 120
   ```
 
   ✔️ [Solution: sumAndProduct.js](./array-exercises/12_sumAndProduct.js)
@@ -465,7 +465,7 @@ Output should look like this:
 
 
 <details>
-  <summary><strong>🟡 Exercise 13: Sum & Product  </strong></summary>
+  <summary><strong>🟡 Exercise 13: Test Results </strong></summary>
 
 Create an array `testResults` containing numbers ([85, 92, 78, 65, 95, 70, 88]) representing test results.
 
@@ -476,11 +476,12 @@ Create an array `testResults` containing numbers ([85, 92, 78, 65, 95, 70, 88]) 
 Output should look like this:
 
  ```javascript
-Array with test results: 85,92,78,65,95,70,88
-First excellent result (>90) is: 92 
-First result below 70 is on position: 3
-Are there any failing results? (<60): false
-Is every result bigger than 50?: true
+console.log(`Array with test results: ${testResults}`); //expected: 85,92,78,65,95,70,88
+console.log(`First excellent result (>90) is: ${firstExcellent}`); // 92
+console.log(`First failing (<70) is on position: ${indexFirstFailing}`); // 3
+console.log(`Are there any failing results? (<60): ${hasFailing}`); // false
+console.log(`Is every result bigger than 50?: ${areBigger}`); // true
+
   ```
 
   ✔️ [Solution: testResults.js](./array-exercises/13_testResults.js)
@@ -495,13 +496,32 @@ Create a new array `discountedPrices` containing only prices that are greater th
 
 
  ```javascript
- Product prices: 15.99,23.5,5,12.75,30.2,8.99
- All discounted prices: 14.391,21.15,11.475,27.18
- Discounted prices - total: 74.196
+ console.log(productPrices);     // 15.99,23.5,5,12.75,30.2,8.99
+ console.log(discountedPrices); // 14.391,21.15,11.475,27.18
+ console.log(total);           // 74.196
   ```
 
   ✔️ [Solution: discounted.js](./array-exercises/14_discounted.js)
 </details>
+
+<details>
+  <summary><strong>🟠 Exercise 15: Formatting City Names  </strong></summary>
+
+Create an array `cityNames`= ["lisBOa", "marbella","vallettA", "Split", "theSSaloniKI", "napoLi", "sALERNO"].
+
+Create a new array named `formattedCities` where each city name will have its first letter capitalized and the rest in lowercase.  [Example: "lisBOa" -> "Lisboa"]
+
+Create a new array `citiesWithS` that contains only the cities (from the original array) whose name starts with the letter 'S' (case-insensitive). Output should look like this:
+
+ ```javascript
+ console.log(cityNames);          // lisBOa,marbella,vallettA,Split,theSSaloniKI,napoLi,sALERNO
+ console.log(formattedCities);   // Lisboa,Marbella,Valletta,Split,Thessaloniki,Napoli,Salerno
+ console.log(citiesWithS);      // Split,sALERNO
+  ```
+
+  ✔️ [Solution: formattingCities.js](./array-exercises/15_formattingCities.js)
+</details>
+
 
 ---
 
