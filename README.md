@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
 - [Installation & Usage](#installation--usage)
+- [Difficulty levels](#dificulty-levels)
 - [Functions exercises](#functions-exercises)
   - [About Functions exercises](#about-functions-exercises)
   - [List of Functions exercises](#list-of-functions-exercises)
@@ -14,20 +15,21 @@
 
 ## Overview
 
-This repository showcases my solutions for various JavaScript **beginner-friendly** challenges and exercises during my learning from The Odin Project, with a focus on fundamental concepts like **string manipulation**,**functions** and **array methods**.
-Exercises are beginner-friendly.
+This repository showcases my solutions for various JavaScript **beginner-friendly** challenges and exercises during my learning from The Odin Project.
+
+Focus is on fundamental concepts like **string manipulation**,**loops**, **functions** and **array methods**.
+The solutions  are currently untested and may contain bugs. They serve as personal learning attempts.
 
 This repo will be continuously updated with new exercises from various sources.
 
-### Installation & Usage ⚙️
+## Installation & Usage ⚙️
 
 <details>
-  <summary><strong>1: Fork & clone the repository</strong></summary>
+  <summary><strong> Fork & clone the repository</strong></summary>
 
- 1. ** Fork**
+ 1. **Fork**
 
-  Begin by forking this repository to your own GitHub account. 
-  Click the 'Fork' button on the top right of this page.
+  Begin by forking this repository to your own GitHub account. Click the 'Fork' button on the top right of this page.
 
 2. **Clone**
 
@@ -37,7 +39,8 @@ This repo will be continuously updated with new exercises from various sources.
     git clone https://github.com/dinruz/js-exercises-functions-arrays.git
   ``` 
 
-<summary><strong>Running specific exercise</strong></summary>
+<details>
+  <summary><strong>Running specific exercise</strong></summary>
 
 * Navigate to the project directory: 
 
@@ -49,32 +52,33 @@ This repo will be continuously updated with new exercises from various sources.
   ```bash
     node array-exercises/01_camelize.js
   ```
-    
 </details>
 
-<details>
-  <summary><strong>Difficulty levels</strong></summary>
+## Dificulty levels
 
-This section explains the difficulty rating system used in this repository. 
-Have in mind these exercises are highly **beginner-friendly**.
+<details>
+<summary><strong> Difficulty rating system used in this repository.<strong></summary> 
 
 
 🟢 **Very Easy**
 
-  These tasks are perfect for first steps. They focus on basic syntax and direct instruction execution, requiring minimal complex thought.
+These tasks are perfect for first steps. 
+They focus on basic syntax and direct instruction execution, requiring minimal complex thought.
 
 🟡  **Easy**
 
-	These tasks involve connecting a few basic concepts or applying simple logic. They might include variables, conditions, or straightforward loops.
+These tasks involve connecting a few basic concepts or applying simple logic.
+They might include variables, conditions, or straightforward loops.
 
 🟠 **Medium**	
 
-  These tasks present a moderate challenge for beginners. They combine several fundamental ideas and might involve slightly more complex logic or basic array manipulations.
+These tasks present a moderate challenge for beginners. 
+They combine several fundamental ideas and might involve slightly more complex logic or basic array manipulations.
 
 🔴  **Hard**	
 
-  These tasks are more complex and require combining multiple concepts or more involved algorithms. They are still approachable but might demand more time and iteration.
-  
+These tasks are more complex and require combining multiple concepts or more involved algorithms. 
+They are still approachable but might demand more time and iteration.
  </details>
 
 ---
@@ -187,7 +191,7 @@ Write a function `getUntilSix()` and call it. It should simulate rolling a die r
 <details>
   <summary><strong>🟢 Exercise 9: Display products</strong></summary>
   
-Write a function `displayProduct()` for displaying perfumery products. It takes a `name` (mandatory string) and `price` (optional number, defaults to '0.00 EU'R). If the product is complimentary, it's a free item and you should input only its name. However, the function must always print both the name and price, regardless of whether it's free or not.
+Write a function `displayProduct()` for displaying perfumery products. It takes a `name` (mandatory string) and `price` (optional number, defaults to '0.00 EUR'). If the product is complimentary, it's a free item and you should input only its name. However, the function must always print both the name and price, regardless of whether it's free or not.
 
 Call the function twice:
 
@@ -205,11 +209,12 @@ Call the function twice:
 
 ### About Array exercises
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 These exercises were developed as part of:
 
 **I. The Odin Project assignment** - challenges sourced from [javascript.info](https://javascript.info/array-methods#tasks).
+
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  01-07
   * Started:   June 2025
@@ -330,6 +335,7 @@ For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, wit
  
 
  ✔️ [Solution: shuffleAnArray.js](./array-exercises/06_shuffleAnArray.js)
+ 💡 **Tip**: To use shuffle method, google [Fisher-Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). 
 </details>
 
 
@@ -401,6 +407,62 @@ The function should return the final string like this:
 
   ✔️ [Solution: cleanAndCapitalize.js](./array-exercises/09_cleanAndCapitalize.js)
 </details>
+
+<details>
+  <summary><strong>🟢Exercise 10: Temperature Conversion </strong></summary>
+
+Create an array named `tempC` containing several numbers. These numbers represent temperatures in Celsius.
+
+Create a new array called `tempF`. Each element in the new array should be the corresponding Celsius temperature converted to Fahrenheit using the formula: `(temperature * 9/5) + 32`.
+
+Output should look like this:
+
+ ```javascript
+ Temperature in Celsisus: 0,10,20,30,-5,15
+ Temperature in Fahrenheit: 32,50,68,86,23,59
+  ```
+
+  ✔️ [Solution: tempConversion.js](./array-exercises/10_tempConversion.js)
+</details>
+
+<details>
+  <summary><strong>🟢Exercise 11: Filter Words </strong></summary>
+
+Create an array `words` containing strings 'augmentation','desk','building','bed','affiliate','ant','sunshine','Ann'.
+
+Create a new array `longWords` that contains only the words whose length is greater than 6 characters.
+Create another new array `startWithA` that contains only the words that start with the letter 'a'(case-insensitive).
+
+Log all three arrays to the console. Output should look like this:
+
+ ```javascript
+ 'Original array: augmentation,desk,building,bed,affiliate,ant,sunshine,Ann'
+ 'Only long words (>6 characters): augmentation,building,affiliate,sunshine'
+ 'Words with an A: augmentation,affiliate,ant,Ann'
+  ```
+
+  ✔️ [Solution: filterWords.js](./array-exercises/11_filterWords.js)
+</details>
+
+<details>
+  <summary><strong>🟡 Exercise 12: Sum & Product  </strong></summary>
+
+Create an array  `numbers` ([1, 2, 3, 4, 5]). 
+
+Calculate the sum of all numbers in the array and store it in a variable `totalSum`.
+Calculate the product of all numbers in the array amd store it in a variable `totalProduct`.
+
+Output should look like this:
+
+ ```javascript
+  Array of numbers: 1,2,3,4,5
+  Total sum: 15, total product: 120
+  ```
+
+  ✔️ [Solution: sumAndProduct.js](./array-exercises/12_sumAndProduct.js)
+</details>
+
+
 
 ---
 
