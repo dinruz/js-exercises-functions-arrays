@@ -14,37 +14,37 @@
 
 ## Overview
 
-This repository showcases my solutions for various JavaScript challenges and exercises during learning from The Odin Project, with a focus on fundamental concepts like **functions**, **array methods** and **string manipulation**. 
+This repository showcases my solutions for various JavaScript **beginner-friendly** challenges and exercises during my learning from The Odin Project, with a focus on fundamental concepts like **string manipulation**,**functions** and **array methods**.
+Exercises are beginner-friendly.
 
 This repo will be continuously updated with new exercises from various sources.
 
 ### Installation & Usage ⚙️
 
 <details>
-  <summary><strong>1: Fork the repository</strong></summary>
+  <summary><strong>1: Fork & clone the repository</strong></summary>
 
- Begin by forking this repository to your own GitHub account. Click the 'Fork' button on the top right of this page.
-</details>
+ 1. ** Fork**
 
-<details>
-  <summary><strong>2: Clone the repository</strong></summary>
+  Begin by forking this repository to your own GitHub account. 
+  Click the 'Fork' button on the top right of this page.
+
+2. **Clone**
 
   Open your terminal or command prompt and run the following command to clone the repository to your local machine:
 
   ```bash
     git clone https://github.com/dinruz/js-exercises-functions-arrays.git
   ``` 
-</details>
 
-<details>
-  <summary><strong>Running specific exercise</strong></summary>
+<summary><strong>Running specific exercise</strong></summary>
 
 * Navigate to the project directory: 
 
  ```bash
     cd js-exercises-functions-arrays/array-exercises
   ```
-* or you can run any JavaScript exercise file using Node.js. For example, to run the `01_camelize.js` array exercise:
+* or you can run any exercise file using Node.js. For example, to run the `01_camelize.js` array exercise:
 
   ```bash
     node array-exercises/01_camelize.js
@@ -56,23 +56,28 @@ This repo will be continuously updated with new exercises from various sources.
   <summary><strong>Difficulty levels</strong></summary>
 
 This section explains the difficulty rating system used in this repository. 
-It's highly **beginner-friendly**.
+Have in mind these exercises are highly **beginner-friendly**.
 
 
 🟢 **Very Easy**
+
   These tasks are perfect for first steps. They focus on basic syntax and direct instruction execution, requiring minimal complex thought.
 
 🟡  **Easy**
+
 	These tasks involve connecting a few basic concepts or applying simple logic. They might include variables, conditions, or straightforward loops.
 
 🟠 **Medium**	
+
   These tasks present a moderate challenge for beginners. They combine several fundamental ideas and might involve slightly more complex logic or basic array manipulations.
 
 🔴  **Hard**	
+
   These tasks are more complex and require combining multiple concepts or more involved algorithms. They are still approachable but might demand more time and iteration.
+  
+ </details>
 
-    </details>
-
+---
 
 ## Functions exercises 🧩
 
@@ -96,7 +101,6 @@ These exercises were developed as part of:
   * Started:   June 2025 
   * Completed: July 2025
 
----
 
 ### List of Functions exercises ✨
 
@@ -387,7 +391,6 @@ Write a function `cleanAndCapitalize(text)` that takes one string and transforms
 
 The function should return the final string like this:
 
-
  ```javascript
     cleanAndCapitalize("tHis-is somE--stranGE. text! ")
     // Expected output: "This Is Some Strange Text"
@@ -399,7 +402,7 @@ The function should return the final string like this:
   ✔️ [Solution: cleanAndCapitalize.js](./array-exercises/09_cleanAndCapitalize.js)
 </details>
 
-
+---
 
 ## Resources 📚
 
