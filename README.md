@@ -38,6 +38,7 @@ This repo will be continuously updated with new exercises from various sources.
   ```bash
     git clone https://github.com/dinruz/js-exercises-functions-arrays.git
   ``` 
+</details>
 
 <details>
   <summary><strong>Running specific exercise</strong></summary>
@@ -463,6 +464,44 @@ Output should look like this:
 </details>
 
 
+<details>
+  <summary><strong>🟡 Exercise 13: Sum & Product  </strong></summary>
+
+Create an array `testResults` containing numbers ([85, 92, 78, 65, 95, 70, 88]) representing test results.
+
+- Locate the first result that is greater than 90. Store it in a variable `firstExcellent`.
+- Find the index of the first result that is less than 70. Store it in a variable `indexFirstFailing`.
+- Check if there is at least one result less than 60  and if all results are greater than 50. 
+
+Output should look like this:
+
+ ```javascript
+Array with test results: 85,92,78,65,95,70,88
+First excellent result (>90) is: 92 
+First result below 70 is on position: 3
+Are there any failing results? (<60): false
+Is every result bigger than 50?: true
+  ```
+
+  ✔️ [Solution: testResults.js](./array-exercises/13_testResults.js)
+</details>
+
+<details>
+  <summary><strong>🟠 Exercise 14: Discounted Prices  </strong></summary>
+
+Create an array `productPrices` ([15.99, 23.50, 5.00, 12.75, 30.20, 8.99]).
+
+Create a new array `discountedPrices` containing only prices that are greater than 10 and these prices should be reduced by 10%. Calculate the total sum of all discounted products. 
+
+
+ ```javascript
+ Product prices: 15.99,23.5,5,12.75,30.2,8.99
+ All discounted prices: 14.391,21.15,11.475,27.18
+ Discounted prices - total: 74.196
+  ```
+
+  ✔️ [Solution: discounted.js](./array-exercises/14_discounted.js)
+</details>
 
 ---
 
