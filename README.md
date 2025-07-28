@@ -18,7 +18,7 @@ This repository showcases my solutions for various JavaScript challenges and exe
 
 This repo will be continuously updated with new exercises from various sources.
 
-## Installation & Usage ⚙️
+### Installation & Usage ⚙️
 
 <details>
   <summary><strong>1: Fork the repository</strong></summary>
@@ -44,11 +44,7 @@ This repo will be continuously updated with new exercises from various sources.
  ```bash
     cd js-exercises-functions-arrays/array-exercises
   ```
-* or you can run any JavaScript exercise file using Node.js. 
-
-Make sure you have Node.js installed on your system.
-
-For example, to run the `01_camelize.js` array exercise:
+* or you can run any JavaScript exercise file using Node.js. For example, to run the `01_camelize.js` array exercise:
 
   ```bash
     node array-exercises/01_camelize.js
@@ -56,25 +52,48 @@ For example, to run the `01_camelize.js` array exercise:
     
 </details>
 
+<details>
+  <summary><strong>Difficulty levels</strong></summary>
+
+This section explains the difficulty rating system used in this repository. 
+It's highly **beginner-friendly**.
+
+
+🟢 **Very Easy**
+  These tasks are perfect for first steps. They focus on basic syntax and direct instruction execution, requiring minimal complex thought.
+
+🟡  **Easy**
+	These tasks involve connecting a few basic concepts or applying simple logic. They might include variables, conditions, or straightforward loops.
+
+🟠 **Medium**	
+  These tasks present a moderate challenge for beginners. They combine several fundamental ideas and might involve slightly more complex logic or basic array manipulations.
+
+🔴  **Hard**	
+  These tasks are more complex and require combining multiple concepts or more involved algorithms. They are still approachable but might demand more time and iteration.
+
+    </details>
+
 
 ## Functions exercises 🧩
 
 ### About Function exercises
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-
 These exercises were developed as part of:
 
 **I. The Odin Project learning** - [Function Basics: Assignments](https://www.theodinproject.com/lessons/foundations-function-basics#assignment) | Foundations Course
 
-  * Exercises 01-04
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
+  * Exercises  01-04
+  * Started:   June 2025 
   * Completed: June 2025
 
 **II. Additional Practice Exercises**
 
-  * Exercises 05 - ... 
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
+  * Exercises  05 - 09
+  * Started:   June 2025 
   * Completed: July 2025
 
 ---
@@ -82,7 +101,7 @@ These exercises were developed as part of:
 ### List of Functions exercises ✨
 
 <details>
-  <summary><strong>Exercise 1: Add7</strong></summary>
+  <summary><strong>🟢 Exercise 1: Add7</strong></summary>
 
   Write a function called `add7()` that takes one number and returns that number + 7.
   Write function and test the output with `console.log``.
@@ -90,7 +109,7 @@ These exercises were developed as part of:
 </details>
 
 <details>
-  <summary><strong>Exercise 2: Multiply</strong></summary>
+  <summary><strong>🟢 Exercise 2: Multiply</strong></summary>
 
 Write a function called `multiply()` that takes 2 numbers and returns their product.
 Write function and test the output with `console.log`.
@@ -98,7 +117,7 @@ Write function and test the output with `console.log`.
 </details>
 
 <details>
-  <summary><strong>Exercise 3: Capitalize</strong></summary>
+  <summary><strong>🟢 Exercise 3: Capitalize</strong></summary>
 
 Write a function called `capitalize()` that takes a string and returns that string with only the first letter capitalized. 
 Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
@@ -106,7 +125,7 @@ Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
 </details>
 
 <details>
-  <summary><strong>Exercise 4: Last Letter </strong></summary>
+  <summary><strong>🟢 Exercise 4: Last Letter </strong></summary>
   
 
 Write a function called `lastLetter()` that takes a string and returns the very last letter of that string. 
@@ -119,7 +138,7 @@ Write a function called `lastLetter()` that takes a string and returns the very 
   ✔️ [Solutions: Function Exercises 01-04](./functions-exercises/basicFunctions.js)
 
 <details>
-  <summary><strong>Exercise 5: Function `Add()` - variations </strong></summary>
+  <summary><strong>🟢 Exercise 5: Function `Add()` - variations </strong></summary>
   
 I. Write a function `add(num1, num2)` that returns the result. Use only 'return'.
 
@@ -132,7 +151,7 @@ III. Write this function as arrow function - `addArrow(num5,num6)`.
 </details>
 
 <details>
-  <summary><strong>Exercise 6: Print Even Numbers</strong></summary>
+  <summary><strong>🟡 Exercise 6: Print Even Numbers</strong></summary>
   
 Write a function `printEvenNumbers(start, end)`.
 
@@ -143,7 +162,7 @@ Within this function, use a `for loop` to print all even numbers between start a
 </details>
 
 <details>
-  <summary><strong>Exercise 7: Roll the Dice</strong></summary>
+  <summary><strong>🟡 Exercise 7: Roll the Dice</strong></summary>
   
 Write a function `getDiceNumber(time)`. Argument represents the total number of times a standard dice should be rolled. Print the roll's sequence number and the result of that roll to the console.
 
@@ -154,7 +173,7 @@ Call the function which should roll the dice 8 times.
 </details>
 
 <details>
-  <summary><strong>Exercise 8: Until Six 🎲</strong></summary>
+  <summary><strong>🟡 Exercise 8: Until Six 🎲</strong></summary>
   
 Write a function `getUntilSix()` and call it. It should simulate rolling a die repeatedly until the number 6 is rolled.
 
@@ -162,7 +181,7 @@ Write a function `getUntilSix()` and call it. It should simulate rolling a die r
  </details>
 
 <details>
-  <summary><strong>Exercise 9: Display products</strong></summary>
+  <summary><strong>🟢 Exercise 9: Display products</strong></summary>
   
 Write a function `displayProduct()` for displaying perfumery products. It takes a `name` (mandatory string) and `price` (optional number, defaults to '0.00 EU'R). If the product is complimentary, it's a free item and you should input only its name. However, the function must always print both the name and price, regardless of whether it's free or not.
 
@@ -188,20 +207,24 @@ These exercises were developed as part of:
 
 **I. The Odin Project assignment** - challenges sourced from [javascript.info](https://javascript.info/array-methods#tasks).
 
-  * Exercises 01-07
-
+  * Exercises  01-07
+  * Started:   June 2025
   * Completed: June 2025
 
 **II. Additional Practice Exercises**
 
-    * Completed: July 2025
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+  * Exercises  08-09
+  * Started:   June 2025
+  * Completed: June 2025
 
 ---
 
 ### List of Array exercises ✨
 
 <details>
-  <summary><strong>Exercise 1: Camelize()</strong></summary>
+  <summary><strong>🟠 Exercise 1: Camelize()</strong></summary>
 
   Write the function `camelize(str)` that changes dash-separated words like “my-short-string” into camel-cased “myShortString”. That is: removes all dashes, each word after dash becomes uppercased. 
   
@@ -218,7 +241,7 @@ camelize("-webkit-transition") == 'WebkitTransition';
 </details>
 
 <details>
-  <summary><strong>Exercise 2: Filter range</strong></summary>
+  <summary><strong>🟡 Exercise 2: Filter range</strong></summary>
 
   Write a function `filterRange(arr, a, b)` that gets an array `arr`, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.
   For instance:
@@ -235,7 +258,7 @@ alert( filtered ); // 3,1 (matching values)
 </details>
 
 <details>
-  <summary><strong>Exercise 3: Filter range in place </strong></summary>
+  <summary><strong>🟡 Exercise 3: Filter range in place </strong></summary>
   
    Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between a and b. The test is: 'a ≤ arr[i] ≤ b'.
 
@@ -251,7 +274,7 @@ filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
 </details>
 
 <details>
-  <summary><strong>Exercise 4: Sort in decreasing order </strong></summary>
+  <summary><strong>🟢 Exercise 4: Sort in decreasing order </strong></summary>
   
 
   ```javascript
@@ -264,7 +287,7 @@ let arr = [5, 2, 1, -10, 8];
 </details>
 
 <details>
-  <summary><strong>Exercise 5: Copy and sort array</strong></summary>
+  <summary><strong>🟡 Exercise 5: Copy and sort array</strong></summary>
 
 
   We have an array of strings 'arr'. We’d like to have a sorted copy of it, but keep arr unmodified.
@@ -282,7 +305,7 @@ alert( sorted ); // CSS, HTML, JavaScript
 </details>
 
 <details>
-  <summary><strong>Exercise 6: Shuffle an array</strong></summary>
+  <summary><strong>🔴 Exercise 6: Shuffle an array</strong></summary>
 
   Write the function `shuffle(array)` that shuffles (randomly reorders) elements of the array.
   Multiple runs of shuffle may lead to different orders of elements. 
@@ -307,7 +330,7 @@ For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, wit
 
 
 <details>
-  <summary><strong>Exercise 7: Filter unique array members </strong></summary>
+  <summary><strong>🟠 Exercise 7: Filter unique array members </strong></summary>
 
 Let `arr` be an array. Create a function `unique(arr)` that should return an array with unique items of 'arr'.
 For instance:
@@ -327,7 +350,7 @@ For instance:
 </details>
 
 <details>
-  <summary><strong>Exercise 8: FizzBuzz Pro </strong></summary>
+  <summary><strong>🟠 Exercise 8: FizzBuzz Pro </strong></summary>
 
 Write a function `fizzBuzzPro(number)` that generates a modified FizzBuzz sequence up to a given number.
 
@@ -354,11 +377,11 @@ Function should:
 </details>
 
 <details>
-  <summary><strong>Exercise 9: cleanAndCapitalize() </strong></summary>
+  <summary><strong>🔴Exercise 9: cleanAndCapitalize() </strong></summary>
 
 Write a function `cleanAndCapitalize(text)` that takes one string and transforms the text in the following way:
 
-* remove all punctuation characters (`.`,`,``;`,`:`,`!`,`?`,`-`,`_`)
+* remove all punctuation characters (.,;:!?_-)
 * capitalize the first letter of each word
 * standardize spaces (only one space between words)
 
