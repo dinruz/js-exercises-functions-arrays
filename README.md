@@ -75,15 +75,15 @@ These exercises were developed as part of:
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-  * Exercises  01-04
+  * Exercises  **01-04**
   * Started:   June 2025 
   * Completed: June 2025
 
 **II. Chris Pine: *Learn to Program***, [Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) | Exercises in section 'A Few Things To Try'
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-  * Exercises  10 - 11
+  * Exercises  **10 - 11**
   * Started:   June 2025 
   * Completed: June 2025
 
@@ -91,7 +91,7 @@ These exercises were developed as part of:
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-  * Exercises  05 - 09
+  * Exercises  **05 - 09, 12**
   * Started:   June 2025 
   * Completed: July 2025
 
@@ -101,18 +101,19 @@ These exercises were developed as part of:
 
 | No. | Exercise Name          | Status      | Solution Link       |
 | :-- | :--------------------- | :---------- | :------------------ |
-| 1   | [Add7](#exercise-fn-1-add7)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
-| 2   | [Multiply](#exercise-fn-2-multiply)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
-| 3   | [Capitalize](#exercise-fn-3-capitalize)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
-| 4   | [Last Letter](#exercise-fn-4-last-letter)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
-| 5   | [Function Add() - variations](#exercise-fn-5-add)| Complete | [Solution](./functions-exercises/05_fnAdd.js) |
-| 6   | [Print Even Numbers](#exercise-fn-6-print-even-numbers)| Complete | [Solution](./functions-exercises/06_fnPrintEven.js) |
-| 7   | [Roll the Dice](#exercise-fn-7-roll-the-dice)| Complete | [Solution](./functions-exercises/07_rollDice.js) |
-| 8   | [Until Six](#exercise-fn-8-until-six)| Complete | [Solution](./functions-exercises/08_getUntilSix.js) |
-| 9   | [Display products](#exercise-fn-9-display-products)| Complete | [Solution](./functions-exercises/09_displayProduct.js) |
-| 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)| Complete | [Solution](./functions-exercises/10_song99bottles.js) |
-| 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)| Complete | [Solution](./functions-exercises/11_deafGrandma.js) |
-| 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) | Complete | [Solution](./functions-exercises/12_deafGrandmaPro.js) |
+| 1   | [Add7](#exercise-fn-1-add7)|   ✔️   | [Solution](./functions-exercises/01-04_basicFn.js) |
+| 2   | [Multiply](#exercise-fn-2-multiply)|   ✔️  | [Solution](./functions-exercises/01-04_basicFn.js) |
+| 3   | [Capitalize](#exercise-fn-3-capitalize)|   ✔️  | [Solution](./functions-exercises/01-04_basicFn.js) |
+| 4   | [Last Letter](#exercise-fn-4-last-letter)|   ✔️  | [Solution](./functions-exercises/01-04_basicFn.js) |
+| 5   | [Function Add() - variations](#exercise-fn-5-add)|  ✔️  | [Solution](./functions-exercises/05_fnAdd.js) |
+| 6   | [Print Even Numbers](#exercise-fn-6-print-even-numbers)|  ✔️  | [Solution](./functions-exercises/06_fnPrintEven.js) |
+| 7   | [Roll the Dice](#exercise-fn-7-roll-the-dice)|  ✔️ | [Solution](./functions-exercises/07_rollDice.js) |
+| 8   | [Until Six](#exercise-fn-8-until-six)|  ✔️ | [Solution](./functions-exercises/08_getUntilSix.js) |
+| 9   | [Display products](#exercise-fn-9-display-products)|  ✔️ | [Solution](./functions-exercises/09_displayProduct.js) |
+| 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)|  ✔️  | [Solution](./functions-exercises/10_song99bottles.js) |
+| 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)|  ✔️ | [Solution](./functions-exercises/11_deafGrandma.js) |
+| 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) |  ✔️  | [Solution](./functions-exercises/12_deafGrandmaPro.js) |
+| 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) | ✔️  | [Solution](./functions-exercises/12_deafGrandmaPro.js) |
 
 
 ### Detailed Function Exercises Descriptions
@@ -246,28 +247,26 @@ Write a program which prints out the lyrics to that beloved classic, that field-
               Use `trim()`.
 </details>
 
+---
+
 <details id="exercise-fn-12-deaf-grandma-pro">
   <summary><strong>Exercise 12: Deaf Grandma Pro</strong></summary>
 
   Write a 'Deaf Grandma' program as above but **pro version**. All conditions from 'Deaf Grandma' must be met (incluuding random years) **plus** these few:
   
   •	**Mixed Case** 
-  
-  If you type something with mixed uppercase and lowercase letters, Grandma will be confused and say: 'COME AGAIN, DEARIE?'.
+    If you type something with mixed uppercase and lowercase letters, Grandma will be confused and say: 'COME AGAIN, DEARIE?'.
   
   •  **Empty Input**
-
-  If you just press Enter without typing anything (an empty string), Grandma will ask: 'ARE YOU GOING TO SAY SOMETHING, DEARIE?'.
+    If you just press Enter without typing anything (an empty string), Grandma will ask: 'ARE YOU GOING TO SAY SOMETHING, DEARIE?'.
 
   •  **Canceling the Prompt**
-
-  If you click "Cancel" on the prompt window, Grandma will interpret it as a 'BYE' and it will count towards ending the game.
+    If you click "Cancel" on the prompt window, Grandma will interpret it as a 'BYE' and it will count towards ending the game.
 
   • **Saying Bye to Grandma**
-  
-  You can't stop talking to grandma until you shout 'BYE' 3 times **in a row** (If you say 'BYE' and then anything else, it won't count).
+    You can't stop talking to grandma until you shout 'BYE' 3 times **in a row** (If you say 'BYE' and then anything else, it won't count).
 
-  💡 **Hint**: Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! Use `trim()`.
+  💡  **Hint**:   Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! Use `trim()`.
 
   ✨ **Feature:** More phrases stored in arrays that Grandma speaks randomly (depending on the input conditions).
 </details>
@@ -284,7 +283,7 @@ These exercises were developed as part of:
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-  * Exercises  01-07
+  * Exercises  **01-07**
   * Started:   June 2025
   * Completed: June 2025
 
@@ -292,7 +291,7 @@ These exercises were developed as part of:
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-  * Exercises  08-09
+  * Exercises  **08-17**
   * Started:   June 2025
   * Completed: June 2025
 
@@ -303,23 +302,23 @@ These exercises were developed as part of:
 
 | No. | Exercise Name          | Status      | Solution Link       |
 | :-- | :--------------------- | :---------- | :------------------ |
-| 1   | [Camelize()](#exercise-arr-1-camelize)| Complete    | [Solution](./array-exercises/01_camelize.js) |
-| 2   | [Filter range](#exercise-arr-2-filter-range)| Complete    | [Solution](./array-exercises/02_filterRange.js) |
-| 3   | [Filter range in place](#exercise-arr-3-filter-range-in-place)| Complete    | [Solution](./array-exercises/03_filterRangeInPlace.js) |
-| 4   | [Sort in decreasing order](#exercise-arr-4-sort-in-decreasing-order)| Complete    | [Solution](./array-exercises/04_sortInDecreasingOrder.js) |
-| 5   | [Copy and sort array](#exercise-arr-5-copy-and-sort-array)| Complete    | [Solution](./array-exercises/05_copyAndSortArray.js) |
-| 6   | [Shuffle an array](#exercise-arr-6-shuffle-an-array)| Complete    | [Solution](./array-exercises/06_shuffleAnArray.js) |
-| 7   | [Filter unique array members](#exercise-arr-7-filter-unique)| Complete    | [Solution](./array-exercises/07_filterUnique.js) |
-| 8   | [FizzBuzz Pro](#exercise-arr-8-fizzbuzz-pro)| Complete | [Solution](./array-exercises/08_fizzBuzzPro.js) |
-| 9   | [cleanAndCapitalize()](#exercise-arr-9-clean-and-capitalize)| Complete | [Solution](./array-exercises/09_cleanAndCapitalize.js) |
-| 10  | [Temperature Conversion](#exercise-arr-10-temperature-conversion)| Complete | [Solution](./array-exercises/10_tempConversion.js) |
-| 11  | [Filter Words](#exercise-arr-11-filter-words)| Complete | [Solution](./array-exercises/11_filterWords.js) |
-| 12  | [Sum & Product](#exercise-arr-12-sum-and-product)| Complete | [Solution](./array-exercises/12_sumAndProduct.js) |
-| 13  | [Test Results](#exercise-arr-13-test-results)| Complete | [Solution](./array-exercises/13_testResults.js) |
-| 14  | [Discounted Prices](#exercise-arr-14-discounted-prices)| Complete | [Solution](./array-exercises/14_discounted.js) |
-| 15  | [Formatting City Names](#exercise-arr-15-formatting-city-names)| Complete | [Solution](./array-exercises/15_formattingCities.js) |
-| 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)| Complete | [Solution](./array-exercises/16_incomeAnalysis.js) |
-| 17  | [Game Inventory](#exercise-arr-17-game-inventory) | In Progress |                        | 
+| 1   | [Camelize()](#exercise-arr-1-camelize)|   ✔️  | [Solution](./array-exercises/01_camelize.js) |
+| 2   | [Filter range](#exercise-arr-2-filter-range)|  ✔️    | [Solution](./array-exercises/02_filterRange.js) |
+| 3   | [Filter range in place](#exercise-arr-3-filter-range-in-place)|  ✔️    | [Solution](./array-exercises/03_filterRangeInPlace.js) |
+| 4   | [Sort in decreasing order](#exercise-arr-4-sort-in-decreasing-order)| ✔️  | [Solution](./array-exercises/04_sortInDecreasingOrder.js) |
+| 5   | [Copy and sort array](#exercise-arr-5-copy-and-sort-array)|   ✔️  | [Solution](./array-exercises/05_copyAndSortArray.js) |
+| 6   | [Shuffle an array](#exercise-arr-6-shuffle-an-array)|  ✔️  | [Solution](./array-exercises/06_shuffleAnArray.js) |
+| 7   | [Filter unique array members](#exercise-arr-7-filter-unique)|   ✔️  | [Solution](./array-exercises/07_filterUnique.js) |
+| 8   | [FizzBuzz Pro](#exercise-arr-8-fizzbuzz-pro)|  ✔️ | [Solution](./array-exercises/08_fizzBuzzPro.js) |
+| 9   | [cleanAndCapitalize()](#exercise-arr-9-clean-and-capitalize)|  ✔️ | [Solution](./array-exercises/09_cleanAndCapitalize.js) |
+| 10  | [Temperature Conversion](#exercise-arr-10-temperature-conversion)|  ✔️| [Solution](./array-exercises/10_tempConversion.js) |
+| 11  | [Filter Words](#exercise-arr-11-filter-words)| ✔️  | [Solution](./array-exercises/11_filterWords.js) |
+| 12  | [Sum & Product](#exercise-arr-12-sum-and-product)|  ✔️ | [Solution](./array-exercises/12_sumAndProduct.js) |
+| 13  | [Test Results](#exercise-arr-13-test-results)| ✔️  | [Solution](./array-exercises/13_testResults.js) |
+| 14  | [Discounted Prices](#exercise-arr-14-discounted-prices)| ✔️  | [Solution](./array-exercises/14_discounted.js) |
+| 15  | [Formatting City Names](#exercise-arr-15-formatting-city-names)|  ✔️  | [Solution](./array-exercises/15_formattingCities.js) |
+| 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)|  ✔️ | [Solution](./array-exercises/16_incomeAnalysis.js) |
+| 17  | [Game Inventory](#exercise-arr-17-game-inventory) | ⏳  |                        | 
 
 ### Detailed Array Exercises Descriptions
 
@@ -633,7 +632,9 @@ Indexes of days with negative incomes: 2,4
 <details id="exercise-arr-17-game-inventory">
   <summary><strong>Exercise 17: Game Inventory</strong></summary>
 
-Imagine your game character is equipped with various items and their inventory is a list of these items. ⚔️ 🔮 This inventory is an array:
+Imagine your game character is equipped with various items and their inventory is a list of these items. ⚔️ 🔮
+
+ This inventory is an array:
 
 ```javascript
 let inventory = ['Sword', 'Shield', 'Potion', 'Bow', 'Arrows', 'Map'];
@@ -643,7 +644,9 @@ let inventory = ['Sword', 'Shield', 'Potion', 'Bow', 'Arrows', 'Map'];
 Implement the following functions. Remember to log clear messages to the console for each action and its result. Your goal is for each function to perform its task efficiently.
 
 
-**1. function `displayInventory()`** 
+<details>
+  <summary><strong>1. function `displayInventory()` </strong></summary>
+
 
 Purpose: Prints the current contents of the inventory to the console in a readable format.
 
@@ -651,7 +654,10 @@ Purpose: Prints the current contents of the inventory to the console in a readab
 Your inventory: Sword, Shield, Potion, Bow, Arrows, Map
 ```
 
-**2. function `addItem(itemName)`**
+</details
+
+<details>
+  <summary><strong> 2. function `addItem(itemName)`</strong></summary>
 
 * Purpose: Adds a new item to the inventory.
 
@@ -676,7 +682,11 @@ You already have Map in your inventory.
 Your inventory: Sword, Shield, Potion, Bow, Arrows, Map, Healing Potion
 ```
 
-**3. function `removeItem(itemName)`**
+</details>
+
+<details>
+  <summary><strong> 3. function `removeItem(itemName)`</strong></summary>
+
 
 * Purpose: Removes a specific item from the inventory.
 
@@ -702,7 +712,10 @@ Item NonExistentItem not found in inventory.
 Your inventory: Sword, Potion, Bow, Arrows, Map, Healing Potion
 ```
 
-**4.function `hasItem(itemName)`**
+</details>
+
+<details>
+  <summary><strong>4.function `hasItem(itemName)`</strong></summary>
 
 * Purpose: Checks if the player possesses a specific item.
 
@@ -721,8 +734,10 @@ Expected Output (for 'Magic Orb'):
 ```javascript
 You do not have Magic Orb in your inventory.
 ```
+</details>
 
-**5. function `sortInventory()`**
+<details>
+  <summary><strong>5. function `sortInventory()`</strong></summary>
 
 * Purpose: Sorts the items in the inventory in alphabetical (lexicographical) order.
 
@@ -734,21 +749,25 @@ Expected Output:
 Sorting inventory...
 Your inventory: Arrows, Bow, Healing Potion, Map, Potion, Sword
 ```
+</details>
 
-**6. function `getItemLengths()`**
+<details>
+  <summary><strong>6. function `getItemLengths()`</strong></summary>
 
 * Purpose: Returns a new array containing the length (number of characters) of each item name in the inventory. The original inventory should remain unchanged.
 
-
- Expected Output (for example after initial items):
+Expected Output (for example after initial items):
 
 ```javascript
 Item name lengths: [5, 6, 6, 3, 6, 3]
 ```
 
-💡 **Hint**: This is a classic use case for the map() method.
+💡 **Hint**: *This is a classic use case for the `map()` method.*
 
-**7. Function `getShortItems(maxLength)`**
+</details>
+
+<details>
+  <summary><strong>7. Function `getShortItems(maxLength)`</strong></summary>
 
 *  Purpose: Returns a new array containing only the items from the inventory whose names have a length less than or equal to maxLength. The original inventory should remain unchanged.
 
@@ -760,8 +779,11 @@ Expected Output (for getShortItems(5) with current inventory):
 Short items (<= 5 chars): Sword, Bow, Map
 Hint: The filter() method is perfect for this.
 ```
+</details>
 
-**8.Function `calculateTotalValue(itemValues)`**  | ✨ challenging 🌟
+<details>
+  <summary><strong>8.Function `calculateTotalValue(itemValues)`|✨challenging 🌟</strong></summary>
+
 
 * Purpose: Calculates the total "value" of all items currently in the inventory based on a provided map of item values.
 
@@ -775,15 +797,17 @@ Expected Output (example with provided itemValues):
 Calculating total inventory value...
 Total inventory value: 155 gold
 ```
-💡 **Hint:** This is a prime candidate for the reduce() method, accumulating a sum based on item lookups.
+💡 **Hint:** *This is a prime candidate for the `reduce()` method, accumulating a sum based on item lookups.*
+
+</details>
 
 <details>
   <summary><strong>° Testing your Implementation °</strong></summary>
 
 
----- **Testing Your Implementation** ---
+After implementing all the functions, add the following code to your .js file (below your function definitions) to test their functionality. 
 
-After implementing all the functions, add the following code to your inventory.js file (below your function definitions) to test their functionality. This sequence of calls will demonstrate if your inventory manager works correctly.
+This sequence of calls will demonstrate if your inventory manager works correctly.
 
 ```javascript
 console.log("--- Initial Inventory ---");
@@ -839,7 +863,6 @@ displayInventory(); // Display inventory one last time after all operations
 </details>
 
 </details>
-
 
 ---
 
