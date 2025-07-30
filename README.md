@@ -1,4 +1,4 @@
-# Javascript Exercises: Functions and Arrays (basics)
+# Javascript Exercises: Functions and Arrays (Foundations)
 
 ## Table of Contents 📖
 
@@ -16,7 +16,7 @@
 
 ---
 
-## Overview
+## Overview 🌱
 
 This repository contains various Javascript exercises and challenges with my solutions (which are currently untested).
 
@@ -24,19 +24,21 @@ Focus is on fundamental concepts like **string manipulation**, **loops**, **func
 
 This repo will be continuously updated with new exercises from various sources.
 
+---
 
 ## Installation & Usage ⚙️
 
- 1.  **Fork the repository**
+1.  **Fork the repository**
 
-    Begin by forking this repository to your own GitHub account. Click the 'Fork' button on the top right of this page.
+  Begin by forking this repository to your own GitHub account. Click the 'Fork' button on the top right of this page.
 
 2.  **Clone it**
 
-    Open your terminal or command prompt and run the following command to clone the repository to your local machine:
-
+  Open your terminal or command prompt and run the following command to clone the repository to your local machine:
+  
     ```bash
-    git clone [https://github.com/dinruz/js-exercises-functions-arrays.git](https://github.com/dinruz/js-exercises-functions-arrays.git)
+
+    git clone https://github.com/dinruz/js-exercises-functions-arrays.git
     ```
 
 <details>
@@ -77,7 +79,7 @@ These exercises were developed as part of:
   * Started:   June 2025 
   * Completed: June 2025
 
-**II. Chris Pine: *Learn to Program*** [Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) | Exercises in section 'A Few Things To Try'
+**II. Chris Pine: *Learn to Program***, [Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) | Exercises in section 'A Few Things To Try'
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
@@ -109,7 +111,7 @@ These exercises were developed as part of:
 | 8   | [Until Six](#exercise-fn-8-until-six)| Complete | [Solution](./functions-exercises/08_getUntilSix.js) |
 | 9   | [Display products](#exercise-fn-9-display-products)| Complete | [Solution](./functions-exercises/09_displayProduct.js) |
 | 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)| Complete | [Solution](./functions-exercises/10_song99bottles.js) |
-| 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)| In Progress |   
+| 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)| Complete | [Solution](./functions-exercises/11_deafGrandma.js) |
 
 
 ### Detailed Function Exercises Descriptions
@@ -192,7 +194,9 @@ Call the function which should roll the dice 8 times. 🎲
 <details id="exercise-fn-8-until-six">
   <summary><strong>Exercise 8: Until Six</strong></summary>
   
-Write a function `getUntilSix()` and call it. 🎲 It should simulate rolling a die repeatedly until the number 6 is rolled.
+Write a function `getUntilSix()` and call it. 🎲 
+
+It should simulate rolling a die repeatedly until the number 6 is rolled.
  
 </details>
 
@@ -201,7 +205,9 @@ Write a function `getUntilSix()` and call it. 🎲 It should simulate rolling a 
 <details id="exercise-fn-9-display-products">
   <summary><strong>Exercise 9: Display products</strong></summary>
   
-Write a function `displayProduct()` for displaying perfumery products. It takes a `name` (mandatory string) and `price` (optional number, defaults to '0.00 EUR'). If the product is complimentary, it's a free item and you should input only its name. However, the function must always print both the name and price, regardless of whether it's free or not.
+Write a function `displayProduct()` for displaying perfumery products. 
+
+It takes a `name` (mandatory string) and `price` (optional number, defaults to '0.00 EUR'). If the product is complimentary, it's a free item and you should input only its name. However, the function must always print both the name and price, regardless of whether it's free or not.
 
 Call the function twice:
 
@@ -231,11 +237,12 @@ Write a program which prints out the lyrics to that beloved classic, that field-
   
   - Whatever you say to grandma (whatever you type in), she should respond with "*HUH?! SPEAK UP, SONNY!*", unless you shout it (type in all capitals). If you shout, she can hear you (or at least she thinks so) and yells back "*NO, NOT SINCE 1938!*".
   
-  - **optional**: To make your program really believable, have grandma shout a different year each time; maybe any year at random between 1930 and 1950. (This part is optional)
+  - **optional**: To make your program really believable, have grandma shout a different year each time; maybe any year at random between 1930 and 1950. 
   
   - You can't stop talking to grandma until you shout "*BYE*".
 
-  💡 **Tip**: Don't forget 'BYE'with an Enter is not the same as 'BYE' without one! Use `trim()`.
+  💡 **Tip**: Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! 
+              Use `trim()`.
 </details>
 
 ---
@@ -323,7 +330,7 @@ alert( filtered ); // 3,1 (matching values)
 <details id="exercise-arr-3-filter-range-in-place">
   <summary><strong>Exercise 3: Filter range in place</strong></summary>
   
-    Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between a and b. The test is: 'a ≤ arr[i] ≤ b'.
+  Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between a and b. The test is: 'a ≤ arr[i] ≤ b'.
 
   The function should only modify the array. It should not return anything.
 
@@ -353,7 +360,7 @@ let arr = [5, 2, 1, -10, 8];
   <summary><strong>Exercise 5: Copy and sort array</strong></summary>
 
 
-  We have an array of strings 'arr'. We’d like to have a sorted copy of it, but keep arr unmodified.
+  We have an array of strings 'arr'. We’d like to have a sorted copy of it, but keep 'arr' unmodified.
 
   Create a function `copySorted(arr)` that returns such a copy.
 
@@ -387,7 +394,7 @@ shuffle(arr);
 All element orders should have an equal probability.
 For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, with equal probability of each case.
 
-💡 **Tip:** To use a shuffle method, google Fisher-Yates Shuffle.
+💡 **Tip:** To use a shuffle method, google **Fisher-Yates Shuffle.**
 
 </details>
 
@@ -458,6 +465,8 @@ The function should return the final string like this:
     // Expected output: "This One Too"
  ```
 </details>
+
+---
 
 <details id="exercise-arr-10-temperature-conversion">
   <summary><strong>Exercise 10: Temperature Conversion</strong></summary>
