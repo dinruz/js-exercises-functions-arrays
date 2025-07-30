@@ -2,17 +2,17 @@
 
 ## Table of Contents 📖
 
-- [Overview 🌱](#overview-)
-- [Installation & Usage ⚙️](#installation-and-usage-)
-- [Functions exercises 🧩](#functions-exercises)
-  - [About Functions exercises](#about-functions-exercises)
-  - [List of Functions exercises ✨](#list-of-functions-exercises-)
-  - [Detailed Function Exercises Descriptions](#detailed-function-exercises-descriptions)
-- [Array exercises 🧩](#array-exercises)
-  - [About Array exercises](#about-array-exercises)
-  - [List of Array exercises ✨](#list-of-array-exercises-)
-  - [Detailed Array Exercises Descriptions](#detailed-array-exercises-descriptions)
-- [Resources 📚](#resources-)
+- [Overview](#overview-)
+- [Installation & Usage](#installation-and-usage-)
+- [Functions exercises](#functions-exercises-)
+  - [About Functions exercises](#about-function-exercises)
+  - [List of Functions exercises](#list-of-functions-exercises-)
+  - [Detailed Function Exercises Descriptions](#detailed-function-exercises-descriptions)
+- [Array exercises](#array-exercises-)
+  - [About Array exercises](#about-array-exercises)
+  - [List of Array exercises](#list-of-array-exercises-)
+  - [Detailed Array Exercises Descriptions](#detailed-array-exercises-descriptions)
+- [Resources](#resources-)
 
 ---
 
@@ -875,3 +875,9 @@ This repository contains exercises & assignments with some content sourced from 
 * [The Odin Project](https://www.theodinproject.com/)
 * [javascript.info](https://javascript.info/) 
 * [Pine, C.: 'Learn to Program' | Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) 
+
+
+
+
+
+[Up](#table-of-contents-)
