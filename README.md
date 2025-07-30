@@ -2,17 +2,17 @@
 
 ## Table of Contents 📖
 
-- [Overview](#overview)
-- [Installation & Usage](#installation--usage)
-- [Functions exercises](#functions-exercises)
-  - [About Functions exercises](#about-functions-exercises)
-  - [List of Functions exercises](#list-of-functions-exercises)
-  - [Detailed Function Exercises Descriptions](#detailed-function-exercises-descriptions)
-- [Array exercises](#array-exercises)
-  - [About Array exercises](#about-array-exercises)
-  - [List of Array exercises](#list-of-array-exercises)
-  - [Detailed Array Exercises Descriptions](#detailed-array-exercises-descriptions)
-- [Resources](#resources)
+- [Overview 🌱](#overview-)
+- [Installation & Usage ⚙️](#installation-and-usage-)
+- [Functions exercises 🧩](#functions-exercises)
+  - [About Functions exercises](#about-functions-exercises)
+  - [List of Functions exercises ✨](#list-of-functions-exercises-)
+  - [Detailed Function Exercises Descriptions](#detailed-function-exercises-descriptions)
+- [Array exercises 🧩](#array-exercises)
+  - [About Array exercises](#about-array-exercises)
+  - [List of Array exercises ✨](#list-of-array-exercises-)
+  - [Detailed Array Exercises Descriptions](#detailed-array-exercises-descriptions)
+- [Resources 📚](#resources-)
 
 ---
 
@@ -26,20 +26,21 @@ This repo will be continuously updated with new exercises from various sources.
 
 ---
 
-## Installation & Usage ⚙️
+## Installation & Usage 
 
 1.  **Fork the repository**
 
-  Begin by forking this repository to your own GitHub account. Click the 'Fork' button on the top right of this page.
+  Begin by forking this repository to your own GitHub account. 
+  
+  Click the 'Fork' button on the top right of this page.
 
 2.  **Clone it**
 
   Open your terminal or command prompt and run the following command to clone the repository to your local machine:
-  
-    ```bash
 
+  ```bash
     git clone https://github.com/dinruz/js-exercises-functions-arrays.git
-    ```
+  ```
 
 <details>
   <summary><strong>Running specific exercise</strong></summary>
