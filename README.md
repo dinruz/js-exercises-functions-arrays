@@ -98,13 +98,22 @@ These exercises were developed as part of:
   * Started:   June 2025 
   * Completed: June 2025
 
-**II. Additional Practice Exercises**
+**II. Chris Pine: *Learn to Program*** [Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) | Exercises in section 'A Few Things To Try'
+
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+  * Exercises  10 - 11
+  * Started:   June 2025 
+  * Completed: /
+
+**III. Additional Practice Exercises**
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
   * Exercises  05 - 09
   * Started:   June 2025 
   * Completed: July 2025
+
 
 
 ### List of Functions exercises ✨
@@ -201,9 +210,35 @@ Call the function twice:
  displayProduct('Scripted body lotion - sample') 
 ```
 
-  * [Solution: displayProduct.js](./functions-exercises/09_displayProduct.js) 
+ ✔️  [Solution: displayProduct.js](./functions-exercises/09_displayProduct.js) 
  </details>
 
+
+ <details>
+  <summary><strong>🟡 Exercise 10: Song '99 Bottles of Beer' 🍺</strong></summary>
+  
+Write a program which prints out the lyrics to that beloved classic, that field-trip favorite: "99 Bottles of Beer on the Wall."
+
+  🎵 [Lyrics](https://www.99-bottles-of-beer.net/lyrics.html) 
+
+  ✔️ [Solution: song99bottles.js](./functions-exercises/10_song99bottles.js) 
+ </details>
+
+
+ <details>
+  <summary><strong>🟠 Exercise 11: Deaf Grandma</strong></summary>
+
+  Write a 'Deaf Grandma' program:
+  
+  - Whatever you say to grandma (whatever you type in), she should respond with "*HUH?! SPEAK UP, SONNY!*", unless you shout it (type in all capitals). If you shout, she can hear you (or at least she thinks so) and yells back "*NO, NOT SINCE 1938!*".
+  
+  - **optional**: To make your program really believable, have grandma shout a different year each time; maybe any year at random between 1930 and 1950. (This part is optional)
+  
+  - You can't stop talking to grandma until you shout "*BYE*".
+
+
+  💡 **Tip**: Don't forget 'BYE'with an Enter is not the same as 'BYE' without one! Use `trim()`.
+ </details>
 ---
 
 ## Array Exercises 🧩
@@ -334,9 +369,10 @@ shuffle(arr);
 All element orders should have an equal probability. 
 For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, with equal probability of each case.
  
-
+ 💡 **Tip**: To use a shuffle method, google [Fisher-Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). 
+ 
  ✔️ [Solution: shuffleAnArray.js](./array-exercises/06_shuffleAnArray.js)
- 💡 **Tip**: To use shuffle method, google [Fisher-Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). 
+
 </details>
 
 
@@ -545,6 +581,7 @@ Indexes of days with negative incomes: 2,4
 
   ✔️ [Solution: incomeAnalysis.js](./array-exercises/16_incomeAnalysis.js)
 </details>
+
 ---
 
 ## Resources 📚
@@ -553,3 +590,4 @@ This repository contains exercises and assignments with some content sourced fro
 
 * [The Odin Project](https://www.theodinproject.com/)
 * [javascript.info](https://javascript.info/) 
+* [Pine, C.: 'Learn to Program' | Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) 
