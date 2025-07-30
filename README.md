@@ -4,83 +4,62 @@
 
 - [Overview](#overview)
 - [Installation & Usage](#installation--usage)
-- [Difficulty levels](#dificulty-levels)
 - [Functions exercises](#functions-exercises)
   - [About Functions exercises](#about-functions-exercises)
   - [List of Functions exercises](#list-of-functions-exercises)
+  - [Detailed Function Exercises Descriptions](#detailed-function-exercises-descriptions)
 - [Array exercises](#array-exercises)
   - [About Array exercises](#about-array-exercises)
   - [List of Array exercises](#list-of-array-exercises)
+  - [Detailed Array Exercises Descriptions](#detailed-array-exercises-descriptions)
 - [Resources](#resources)
+
+---
 
 ## Overview
 
-This repository showcases my solutions for various JavaScript **beginner-friendly** challenges and exercises during my learning from The Odin Project.
+This repository contains various Javascript exercises and challenges with my solutions (which are currently untested).
 
-Focus is on fundamental concepts like **string manipulation**,**loops**, **functions** and **array methods**.
-The solutions  are currently untested and may contain bugs. They serve as personal learning attempts.
+Focus is on fundamental concepts like **string manipulation**, **loops**, **functions** and **array methods**.
 
 This repo will be continuously updated with new exercises from various sources.
 
+
 ## Installation & Usage ⚙️
 
-<details>
-  <summary><strong> Fork & clone the repository</strong></summary>
+ 1.  **Fork the repository**
 
- 1. **Fork**
+    Begin by forking this repository to your own GitHub account. Click the 'Fork' button on the top right of this page.
 
-  Begin by forking this repository to your own GitHub account. Click the 'Fork' button on the top right of this page.
+2.  **Clone it**
 
-2. **Clone**
+    Open your terminal or command prompt and run the following command to clone the repository to your local machine:
 
-  Open your terminal or command prompt and run the following command to clone the repository to your local machine:
-
-  ```bash
-    git clone https://github.com/dinruz/js-exercises-functions-arrays.git
-  ``` 
-</details>
+    ```bash
+    git clone [https://github.com/dinruz/js-exercises-functions-arrays.git](https://github.com/dinruz/js-exercises-functions-arrays.git)
+    ```
 
 <details>
   <summary><strong>Running specific exercise</strong></summary>
 
-* Navigate to the project directory: 
-
- ```bash
-    cd js-exercises-functions-arrays/array-exercises
-  ```
-* or you can run any exercise file using Node.js. For example, to run the `01_camelize.js` array exercise:
+  First, navigate into the cloned repository's root directory:
 
   ```bash
-    node array-exercises/01_camelize.js
+  cd js-exercises-functions-arrays
   ```
+ Then, you can run any exercise file using Node.js. For example, to run the '01_camelize.js' array exercise:
+
+```bash
+node array-exercises/01_camelize.js
+```
+Or, if you navigate into the specific exercise folder (e.g., 'array-exercises'):
+
+```bash
+cd array-exercises
+# Then run the exercise file directly
+node 01_camelize.js
+```
 </details>
-
-## Dificulty levels
-
-<details>
-<summary><strong> Difficulty rating system used in this repository.<strong></summary> 
-
-
-🟢 **Very Easy**
-
-These tasks are perfect for first steps. 
-They focus on basic syntax and direct instruction execution, requiring minimal complex thought.
-
-🟡  **Easy**
-
-These tasks involve connecting a few basic concepts or applying simple logic.
-They might include variables, conditions, or straightforward loops.
-
-🟠 **Medium**	
-
-These tasks present a moderate challenge for beginners. 
-They combine several fundamental ideas and might involve slightly more complex logic or basic array manipulations.
-
-🔴  **Hard**	
-
-These tasks are more complex and require combining multiple concepts or more involved algorithms. 
-They are still approachable but might demand more time and iteration.
- </details>
 
 ---
 
@@ -118,45 +97,65 @@ These exercises were developed as part of:
 
 ### List of Functions exercises ✨
 
-<details>
-  <summary><strong>🟢 Exercise 1: Add7</strong></summary>
+| No. | Exercise Name          | Status      | Solution Link       |
+| :-- | :--------------------- | :---------- | :------------------ |
+| 1   | [Add7](#exercise-fn-1-add7)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
+| 2   | [Multiply](#exercise-fn-2-multiply)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
+| 3   | [Capitalize](#exercise-fn-3-capitalize)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
+| 4   | [Last Letter](#exercise-fn-4-last-letter)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
+| 5   | [Function Add() - variations](#exercise-fn-5-add)| Complete | [Solution](./functions-exercises/05_fnAdd.js) |
+| 6   | [Print Even Numbers](#exercise-fn-6-print-even-numbers)| Complete | [Solution](./functions-exercises/06_fnPrintEven.js) |
+| 7   | [Roll the Dice](#exercise-fn-7-roll-the-dice)| Complete | [Solution](./functions-exercises/07_rollDice.js) |
+| 8   | [Until Six](#exercise-fn-8-until-six)| Complete | [Solution](./functions-exercises/08_getUntilSix.js) |
+| 9   | [Display products](#exercise-fn-9-display-products)| Complete | [Solution](./functions-exercises/09_displayProduct.js) |
+| 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)| Complete | [Solution](./functions-exercises/10_song99bottles.js) |
+| 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)| In Progress |   
+
+
+### Detailed Function Exercises Descriptions
+
+<details id="exercise-fn-1-add7">
+  <summary><strong>Exercise 1: Add7</strong></summary>
 
   Write a function called `add7()` that takes one number and returns that number + 7.
-  Write function and test the output with `console.log``.
-
+  Write function and test the output with `console.log`.
 </details>
 
-<details>
-  <summary><strong>🟢 Exercise 2: Multiply</strong></summary>
+---
+
+<details id="exercise-fn-2-multiply">
+  <summary><strong>Exercise 2: Multiply</strong></summary>
 
 Write a function called `multiply()` that takes 2 numbers and returns their product.
 Write function and test the output with `console.log`.
-
 </details>
 
-<details>
-  <summary><strong>🟢 Exercise 3: Capitalize</strong></summary>
+---
+
+<details id="exercise-fn-3-capitalize">
+  <summary><strong>Exercise 3: Capitalize</strong></summary>
 
 Write a function called `capitalize()` that takes a string and returns that string with only the first letter capitalized. 
 Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
-
 </details>
 
-<details>
-  <summary><strong>🟢 Exercise 4: Last Letter </strong></summary>
+---
+
+<details id="exercise-fn-4-last-letter">
+  <summary><strong>Exercise 4: Last Letter</strong></summary>
   
 
 Write a function called `lastLetter()` that takes a string and returns the very last letter of that string. 
 
 ```javascript
-   lastLetter('abcd'); // should return: 'd' 
+    lastLetter('abcd'); // should return: 'd' 
 ```
 </details>
 
-  ✔️ [Solutions: Function Exercises 01-04](./functions-exercises/basicFunctions.js)
+---
 
-<details>
-  <summary><strong>🟢 Exercise 5: Function `Add()` - variations </strong></summary>
+<details id="exercise-fn-5-add">
+  <summary><strong>Exercise 5: Function `Add()` - variations</strong></summary>
   
 I. Write a function `add(num1, num2)` that returns the result. Use only 'return'.
 
@@ -164,69 +163,69 @@ II. Write similar function `addStore(num3,num4)` and store the result in a new v
 
 III. Write this function as arrow function - `addArrow(num5,num6)`.
 
-  ✔️ [Solution: Add.js](./functions-exercises/05_fnAdd.js) 
-
 </details>
 
-<details>
-  <summary><strong>🟡 Exercise 6: Print Even Numbers</strong></summary>
+---
+
+<details id="exercise-fn-6-print-even-numbers">
+  <summary><strong>Exercise 6: Print Even Numbers</strong></summary>
   
 Write a function `printEvenNumbers(start, end)`.
 
 Within this function, use a `for loop` to print all even numbers between start and end (inclusive of start and end if they are even). Finally, call the function with the range 1-15.
 
-  ✔️ [Solution: PrintEven.js](./functions-exercises/06_fnPrintEven.js) 
-
 </details>
 
-<details>
-  <summary><strong>🟡 Exercise 7: Roll the Dice</strong></summary>
+---
+
+<details id="exercise-fn-7-roll-the-dice">
+  <summary><strong>Exercise 7: Roll the Dice</strong></summary>
   
 Write a function `getDiceNumber(time)`. Argument represents the total number of times a standard dice should be rolled. Print the roll's sequence number and the result of that roll to the console.
 
-Call the function which should roll the dice 8 times.
-
-  ✔️ [Solution: rollDice.js](./functions-exercises/07_rollDice.js) 
+Call the function which should roll the dice 8 times. 🎲
 
 </details>
 
-<details>
-  <summary><strong>🟡 Exercise 8: Until Six 🎲</strong></summary>
+---
+
+<details id="exercise-fn-8-until-six">
+  <summary><strong>Exercise 8: Until Six</strong></summary>
   
-Write a function `getUntilSix()` and call it. It should simulate rolling a die repeatedly until the number 6 is rolled.
+Write a function `getUntilSix()` and call it. 🎲 It should simulate rolling a die repeatedly until the number 6 is rolled.
+ 
+</details>
 
-  ✔️ [Solution: getUntilSix.js](./functions-exercises/08_getUntilSix.js) 
- </details>
+---
 
-<details>
-  <summary><strong>🟢 Exercise 9: Display products</strong></summary>
+<details id="exercise-fn-9-display-products">
+  <summary><strong>Exercise 9: Display products</strong></summary>
   
 Write a function `displayProduct()` for displaying perfumery products. It takes a `name` (mandatory string) and `price` (optional number, defaults to '0.00 EUR'). If the product is complimentary, it's a free item and you should input only its name. However, the function must always print both the name and price, regardless of whether it's free or not.
 
 Call the function twice:
 
 ```javascript
- displayProduct('Java Eau de Parfum', 150)   
- displayProduct('Scripted body lotion - sample') 
+  displayProduct('Java Eau de Parfum', 150)   
+  displayProduct('Scripted body lotion - sample')
 ```
+</details>
 
- ✔️  [Solution: displayProduct.js](./functions-exercises/09_displayProduct.js) 
- </details>
+---
 
-
- <details>
-  <summary><strong>🟡 Exercise 10: Song '99 Bottles of Beer' 🍺</strong></summary>
+<details id="exercise-fn-10-song-99-bottles">
+  <summary><strong> Exercise 10: Song '99 Bottles of Beer'</strong></summary>
   
-Write a program which prints out the lyrics to that beloved classic, that field-trip favorite: "99 Bottles of Beer on the Wall."
+Write a program which prints out the lyrics to that beloved classic, that field-trip favorite: "99 Bottles of Beer on the Wall."🍺
 
   🎵 [Lyrics](https://www.99-bottles-of-beer.net/lyrics.html) 
 
-  ✔️ [Solution: song99bottles.js](./functions-exercises/10_song99bottles.js) 
- </details>
+</details>
 
+---
 
- <details>
-  <summary><strong>🟠 Exercise 11: Deaf Grandma</strong></summary>
+<details id="exercise-fn-11-deaf-grandma">
+  <summary><strong>Exercise 11: Deaf Grandma</strong></summary>
 
   Write a 'Deaf Grandma' program:
   
@@ -236,15 +235,14 @@ Write a program which prints out the lyrics to that beloved classic, that field-
   
   - You can't stop talking to grandma until you shout "*BYE*".
 
-
   💡 **Tip**: Don't forget 'BYE'with an Enter is not the same as 'BYE' without one! Use `trim()`.
- </details>
+</details>
+
 ---
 
 ## Array Exercises 🧩
 
 ### About Array exercises
-
 
 These exercises were developed as part of:
 
@@ -268,8 +266,30 @@ These exercises were developed as part of:
 
 ### List of Array exercises ✨
 
-<details>
-  <summary><strong>🟠 Exercise 1: Camelize()</strong></summary>
+
+| No. | Exercise Name          | Status      | Solution Link       |
+| :-- | :--------------------- | :---------- | :------------------ |
+| 1   | [Camelize()](#exercise-arr-1-camelize)| Complete    | [Solution](./array-exercises/01_camelize.js) |
+| 2   | [Filter range](#exercise-arr-2-filter-range)| Complete    | [Solution](./array-exercises/02_filterRange.js) |
+| 3   | [Filter range in place](#exercise-arr-3-filter-range-in-place)| Complete    | [Solution](./array-exercises/03_filterRangeInPlace.js) |
+| 4   | [Sort in decreasing order](#exercise-arr-4-sort-in-decreasing-order)| Complete    | [Solution](./array-exercises/04_sortInDecreasingOrder.js) |
+| 5   | [Copy and sort array](#exercise-arr-5-copy-and-sort-array)| Complete    | [Solution](./array-exercises/05_copyAndSortArray.js) |
+| 6   | [Shuffle an array](#exercise-arr-6-shuffle-an-array)| Complete    | [Solution](./array-exercises/06_shuffleAnArray.js) |
+| 7   | [Filter unique array members](#exercise-arr-7-filter-unique)| Complete    | [Solution](./array-exercises/07_filterUnique.js) |
+| 8   | [FizzBuzz Pro](#exercise-arr-8-fizzbuzz-pro)| Complete | [Solution](./array-exercises/08_fizzBuzzPro.js) |
+| 9   | [cleanAndCapitalize()](#exercise-arr-9-clean-and-capitalize)| Complete | [Solution](./array-exercises/09_cleanAndCapitalize.js) |
+| 10  | [Temperature Conversion](#exercise-arr-10-temperature-conversion)| Complete | [Solution](./array-exercises/10_tempConversion.js) |
+| 11  | [Filter Words](#exercise-arr-11-filter-words)| Complete | [Solution](./array-exercises/11_filterWords.js) |
+| 12  | [Sum & Product](#exercise-arr-12-sum-and-product)| Complete | [Solution](./array-exercises/12_sumAndProduct.js) |
+| 13  | [Test Results](#exercise-arr-13-test-results)| Complete | [Solution](./array-exercises/13_testResults.js) |
+| 14  | [Discounted Prices](#exercise-arr-14-discounted-prices)| Complete | [Solution](./array-exercises/14_discounted.js) |
+| 15  | [Formatting City Names](#exercise-arr-15-formatting-city-names)| Complete | [Solution](./array-exercises/15_formattingCities.js) |
+| 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)| Complete | [Solution](./array-exercises/16_incomeAnalysis.js) |
+
+### Detailed Array Exercises Descriptions
+
+<details id="exercise-arr-1-camelize">
+  <summary><strong>Exercise 1: Camelize()</strong></summary>
 
   Write the function `camelize(str)` that changes dash-separated words like “my-short-string” into camel-cased “myShortString”. That is: removes all dashes, each word after dash becomes uppercased. 
   
@@ -280,13 +300,12 @@ camelize("background-color") == 'backgroundColor';
 camelize("list-style-image") == 'listStyleImage';
 camelize("-webkit-transition") == 'WebkitTransition';
 ```
-
-✔️ [Solution: Camelize.js](./array-exercises/01_camelize.js)
-
 </details>
 
-<details>
-  <summary><strong>🟡 Exercise 2: Filter range</strong></summary>
+---
+
+<details id="exercise-arr-2-filter-range">
+  <summary><strong>Exercise 2: Filter range</strong></summary>
 
   Write a function `filterRange(arr, a, b)` that gets an array `arr`, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.
   For instance:
@@ -297,15 +316,14 @@ let filtered = filterRange(arr, 1, 4);
 alert( filtered ); // 3,1 (matching values)
 // alert( arr ); // 5,3,8,1 (not modified)
 ```
-
- ✔️ [Solution: filterRange.js](./array-exercises/02_filterRange.js)
-
 </details>
 
-<details>
-  <summary><strong>🟡 Exercise 3: Filter range in place </strong></summary>
+---
+
+<details id="exercise-arr-3-filter-range-in-place">
+  <summary><strong>Exercise 3: Filter range in place</strong></summary>
   
-   Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between a and b. The test is: 'a ≤ arr[i] ≤ b'.
+    Write a function `filterRangeInPlace(arr, a, b)` that gets an array `arr` and removes from it all values except those that are between a and b. The test is: 'a ≤ arr[i] ≤ b'.
 
   The function should only modify the array. It should not return anything.
 
@@ -314,25 +332,25 @@ let arr = [5, 3, 8, 1];
 filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
 // alert( arr ); // [3, 1]
 ```
-
- ✔️ [Solution: filterRangeInPlace.js](./array-exercises/03_filterRangeInPlace.js)</p>
 </details>
 
-<details>
-  <summary><strong>🟢 Exercise 4: Sort in decreasing order </strong></summary>
+---
+
+<details id="exercise-arr-4-sort-in-decreasing-order">
+  <summary><strong>Exercise 4: Sort in decreasing order</strong></summary>
   
 
   ```javascript
 let arr = [5, 2, 1, -10, 8];
 // ... 
   alert( arr ); // 8, 5, 2, 1, -10
-  ```
-
-[Solution: sortInDecreasingOrder.js](./array-exercises/04_sortInDecreasingOrder.js)
+```
 </details>
 
-<details>
-  <summary><strong>🟡 Exercise 5: Copy and sort array</strong></summary>
+---
+
+<details id="exercise-arr-5-copy-and-sort-array">
+  <summary><strong>Exercise 5: Copy and sort array</strong></summary>
 
 
   We have an array of strings 'arr'. We’d like to have a sorted copy of it, but keep arr unmodified.
@@ -345,12 +363,12 @@ let sorted = copySorted(arr);
 alert( sorted ); // CSS, HTML, JavaScript
 // alert( arr ); // HTML, JavaScript, CSS (no changes)
 ```
- 
-  ✔️ [Solution: copyAndSortArray.js](./array-exercises/05_copyAndSortArray.js)
 </details>
 
-<details>
-  <summary><strong>🔴 Exercise 6: Shuffle an array</strong></summary>
+---
+
+<details id="exercise-arr-6-shuffle-an-array">
+  <summary><strong>Exercise 6: Shuffle an array</strong></summary>
 
   Write the function `shuffle(array)` that shuffles (randomly reorders) elements of the array.
   Multiple runs of shuffle may lead to different orders of elements. 
@@ -366,38 +384,37 @@ shuffle(arr);
     // arr = [3, 1, 2]
   // ...
 ```
-All element orders should have an equal probability. 
+All element orders should have an equal probability.
 For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, with equal probability of each case.
- 
- 💡 **Tip**: To use a shuffle method, google [Fisher-Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). 
- 
- ✔️ [Solution: shuffleAnArray.js](./array-exercises/06_shuffleAnArray.js)
+
+💡 **Tip:** To use a shuffle method, google Fisher-Yates Shuffle.
 
 </details>
 
+---
 
-<details>
-  <summary><strong>🟠 Exercise 7: Filter unique array members </strong></summary>
+<details id="exercise-arr-7-filter-unique">
+  <summary><strong>Exercise 7: Filter unique array members</strong></summary>
 
 Let `arr` be an array. Create a function `unique(arr)` that should return an array with unique items of 'arr'.
 For instance:
 
- ```javascript
- 
- function unique(arr) {
+  ```javascript
+  
+  function unique(arr) {
     /* your code */
     }
     let strings = ["Hare", "Krishna", "Hare", "Krishna",
     "Krishna", "Krishna", "Hare", "Hare", ":-O"
     ];
     alert( unique(strings) ); // Hare, Krishna, :-O
-```
-
- ✔️ [Solution: filterUnique.js](./array-exercises/07_filterUnique.js)
+  ```
 </details>
 
-<details>
-  <summary><strong>🟠 Exercise 8: FizzBuzz Pro </strong></summary>
+---
+
+<details id="exercise-arr-8-fizzbuzz-pro">
+  <summary><strong>Exercise 8: FizzBuzz Pro</strong></summary>
 
 Write a function `fizzBuzzPro(number)` that generates a modified FizzBuzz sequence up to a given number.
 
@@ -412,19 +429,18 @@ Function should:
   - apply **special rule**:
     * if a number contains the digit "7", it outputs "Bang!" instead of any FizzBuzz variant
 
-   - return a single string of the results, separated by `, ` with a `.` at the very end.
+    - return a single string of the results, separated by `, ` with a `.` at the very end.
 
-
- ```javascript
- 
+  ```javascript
+  
     fizzBuzzPro(20) // Expected: "1, 2, Fizz, 4, Buzz, Fizz, Bang!, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, Bang!, 18, 19, Buzz."
-```
-
-  ✔️ [Solution: fizzBuzzPro.js](./array-exercises/08_fizzBuzzPro.js)
+  ```
 </details>
 
-<details>
-  <summary><strong>🔴Exercise 9: cleanAndCapitalize() </strong></summary>
+---
+
+<details id="exercise-arr-9-clean-and-capitalize">
+  <summary><strong>Exercise 9: cleanAndCapitalize()</strong></summary>
 
 Write a function `cleanAndCapitalize(text)` that takes one string and transforms the text in the following way:
 
@@ -434,19 +450,17 @@ Write a function `cleanAndCapitalize(text)` that takes one string and transforms
 
 The function should return the final string like this:
 
- ```javascript
+  ```javascript
     cleanAndCapitalize("tHis-is somE--stranGE. text! ")
     // Expected output: "This Is Some Strange Text"
 
     cleanAndCapitalize(" THIS.one...   TOo_  ")
     // Expected output: "This One Too"
-  ```
-
-  ✔️ [Solution: cleanAndCapitalize.js](./array-exercises/09_cleanAndCapitalize.js)
+ ```
 </details>
 
-<details>
-  <summary><strong>🟢Exercise 10: Temperature Conversion </strong></summary>
+<details id="exercise-arr-10-temperature-conversion">
+  <summary><strong>Exercise 10: Temperature Conversion</strong></summary>
 
 Create an array named `tempC` containing several numbers. These numbers represent temperatures in Celsius.
 
@@ -454,16 +468,16 @@ Create a new array called `tempF`. Each element in the new array should be the c
 
 Output should look like this:
 
- ```javascript
- console.log(tempC); // expected: 0,10,20,30,-5,15
- console.log(tempF); // expected: 32,50,68,86,23,59
+  ```javascript
+  console.log(tempC); // expected: 0,10,20,30,-5,15
+  console.log(tempF); // expected: 32,50,68,86,23,59
   ```
-
-  ✔️ [Solution: tempConversion.js](./array-exercises/10_tempConversion.js)
 </details>
 
-<details>
-  <summary><strong>🟢Exercise 11: Filter Words </strong></summary>
+---
+
+<details id="exercise-arr-11-filter-words">
+  <summary><strong>Exercise 11: Filter Words</strong></summary>
 
 Create an array `words` containing strings 'augmentation','desk','building','bed','affiliate','ant','sunshine','Ann'.
 
@@ -472,121 +486,116 @@ Create another new array `startWithA` that contains only the words that start wi
 
 Log all three arrays to the console. Output should look like this:
 
- ```javascript
- console.log(words);        // augmentation,desk,building,bed,affiliate,ant,sunshine,Ann
- console.log(longWords);   //  augmentation,building,affiliate,sunshine
- console.log(startWithA); //   augmentation,affiliate,ant,Ann
+  ```javascript
+  console.log(words);        // augmentation,desk,building,bed,affiliate,ant,sunshine,Ann
+  console.log(longWords);   //  augmentation,building,affiliate,sunshine
+  console.log(startWithA); //   augmentation,affiliate,ant,Ann
   ```
-
-  ✔️ [Solution: filterWords.js](./array-exercises/11_filterWords.js)
 </details>
 
-<details>
-  <summary><strong>🟡 Exercise 12: Sum & Product  </strong></summary>
+---
 
-Create an array  `numbers` ([1, 2, 3, 4, 5]). 
+<details id="exercise-arr-12-sum-and-product">
+  <summary><strong>Exercise 12: Sum & Product</strong></summary>
+
+Create an array `numbers` ([1, 2, 3, 4, 5]). 
 
 Calculate the sum of all numbers in the array and store it in a variable `totalSum`.
-Calculate the product of all numbers in the array amd store it in a variable `totalProduct`.
+Calculate the product of all numbers in the array and store it in a variable `totalProduct`.
 
 Output should look like this:
 
- ```javascript
+  ```javascript
   console.log('Array of numbers: ',numbers);// Array of numbers: 1,2,3,4,5
- console.log('Total sum: ',totalSum, 'total product: ',totalProduct);// Total sum: 15, total product: 120
+  console.log('Total sum: ',totalSum, 'total product: ',totalProduct);// Total sum: 15, total product: 120
   ```
-
-  ✔️ [Solution: sumAndProduct.js](./array-exercises/12_sumAndProduct.js)
 </details>
 
+---
 
-<details>
-  <summary><strong>🟡 Exercise 13: Test Results </strong></summary>
+<details id="exercise-arr-13-test-results">
+  <summary><strong>Exercise 13: Test Results</strong></summary>
 
 Create an array `testResults` containing numbers ([85, 92, 78, 65, 95, 70, 88]) representing test results.
 
 - Locate the first result that is greater than 90. Store it in a variable `firstExcellent`.
 - Find the index of the first result that is less than 70. Store it in a variable `indexFirstFailing`.
-- Check if there is at least one result less than 60  and if all results are greater than 50. 
+- Check if there is at least one result less than 60 and if all results are greater than 50. 
 
 Output should look like this:
 
- ```javascript
+  ```javascript
 console.log(`Array with test results: ${testResults}`); //expected: 85,92,78,65,95,70,88
 console.log(`First excellent result (>90) is: ${firstExcellent}`); // 92
 console.log(`First failing (<70) is on position: ${indexFirstFailing}`); // 3
 console.log(`Are there any failing results? (<60): ${hasFailing}`); // false
 console.log(`Is every result bigger than 50?: ${areBigger}`); // true
-
   ```
-
-  ✔️ [Solution: testResults.js](./array-exercises/13_testResults.js)
 </details>
 
-<details>
-  <summary><strong>🟠 Exercise 14: Discounted Prices  </strong></summary>
+---
+
+<details id="exercise-arr-14-discounted-prices">
+  <summary><strong>Exercise 14: Discounted Prices</strong></summary>
 
 Create an array `productPrices` ([15.99, 23.50, 5.00, 12.75, 30.20, 8.99]).
 
 Create a new array `discountedPrices` containing only prices that are greater than 10 and these prices should be reduced by 10%. Calculate the total sum of all discounted products. 
 
 
- ```javascript
- console.log(productPrices);     // 15.99,23.5,5,12.75,30.2,8.99
- console.log(discountedPrices); // 14.391,21.15,11.475,27.18
- console.log(total);           // 74.196
+  ```javascript
+  console.log(productPrices);    // 15.99,23.5,5,12.75,30.2,8.99
+  console.log(discountedPrices); // 14.391,21.15,11.475,27.18
+  console.log(total);            // 74.196
   ```
-
-  ✔️ [Solution: discounted.js](./array-exercises/14_discounted.js)
 </details>
 
-<details>
-  <summary><strong>🟠 Exercise 15: Formatting City Names  </strong></summary>
+---
+<details id="exercise-arr-15-formatting-city-names">
+  <summary><strong>Exercise 15: Formatting City Names</strong></summary>
 
 Create an array `cityNames`= ["lisBOa", "marbella","vallettA", "Split", "theSSaloniKI", "napoLi", "sALERNO"].
 
-Create a new array named `formattedCities` where each city name will have its first letter capitalized and the rest in lowercase.  [Example: "lisBOa" -> "Lisboa"]
+Create a new array named `formattedCities` where each city name will have its first letter capitalized and the rest in lowercase. [Example: "lisBOa" -> "Lisboa"]
 
 Create a new array `citiesWithS` that contains only the cities (from the original array) whose name starts with the letter 'S' (case-insensitive). Output should look like this:
 
- ```javascript
- console.log(cityNames);          // lisBOa,marbella,vallettA,Split,theSSaloniKI,napoLi,sALERNO
- console.log(formattedCities);   // Lisboa,Marbella,Valletta,Split,Thessaloniki,Napoli,Salerno
- console.log(citiesWithS);      // Split,sALERNO
+  ```javascript
+  console.log(cityNames);          // lisBOa,marbella,vallettA,Split,theSSaloniKI,napoLi,sALERNO
+  console.log(formattedCities);   // Lisboa,Marbella,Valletta,Split,Thessaloniki,Napoli,Salerno
+  console.log(citiesWithS);      // Split,sALERNO
   ```
-
-  ✔️ [Solution: formattingCities.js](./array-exercises/15_formattingCities.js)
 </details>
 
-<details>
-  <summary><strong>🟠 Exercise 16: Daily Income Analysis </strong></summary>
+---
+
+<details id="exercise-arr-16-daily-income-analysis">
+  <summary><strong>Exercise 16: Daily Income Analysis</strong></summary>
 
 Imagine you have an array of numbers representing daily incomes over a week. Some days were not good, resulting in negative or zero incomes. Create an array `dailyIncome` like this: [120, 80, -30, 150, 0, 90, 200].
 
 You need to perform the following analyses:
 
-  * Positive Incomes: Create a new array `positiveIncomes` containing only the incomes that are strictly greater than 0.  Calculate the sum of all positive incomes from the positiveIncomes array. 
+  * Positive Incomes: Create a new array `positiveIncomes` containing only the incomes that are strictly greater than 0. Calculate the sum of all positive incomes from the positiveIncomes array. 
 
   * Indexes of Bad Income Days: Find all the indexes of the days when the income was less than or equal to 0. 
 
 Finally, log all the results to the console like this:
 
- ```javascript
- /*
+  ```javascript
+  /*
 Original array - daily income for a week: 120,80,-30,150,0,90,200
 Positive incomes: 120,80,150,90,200, Total of positive incomes: 640
 Indexes of days with negative incomes: 2,4
 */
   ```
-
-  ✔️ [Solution: incomeAnalysis.js](./array-exercises/16_incomeAnalysis.js)
 </details>
 
 ---
 
 ## Resources 📚
 
-This repository contains exercises and assignments with some content sourced from the following resources:
+This repository contains exercises & assignments with some content sourced from the following resources:
 
 * [The Odin Project](https://www.theodinproject.com/)
 * [javascript.info](https://javascript.info/) 
