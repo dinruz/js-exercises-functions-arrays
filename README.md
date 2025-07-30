@@ -85,7 +85,7 @@ These exercises were developed as part of:
 
   * Exercises  10 - 11
   * Started:   June 2025 
-  * Completed: /
+  * Completed: June 2025
 
 **III. Additional Practice Exercises**
 
@@ -101,10 +101,10 @@ These exercises were developed as part of:
 
 | No. | Exercise Name          | Status      | Solution Link       |
 | :-- | :--------------------- | :---------- | :------------------ |
-| 1   | [Add7](#exercise-fn-1-add7)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
-| 2   | [Multiply](#exercise-fn-2-multiply)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
-| 3   | [Capitalize](#exercise-fn-3-capitalize)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
-| 4   | [Last Letter](#exercise-fn-4-last-letter)| Complete    | [Solution](./functions-exercises/basicFunctions.js) |
+| 1   | [Add7](#exercise-fn-1-add7)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
+| 2   | [Multiply](#exercise-fn-2-multiply)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
+| 3   | [Capitalize](#exercise-fn-3-capitalize)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
+| 4   | [Last Letter](#exercise-fn-4-last-letter)| Complete    | [Solution](./functions-exercises/01-04_basicFn.js) |
 | 5   | [Function Add() - variations](#exercise-fn-5-add)| Complete | [Solution](./functions-exercises/05_fnAdd.js) |
 | 6   | [Print Even Numbers](#exercise-fn-6-print-even-numbers)| Complete | [Solution](./functions-exercises/06_fnPrintEven.js) |
 | 7   | [Roll the Dice](#exercise-fn-7-roll-the-dice)| Complete | [Solution](./functions-exercises/07_rollDice.js) |
@@ -112,6 +112,7 @@ These exercises were developed as part of:
 | 9   | [Display products](#exercise-fn-9-display-products)| Complete | [Solution](./functions-exercises/09_displayProduct.js) |
 | 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)| Complete | [Solution](./functions-exercises/10_song99bottles.js) |
 | 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)| Complete | [Solution](./functions-exercises/11_deafGrandma.js) |
+| 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) | Complete | [Solution](./functions-exercises/12_deafGrandmaPro.js) |
 
 
 ### Detailed Function Exercises Descriptions
@@ -241,8 +242,34 @@ Write a program which prints out the lyrics to that beloved classic, that field-
   
   - You can't stop talking to grandma until you shout "*BYE*".
 
-  💡 **Tip**: Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! 
+  💡 **Hint**: Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! 
               Use `trim()`.
+</details>
+
+<details id="exercise-fn-12-deaf-grandma-pro">
+  <summary><strong>Exercise 12: Deaf Grandma Pro</strong></summary>
+
+  Write a 'Deaf Grandma' program as above but **pro version**. All conditions from 'Deaf Grandma' must be met (incluuding random years) **plus** these few:
+  
+  •	**Mixed Case** 
+  
+  If you type something with mixed uppercase and lowercase letters, Grandma will be confused and say: 'COME AGAIN, DEARIE?'.
+  
+  •  **Empty Input**
+
+  If you just press Enter without typing anything (an empty string), Grandma will ask: 'ARE YOU GOING TO SAY SOMETHING, DEARIE?'.
+
+  •  **Canceling the Prompt**
+
+  If you click "Cancel" on the prompt window, Grandma will interpret it as a 'BYE' and it will count towards ending the game.
+
+  • **Saying Bye to Grandma**
+  
+  You can't stop talking to grandma until you shout 'BYE' 3 times **in a row** (If you say 'BYE' and then anything else, it won't count).
+
+  💡 **Hint**: Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! Use `trim()`.
+
+  ✨ **Feature:** More phrases stored in arrays that Grandma speaks randomly (depending on the input conditions).
 </details>
 
 ---
@@ -292,6 +319,7 @@ These exercises were developed as part of:
 | 14  | [Discounted Prices](#exercise-arr-14-discounted-prices)| Complete | [Solution](./array-exercises/14_discounted.js) |
 | 15  | [Formatting City Names](#exercise-arr-15-formatting-city-names)| Complete | [Solution](./array-exercises/15_formattingCities.js) |
 | 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)| Complete | [Solution](./array-exercises/16_incomeAnalysis.js) |
+| 17  | [Game Inventory](#exercise-arr-17-game-inventory) | In Progress |                        | 
 
 ### Detailed Array Exercises Descriptions
 
@@ -599,6 +627,219 @@ Indexes of days with negative incomes: 2,4
 */
   ```
 </details>
+
+---
+
+<details id="exercise-arr-17-game-inventory">
+  <summary><strong>Exercise 17: Game Inventory</strong></summary>
+
+Imagine your game character is equipped with various items and their inventory is a list of these items. ⚔️ 🔮 This inventory is an array:
+
+```javascript
+let inventory = ['Sword', 'Shield', 'Potion', 'Bow', 'Arrows', 'Map'];
+```
+
+**--- Tasks for Implementation ---**
+Implement the following functions. Remember to log clear messages to the console for each action and its result. Your goal is for each function to perform its task efficiently.
+
+
+**1. function `displayInventory()`** 
+
+Purpose: Prints the current contents of the inventory to the console in a readable format.
+
+```javascript
+Your inventory: Sword, Shield, Potion, Bow, Arrows, Map
+```
+
+**2. function `addItem(itemName)`**
+
+* Purpose: Adds a new item to the inventory.
+
+* Argument: itemName (string) - the name of the item to add.
+
+* Additional Requirement: Before adding, check if the item already exists in the inventory. If it does, log a message stating that you already possess the item and do not add it again (the inventory doesn't allow duplicate names).
+
+* After Action: Always display the updated inventory.
+
+Expected Output (for adding 'Healing Potion'):
+
+```javascript
+Adding Healing Potion...
+Your inventory: Sword, Shield, Potion, Bow, Arrows, Map, Healing Potion
+```
+
+Expected Output (for adding 'Map' - a duplicate):
+
+```javascript
+Adding Map...
+You already have Map in your inventory.
+Your inventory: Sword, Shield, Potion, Bow, Arrows, Map, Healing Potion
+```
+
+**3. function `removeItem(itemName)`**
+
+* Purpose: Removes a specific item from the inventory.
+
+* Argument: itemName (string) - the name of the item to remove.
+
+* Additional Requirement: If the item is not found in the inventory, log a message "Item [itemName] not found in inventory."
+
+* After Action: Always display the updated inventory.
+
+Expected Output (for removing 'Shield'):
+
+```javascript
+Attempting to remove Shield...
+Shield removed from inventory.
+Your inventory: Sword, Potion, Bow, Arrows, Map, Healing Potion
+```
+
+Expected Output (for removing 'NonExistentItem'):
+
+```javascript
+Attempting to remove NonExistentItem...
+Item NonExistentItem not found in inventory.
+Your inventory: Sword, Potion, Bow, Arrows, Map, Healing Potion
+```
+
+**4.function `hasItem(itemName)`**
+
+* Purpose: Checks if the player possesses a specific item.
+
+* Argument: itemName (string) - the name of the item to check for.
+
+* Output: A clear message to the console indicating whether the item is possessed or not.
+
+Expected Output (for 'Sword'):
+
+```javascript
+You have Sword in your inventory.
+```
+
+Expected Output (for 'Magic Orb'):
+
+```javascript
+You do not have Magic Orb in your inventory.
+```
+
+**5. function `sortInventory()`**
+
+* Purpose: Sorts the items in the inventory in alphabetical (lexicographical) order.
+
+* After Action: Always display the sorted inventory.
+
+Expected Output:
+
+```javascript
+Sorting inventory...
+Your inventory: Arrows, Bow, Healing Potion, Map, Potion, Sword
+```
+
+**6. function `getItemLengths()`**
+
+* Purpose: Returns a new array containing the length (number of characters) of each item name in the inventory. The original inventory should remain unchanged.
+
+
+ Expected Output (for example after initial items):
+
+```javascript
+Item name lengths: [5, 6, 6, 3, 6, 3]
+```
+
+💡 **Hint**: This is a classic use case for the map() method.
+
+**7. Function `getShortItems(maxLength)`**
+
+*  Purpose: Returns a new array containing only the items from the inventory whose names have a length less than or equal to maxLength. The original inventory should remain unchanged.
+
+* Argument: maxLength (number) - the maximum allowed length for item names.
+
+Expected Output (for getShortItems(5) with current inventory):
+
+```javascript
+Short items (<= 5 chars): Sword, Bow, Map
+Hint: The filter() method is perfect for this.
+```
+
+**8.Function `calculateTotalValue(itemValues)`**  | ✨ challenging 🌟
+
+* Purpose: Calculates the total "value" of all items currently in the inventory based on a provided map of item values.
+
+* Argument: itemValues (object) - an object where keys are item names (strings) and values are their corresponding numeric values (e.g., { 'Sword': 100, 'Potion': 20, 'Arrows': 5, 'Map': 30 }). 
+
+If an item in the inventory is not found in itemValues, its value should be considered 0.
+
+Expected Output (example with provided itemValues):
+
+```javascript
+Calculating total inventory value...
+Total inventory value: 155 gold
+```
+💡 **Hint:** This is a prime candidate for the reduce() method, accumulating a sum based on item lookups.
+
+<details>
+  <summary><strong>° Testing your Implementation °</strong></summary>
+
+
+---- **Testing Your Implementation** ---
+
+After implementing all the functions, add the following code to your inventory.js file (below your function definitions) to test their functionality. This sequence of calls will demonstrate if your inventory manager works correctly.
+
+```javascript
+console.log("--- Initial Inventory ---");
+displayInventory();
+
+console.log("\n--- Scenario 1: Adding Items ---");
+addItem('Healing Potion'); // Add a new item
+addItem('Map');           // Try to add a duplicate item
+addItem('Gold Coins');    // Add another new item
+
+console.log("\n--- Scenario 2: Removing Items ---");
+removeItem('Shield');           // Remove an existing item
+removeItem('NonExistentItem');  // Try to remove a non-existent item
+removeItem('Arrows');           // Remove another existing item
+
+console.log("\n--- Scenario 3: Checking for Items ---");
+hasItem('Sword');        // Check for an existing item
+hasItem('Gold Coins');   // Check for a newly added item
+hasItem('Magic Orb');    // Check for a non-existent item
+
+console.log("\n--- Scenario 4: Sorting Inventory ---");
+sortInventory();
+
+console.log("\n--- Scenario 5: Item Transformations (map) ---");
+const lengths = getItemLengths(); // Call the function, it should log its output internally
+console.log(`Item lengths array returned: ${lengths}`);
+
+console.log("\n--- Scenario 6: Item Filtering (filter) ---");
+const shortItems = getShortItems(5); // Call the function, it should log its output internally
+console.log(`Short items array returned: ${shortItems}`);
+const veryShortItems = getShortItems(3);
+console.log(`Very short items array returned: ${veryShortItems}`);
+
+
+console.log("\n--- Scenario 7: Calculating Total Value (reduce) ---");
+const itemPriceList = {
+    'Sword': 100,
+    'Shield': 80, // Note: Shield might be removed earlier depending on exact test order
+    'Potion': 20,
+    'Bow': 70,
+    'Arrows': 5,
+    'Map': 30,
+    'Healing Potion': 25,
+    'Gold Coins': 10
+    // NonExistentItem and Magic Orb have 0 value as they are not here
+};
+const totalValue = calculateTotalValue(itemPriceList); // Call the function, it should log its output internally
+console.log(`Total inventory value returned: ${totalValue} gold`);
+
+console.log("\n--- Final Inventory State ---");
+displayInventory(); // Display inventory one last time after all operations
+```
+</details>
+
+</details>
+
 
 ---
 
