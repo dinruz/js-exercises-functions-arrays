@@ -113,7 +113,7 @@ These exercises were developed as part of:
 | 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)|  ✔️  | [Solution](./functions-exercises/10_song99bottles.js) |
 | 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)|  ✔️ | [Solution](./functions-exercises/11_deafGrandma.js) |
 | 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) |  ✔️  | [Solution](./functions-exercises/12_deafGrandmaPro.js) |
-| 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) | ✔️  | [Solution](./functions-exercises/12_deafGrandmaPro.js) |
+
 
 
 ### Detailed Function Exercises Descriptions
@@ -252,18 +252,20 @@ Write a program which prints out the lyrics to that beloved classic, that field-
 <details id="exercise-fn-12-deaf-grandma-pro">
   <summary><strong>Exercise 12: Deaf Grandma Pro</strong></summary>
 
-  Write a 'Deaf Grandma' program as above but **pro version**. All conditions from 'Deaf Grandma' must be met (incluuding random years) **plus** these few:
+  Write a 'Deaf Grandma' program as above but **pro version**. 
   
-  •	**Mixed Case** 
+  All conditions from 'Deaf Grandma' must be met (including random years) **plus** these few:
+  
+  •	**Mixed Case:** 
     If you type something with mixed uppercase and lowercase letters, Grandma will be confused and say: 'COME AGAIN, DEARIE?'.
   
-  •  **Empty Input**
+  •  **Empty Input:**
     If you just press Enter without typing anything (an empty string), Grandma will ask: 'ARE YOU GOING TO SAY SOMETHING, DEARIE?'.
 
-  •  **Canceling the Prompt**
+  •  **Canceling the Prompt:**
     If you click "Cancel" on the prompt window, Grandma will interpret it as a 'BYE' and it will count towards ending the game.
 
-  • **Saying Bye to Grandma**
+  • **Saying Bye to Grandma:**
     You can't stop talking to grandma until you shout 'BYE' 3 times **in a row** (If you say 'BYE' and then anything else, it won't count).
 
   💡  **Hint**:   Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! Use `trim()`.
@@ -640,21 +642,18 @@ Imagine your game character is equipped with various items and their inventory i
 let inventory = ['Sword', 'Shield', 'Potion', 'Bow', 'Arrows', 'Map'];
 ```
 
-**--- Tasks for Implementation ---**
 Implement the following functions. Remember to log clear messages to the console for each action and its result. Your goal is for each function to perform its task efficiently.
 
 
 <details>
   <summary><strong>1. function `displayInventory()` </strong></summary>
 
-
 Purpose: Prints the current contents of the inventory to the console in a readable format.
 
 ```javascript
 Your inventory: Sword, Shield, Potion, Bow, Arrows, Map
 ```
-
-</details
+</details>
 
 <details>
   <summary><strong> 2. function `addItem(itemName)`</strong></summary>
@@ -715,7 +714,7 @@ Your inventory: Sword, Potion, Bow, Arrows, Map, Healing Potion
 </details>
 
 <details>
-  <summary><strong>4.function `hasItem(itemName)`</strong></summary>
+  <summary><strong>4. function `hasItem(itemName)`</strong></summary>
 
 * Purpose: Checks if the player possesses a specific item.
 
@@ -782,7 +781,7 @@ Hint: The filter() method is perfect for this.
 </details>
 
 <details>
-  <summary><strong>8.Function `calculateTotalValue(itemValues)`|✨challenging 🌟</strong></summary>
+  <summary><strong>8. Function `calculateTotalValue(itemValues)` | ✨ challenging 🌟</strong></summary>
 
 
 * Purpose: Calculates the total "value" of all items currently in the inventory based on a provided map of item values.
@@ -860,6 +859,8 @@ console.log(`Total inventory value returned: ${totalValue} gold`);
 console.log("\n--- Final Inventory State ---");
 displayInventory(); // Display inventory one last time after all operations
 ```
+</details>
+
 </details>
 
 </details>
