@@ -85,8 +85,8 @@ These exercises were developed as part of:
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  **10 - 11**
-  * Started:   June 2025 
-  * Completed: June 2025
+  * Started:   July 2025 
+  * Completed: July 2025
 
 **III. Additional Practice Exercises**
 
@@ -244,7 +244,7 @@ Write a program which prints out the lyrics to that beloved classic, that field-
   
   - You can't stop talking to grandma until you shout "*BYE*".
 
-  💡 **Hint**: Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! 
+  💡 **Hint**: Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '. 
               Use `trim()`.
 </details>
 
@@ -269,7 +269,7 @@ Write a program which prints out the lyrics to that beloved classic, that field-
   • **Saying Bye to Grandma:**
     You can't stop talking to grandma until you shout 'BYE' 3 times **in a row** (If you say 'BYE' and then anything else, it won't count).
 
-  💡  **Hint**:   Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '! Use `trim()`.
+  💡  **Hint**:   Don't forget 'BYE' is not the same as 'BYE  ' or '  BYE '. Use `trim()`.
 
   ✨ **Feature:** More phrases stored in arrays that Grandma speaks randomly (depending on the input conditions).
 </details>
@@ -671,6 +671,7 @@ Expected Output (for adding 'Healing Potion'):
 
 ```javascript
 Adding Healing Potion...
+Item added: Healing Potion
 Your inventory: Sword, Shield, Potion, Bow, Arrows, Map, Healing Potion
 ```
 
@@ -810,55 +811,105 @@ After implementing all the functions, add the following code to your .js file (b
 This sequence of calls will demonstrate if your inventory manager works correctly.
 
 ```javascript
-console.log("--- Initial Inventory ---");
-displayInventory();
+let myAdventureInventory = ['Steel Sword', 'Leather Armor', 'Health Potion', 'Magical Map'];
 
-console.log("\n--- Scenario 1: Adding Items ---");
-addItem('Healing Potion'); // Add a new item
-addItem('Map');           // Try to add a duplicate item
-addItem('Gold Coins');    // Add another new item
+console.log("--- My Adventure Inventory Test ---");
 
-console.log("\n--- Scenario 2: Removing Items ---");
-removeItem('Shield');           // Remove an existing item
-removeItem('NonExistentItem');  // Try to remove a non-existent item
-removeItem('Arrows');           // Remove another existing item
+console.log("My Adventure Inventory: Initial State");
+displayInventory(myAdventureInventory);
 
-console.log("\n--- Scenario 3: Checking for Items ---");
-hasItem('Sword');        // Check for an existing item
-hasItem('Gold Coins');   // Check for a newly added item
-hasItem('Magic Orb');    // Check for a non-existent item
+console.log("Adding New Gear...");
+addItem(myAdventureInventory, 'Elixir of Life');
+addItem(myAdventureInventory, 'Magical Map'); // This should fail gracefully
+addItem(myAdventureInventory, 'Rope');
 
-console.log("\n--- Scenario 4: Sorting Inventory ---");
-sortInventory();
+console.log("Removing Unwanted Items...");
+removeItem(myAdventureInventory, 'Leather Armor');
+removeItem(myAdventureInventory, 'Rusty Dagger'); // This should fail as it's not present
+removeItem(myAdventureInventory, 'Health Potion');
 
-console.log("\n--- Scenario 5: Item Transformations (map) ---");
-const lengths = getItemLengths(); // Call the function, it should log its output internally
-console.log(`Item lengths array returned: ${lengths}`);
+console.log("Is the Gear Present?");
+hasItem(myAdventureInventory, 'Steel Sword');
+hasItem(myAdventureInventory, 'Elixir of Life');
+hasItem(myAdventureInventory, 'Health Potion'); // This should fail as it was removed
 
-console.log("\n--- Scenario 6: Item Filtering (filter) ---");
-const shortItems = getShortItems(5); // Call the function, it should log its output internally
-console.log(`Short items array returned: ${shortItems}`);
-const veryShortItems = getShortItems(3);
-console.log(`Very short items array returned: ${veryShortItems}`);
+console.log("Sorting My Inventory...");
+sortInventory(myAdventureInventory);
 
+console.log("Analyzing Item Data (Map/Filter)...");
+const myLengths = getItemLengths(myAdventureInventory);
+console.log(`Item lengths array returned: ${myLengths}`);
+const myShortItems = getShortItems(myAdventureInventory, 6);
+console.log(`Short items array returned: ${myShortItems}`);
 
-console.log("\n--- Scenario 7: Calculating Total Value (reduce) ---");
-const itemPriceList = {
-    'Sword': 100,
-    'Shield': 80, // Note: Shield might be removed earlier depending on exact test order
-    'Potion': 20,
-    'Bow': 70,
-    'Arrows': 5,
-    'Map': 30,
-    'Healing Potion': 25,
-    'Gold Coins': 10
-    // NonExistentItem and Magic Orb have 0 value as they are not here
+console.log("Calculating Total Value...");
+const myPriceList = {
+    'Steel Sword': 150,
+    'Leather Armor': 75,
+    'Health Potion': 20,
+    'Magical Map': 50,
+    'Elixir of Life': 200,
+    'Rope': 5
 };
-const totalValue = calculateTotalValue(itemPriceList); // Call the function, it should log its output internally
-console.log(`Total inventory value returned: ${totalValue} gold`);
+const myTotalValue = calculateTotalValue(myAdventureInventory, myPriceList);
+console.log(`Total inventory value: ${myTotalValue} gold`);
 
-console.log("\n--- Final Inventory State ---");
-displayInventory(); // Display inventory one last time after all operations
+console.log("My Adventure Inventory: Final State");
+displayInventory(myAdventureInventory);
+```
+
+
+Expected Output:
+
+```javascript
+--- My Adventure Inventory Test ---
+My Adventure Inventory: Initial State
+Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map
+
+Adding New Gear...
+Adding Elixir of Life...
+Item added: Elixir of Life
+Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map,Elixir of Life
+Adding Magical Map...
+You already have Magical Map in your inventory.
+Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map,Elixir of Life
+Adding Rope...
+Item added: Rope
+Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map,Elixir of Life,Rope
+
+Removing Unwanted Items...
+Attempting to remove Leather Armor...
+Leather Armor removed from inventory.
+Your inventory: Steel Sword,Health Potion,Magical Map,Elixir of Life,Rope
+Attempting to remove Rusty Dagger...
+Item Rusty Dagger not found in inventory.
+Your inventory: Steel Sword,Health Potion,Magical Map,Elixir of Life,Rope
+Attempting to remove Health Potion...
+Health Potion removed from inventory.
+Your inventory: Steel Sword,Magical Map,Elixir of Life,Rope
+
+Is the Gear Present?
+You have Steel Sword in your inventory.
+You have Elixir of Life in your inventory.
+You do not have Health Potion in your inventory.
+
+Sorting My Inventory...
+Sorting inventory...
+Your inventory: Elixir of Life,Magical Map,Rope,Steel Sword
+
+Analyzing Item Data (Map/Filter)...
+Item name lengths: 14,12,4,11
+Item lengths array returned: 14,12,4,11
+Short items (<= 6 chars): Rope
+Short items array returned: Rope
+
+Calculating Total Value...
+Calculating total inventory value...
+Total inventory value: 355 gold
+Total inventory value returned: 355 gold
+
+My Adventure Inventory: Final State
+Your inventory: Elixir of Life,Magical Map,Rope,Steel Sword
 ```
 </details>
 
