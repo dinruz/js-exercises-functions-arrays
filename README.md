@@ -113,7 +113,8 @@ These exercises were developed as part of:
 | 9   | [Display products](#exercise-fn-9-display-products)|  ✔️ | [Solution](./functions-exercises/09_displayProduct.js) |
 | 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)|  ✔️  | [Solution](./functions-exercises/10_song99bottles.js) |
 | 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)|  ✔️ | [Solution](./functions-exercises/11_deafGrandma.js) |
-| 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) |  ✔️  | [Solution](./functions-exercises/12_deafGrandmaPro.js) |
+| 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) |  ✔️  | [Solution](./functions-exercises/12_deafGrandmaPro.js) | 
+
 
 
 
@@ -294,7 +295,7 @@ These exercises were developed as part of:
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-  * Exercises  **08-17**
+  * Exercises  **08-18**
   * Started:   June 2025
   * Completed: June 2025
 
@@ -320,8 +321,8 @@ These exercises were developed as part of:
 | 13  | [Test Results](#exercise-arr-13-test-results)| ✔️  | [Solution](./array-exercises/13_testResults.js) |
 | 14  | [Discounted Prices](#exercise-arr-14-discounted-prices)| ✔️  | [Solution](./array-exercises/14_discounted.js) |
 | 15  | [Formatting City Names](#exercise-arr-15-formatting-city-names)|  ✔️  | [Solution](./array-exercises/15_formattingCities.js) |
-| 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)|  ✔️ | [Solution](./array-exercises/16_incomeAnalysis.js) |
-| 17  | [Game Inventory](#exercise-arr-17-game-inventory) | ⏳  |                        | 
+| 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)| ✔️ | [Solution](./array-exercises/16_incomeAnalysis.js) |
+| 17  | [Game Inventory](#exercise-arr-17-game-inventory) |  🧪✔️ | [Solution](./array-exercises/17_gameInventory.js) |                       
 
 ### Detailed Array Exercises Descriptions
 
@@ -774,23 +775,25 @@ Item name lengths: [5, 6, 6, 3, 6, 3]
 
 * Argument: maxLength (number) - the maximum allowed length for item names.
 
-Expected Output (for getShortItems(5) with current inventory):
+Expected Output (for getShortItems(5)):
 
 ```javascript
-Short items (<= 5 chars): Sword, Bow, Map
-Hint: The filter() method is perfect for this.
+Short items (<= 5 chars): "Bow","Map","Sword"
+
 ```
+💡 **Hint:** The filter() method is perfect for this.
+
 </details>
 
 <details>
-  <summary><strong>8. Function `calculateTotalValue(itemValues)` | ✨ challenging 🌟</strong></summary>
+  <summary><strong>8. Function `calculateTotalValue(itemValues)` |  challenging ✨</strong></summary>
 
 
 * Purpose: Calculates the total "value" of all items currently in the inventory based on a provided map of item values.
 
 * Argument: itemValues (object) - an object where keys are item names (strings) and values are their corresponding numeric values (e.g., { 'Sword': 100, 'Potion': 20, 'Arrows': 5, 'Map': 30 }). 
 
-If an item in the inventory is not found in itemValues, its value should be considered 0.
+If an item in the inventory is **not found** in itemValues, its value should be considered 0.
 
 Expected Output (example with provided itemValues):
 
@@ -803,7 +806,7 @@ Total inventory value: 155 gold
 </details>
 
 <details>
-  <summary><strong>° Testing your Implementation °</strong></summary>
+  <summary><strong> Testing your Implementation 🧪</strong></summary>
 
 
 After implementing all the functions, add the following code to your .js file (below your function definitions) to test their functionality. 
@@ -811,7 +814,8 @@ After implementing all the functions, add the following code to your .js file (b
 This sequence of calls will demonstrate if your inventory manager works correctly.
 
 ```javascript
-let myAdventureInventory = ['Steel Sword', 'Leather Armor', 'Health Potion', 'Magical Map'];
+
+let myAdventureInventory = ['Steel sword', 'Leather armor', 'Health potion', 'Magical map'];
 
 console.log("--- My Adventure Inventory Test ---");
 
@@ -820,18 +824,18 @@ displayInventory(myAdventureInventory);
 
 console.log("Adding New Gear...");
 addItem(myAdventureInventory, 'Elixir of Life');
-addItem(myAdventureInventory, 'Magical Map'); // This should fail gracefully
+addItem(myAdventureInventory, 'Magical map'); // This should fail gracefully
 addItem(myAdventureInventory, 'Rope');
 
 console.log("Removing Unwanted Items...");
-removeItem(myAdventureInventory, 'Leather Armor');
-removeItem(myAdventureInventory, 'Rusty Dagger'); // This should fail as it's not present
-removeItem(myAdventureInventory, 'Health Potion');
+removeItem(myAdventureInventory, 'Leather armor');
+removeItem(myAdventureInventory, 'Rusty dagger'); // This should fail as it's not present
+removeItem(myAdventureInventory, 'Health potion');
 
 console.log("Is the Gear Present?");
-hasItem(myAdventureInventory, 'Steel Sword');
-hasItem(myAdventureInventory, 'Elixir of Life');
-hasItem(myAdventureInventory, 'Health Potion'); // This should fail as it was removed
+hasItem(myAdventureInventory, 'Steel sword');
+hasItem(myAdventureInventory, 'Elixir of life');
+hasItem(myAdventureInventory, 'Health potion'); // This should fail as it was removed
 
 console.log("Sorting My Inventory...");
 sortInventory(myAdventureInventory);
@@ -844,72 +848,67 @@ console.log(`Short items array returned: ${myShortItems}`);
 
 console.log("Calculating Total Value...");
 const myPriceList = {
-    'Steel Sword': 150,
-    'Leather Armor': 75,
-    'Health Potion': 20,
-    'Magical Map': 50,
-    'Elixir of Life': 200,
+    'Steel sword': 150,
+    'Leather armor': 75,
+    'Health potion': 20,
+    'Magical map': 50,
+    'Elixir of life': 200,
     'Rope': 5
 };
-const myTotalValue = calculateTotalValue(myAdventureInventory, myPriceList);
+const myTotalValue = calculateTotalValue(myPriceList);
 console.log(`Total inventory value: ${myTotalValue} gold`);
 
 console.log("My Adventure Inventory: Final State");
 displayInventory(myAdventureInventory);
-```
 
+ ```
 
 Expected Output:
 
 ```javascript
 --- My Adventure Inventory Test ---
 My Adventure Inventory: Initial State
-Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map
-
+[📜] Your inventory:  (4) ['Steel sword', 'Leather armor', 'Health potion', 'Magical map']
 Adding New Gear...
-Adding Elixir of Life...
-Item added: Elixir of Life
-Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map,Elixir of Life
-Adding Magical Map...
-You already have Magical Map in your inventory.
-Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map,Elixir of Life
-Adding Rope...
-Item added: Rope
-Your inventory: Steel Sword,Leather Armor,Health Potion,Magical Map,Elixir of Life,Rope
-
+Adding Elixir of Life... ⏳
+[➕] Item added: Elixir of life
+[📜] Your inventory:  (5) ['Steel sword', 'Leather armor', 'Health potion', 'Magical map', 'Elixir of life']
+Adding Magical map... ⏳
+[❗] You already have Magical map in your inventory.
+[📜] Your inventory:  (5) ['Steel sword', 'Leather armor', 'Health potion', 'Magical map', 'Elixir of life']
+Adding Rope... ⏳
+[➕] Item added: Rope
+[📜] Your inventory:  (6) ['Steel sword', 'Leather armor', 'Health potion', 'Magical map', 'Elixir of life', 'Rope']
 Removing Unwanted Items...
-Attempting to remove Leather Armor...
-Leather Armor removed from inventory.
-Your inventory: Steel Sword,Health Potion,Magical Map,Elixir of Life,Rope
-Attempting to remove Rusty Dagger...
-Item Rusty Dagger not found in inventory.
-Your inventory: Steel Sword,Health Potion,Magical Map,Elixir of Life,Rope
-Attempting to remove Health Potion...
-Health Potion removed from inventory.
-Your inventory: Steel Sword,Magical Map,Elixir of Life,Rope
-
+Attempting to remove Leather armor... ⏳
+[➖] Leather armor removed from inventory.
+[📜] Your inventory:  (5) ['Steel sword', 'Health potion', 'Magical map', 'Elixir of life', 'Rope']
+Attempting to remove Rusty dagger... ⏳
+[❗] Item Rusty dagger not found in inventory.
+[📜] Your inventory:  (5) ['Steel sword', 'Health potion', 'Magical map', 'Elixir of life', 'Rope']
+Attempting to remove Health potion... ⏳
+[➖] Health potion removed from inventory.
+[📜] Your inventory:  (4) ['Steel sword', 'Magical map', 'Elixir of life', 'Rope']
 Is the Gear Present?
-You have Steel Sword in your inventory.
-You have Elixir of Life in your inventory.
-You do not have Health Potion in your inventory.
-
+[✔️] You have Steel sword in your inventory.
+[✔️] You have Elixir of life in your inventory.
+[❌] You do not have Health potion in your inventory.
 Sorting My Inventory...
-Sorting inventory...
-Your inventory: Elixir of Life,Magical Map,Rope,Steel Sword
-
+Sorting inventory... ⏳
+[📜] Your inventory: Elixir of life,Magical map,Rope,Steel sword
 Analyzing Item Data (Map/Filter)...
-Item name lengths: 14,12,4,11
-Item lengths array returned: 14,12,4,11
-Short items (<= 6 chars): Rope
+[📜] Your inventory: Elixir of life,Magical map,Rope,Steel sword
+Item name lengths: (4) [14, 11, 4, 11]
+Item lengths array returned: 14,11,4,11
+Short items (<= 6 chars): ['Rope']
 Short items array returned: Rope
-
 Calculating Total Value...
-Calculating total inventory value...
-Total inventory value: 355 gold
-Total inventory value returned: 355 gold
-
+Calculating total inventory value... ⏳
+[💰] Total inventory value: 405 gold
+[📜] Your inventory: Elixir of life,Magical map,Rope,Steel sword
+Total inventory value: 405 gold
 My Adventure Inventory: Final State
-Your inventory: Elixir of Life,Magical Map,Rope,Steel Sword
+[📜] Your inventory:  (4) ['Elixir of life', 'Magical map', 'Rope', 'Steel sword']
 ```
 </details>
 
@@ -931,4 +930,3 @@ This repository contains exercises & assignments with some content sourced from 
 
 
 
-[Up](#table-of-contents-)
