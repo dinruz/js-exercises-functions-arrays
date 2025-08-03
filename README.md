@@ -324,7 +324,7 @@ These exercises were developed as part of:
 | 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)| ✔️ | [Solution](./array-exercises/16_incomeAnalysis.js) |
 | 17  | [Game Inventory](#exercise-arr-17-game-inventory) |  ✔️ 🧪| [Solution](./array-exercises/17_gameInventory.js) |   
 | 18 | [Kubrick Filmography](#exercise-arr-18-kubrick-filmography) | ✔️ 🧪 |  [Solution](./array-exercises/18_kubrickFilmography.js)   |  
-| 19 | [Literature Analysis](#exercise-arr-19-literature.analysis) | ⏳ |  
+| 19 | [Literature Analysis](#exercise-arr-19-literature-analysis) | ✔️ 🧪 |  [Solution](./array-exercises/19_literatureAnalysis.js)   |  
 | 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | 
 
 
@@ -1096,15 +1096,12 @@ const testLibrary = [
 // Testing Code
 console.log('--- Test 1: All Russian Authors ---');
 const allRussianAuthors = getAllRussianAuthors(testLibrary);
-console.log(allRussianAuthors);
 
 console.log('--- Test 2: Average Page Count by Genre ---');
 const avgPagesFantasy = getAveragePageCountByGenre('Fantasy', testLibrary);
-console.log(`Average pages for genre 'Fantasy':`, avgPagesFantasy);
 
 console.log('--- Test 3: Books written before a specific year ---');
 const booksBefore1900 = getBooksWrittenBefore(testLibrary, 1900);
-console.log(`Books written before 1900:`, booksBefore1900);
 
 // Expected Output
  --- Test 1: All Russian Authors ---
@@ -1112,7 +1109,7 @@ console.log(`Books written before 1900:`, booksBefore1900);
   --- Test 2: Average Page Count by Genre ---
   Average pages for genre 'Fantasy': 384
   --- Test 3: Books written before a specific year ---
-  Books written before 1900: ['Don Quixote', 'The Idiot', 'The Master and Margarita']
+  Books written before 1900: ['Don Quixote', 'The Idiot']
 ```
 </details>
 
@@ -1129,7 +1126,7 @@ The structure for each mission is: `[Mission Name, Year, Status, [Crew Members]]
 
 **Rules**
 
-Your goal is to complete the following three functions. Remember to use array methods instead of traditional `for` loops.
+Use array methods instead of traditional `for` loops.
 
 **Write functions:**
 
@@ -1137,7 +1134,7 @@ Your goal is to complete the following three functions. Remember to use array me
 
 Create a function that quickly identifies all missions that have been a 'Success'. The function should return an array containing only the names of these missions.
 
-**2.`getAverageCrewSizeByDecade()`**
+**2.`getAverageCrewSizeByDecade()`** | challenging ✨
 
 Write a function that calculates the average number of crew members per mission for each decade. 
 
@@ -1176,15 +1173,14 @@ const testMissions = [
 // Testing Code
 console.log('--- Test 1: Successful Missions ---');
 const successfulMissions = getAllSuccessfulMissions(testMissions);
-console.log(successfulMissions);
 
 console.log('--- Test 2: Average Crew Size by Decade ---');
 const crewSizeByDecade = getAverageCrewSizeByDecade(testMissions);
-console.log(crewSizeByDecade);
+
 
 console.log('--- Test 3: Unique Crew Members ---');
 const uniqueCrewMembers = findUniqueCrewMembers(testMissions);
-console.log(`Unique crew members:`, uniqueCrewMembers);
+
 
 // Expected Output
 --- Test 1: Successful Missions ---
@@ -1197,7 +1193,6 @@ console.log(`Unique crew members:`, uniqueCrewMembers);
 </details>
 
 </details>
-
 
 ---
 
