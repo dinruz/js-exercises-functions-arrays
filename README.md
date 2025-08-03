@@ -329,8 +329,6 @@ These exercises were developed as part of:
 
 
 
-
-
 ### Detailed Array Exercises Descriptions
 
 <details id="exercise-arr-1-camelize">
@@ -810,7 +808,7 @@ Total inventory value: 155 gold
 ```
 💡 **Hint:** *This is a prime candidate for the `reduce()` method, accumulating a sum based on item lookups.*
 </details>
-</details>
+
 
 <details>
   <summary><strong> Testing your Implementation 🧪</strong></summary>
