@@ -1,13 +1,4 @@
 
-/*
-The movies are stored in a nested array. 
-Each inner array represents one movie: [title, year, genres]. 
-Genres are also a nested array.
-*  Case Handling: Movie titles & genres should be Title Case. 
-                 Years are numbers.
-*  Return Values: Functions must return a new array or a single value 
-(like a number or a string). Do not modify the original array.
-*/
 // Kubrick movies list
 
 let kubrickMovies = [
