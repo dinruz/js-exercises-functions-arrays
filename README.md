@@ -297,7 +297,7 @@ These exercises were developed as part of:
 
   * Exercises  **08-18**
   * Started:   June 2025
-  * Completed: June 2025
+  * Completed: 
 
 ---
 
@@ -322,7 +322,14 @@ These exercises were developed as part of:
 | 14  | [Discounted Prices](#exercise-arr-14-discounted-prices)| ✔️  | [Solution](./array-exercises/14_discounted.js) |
 | 15  | [Formatting City Names](#exercise-arr-15-formatting-city-names)|  ✔️  | [Solution](./array-exercises/15_formattingCities.js) |
 | 16  | [Daily Income Analysis](#exercise-arr-16-daily-income-analysis)| ✔️ | [Solution](./array-exercises/16_incomeAnalysis.js) |
-| 17  | [Game Inventory](#exercise-arr-17-game-inventory) |  🧪✔️ | [Solution](./array-exercises/17_gameInventory.js) |                       
+| 17  | [Game Inventory](#exercise-arr-17-game-inventory) |  ✔️ 🧪| [Solution](./array-exercises/17_gameInventory.js) |   
+| 18 | [Kubrick Filmography](#exercise-arr-18-kubrick-filmography) | ✔️ 🧪 |  [Solution](./array-exercises/18_kubrickFilmography.js)   |  
+| 19 | [Literature Analysis](#exercise-arr-19-literature.analysis) | ⏳ |  
+| 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | 
+
+
+
+
 
 ### Detailed Array Exercises Descriptions
 
@@ -802,7 +809,7 @@ Calculating total inventory value...
 Total inventory value: 155 gold
 ```
 💡 **Hint:** *This is a prime candidate for the `reduce()` method, accumulating a sum based on item lookups.*
-
+</details>
 </details>
 
 <details>
@@ -915,6 +922,284 @@ My Adventure Inventory: Final State
 </details>
 
 </details>
+
+---
+
+<details id="exercise-arr-18-kubrick-filmography">
+  <summary><strong>Kubrick Filmography</strong></summary>
+Create a system for managing and analyzing Stanley Kubrick's filmography using only arrays.
+
+**Rules**
+*  Data Format: The movies are stored in a nested array. Each inner array represents one movie: [title, year, genres]. Genres are also a nested array.
+
+*  Case Handling: Movie titles should be Title Case. Genres are also Title Case. Years are numbers.
+
+*  Return Values: Functions must return a new array or a single value (like a number or a string). Do not modify the original array.
+
+💡 **Hint:** For a neat and clean output of your data in the console, you can use console.table().
+
+**Setup**
+```javaScript
+let kubrickMovies = [
+  ['2001: A Space Odyssey', 1968, ['Sci-Fi', 'Adventure']],
+  ['The Shining', 1980, ['Horror', 'Psychological Thriller']],
+  ['A Clockwork Orange', 1971, ['Sci-Fi', 'Dystopian']],
+  ['Full Metal Jacket', 1987, ['War', 'Drama']],
+  ['Dr. Strangelove', 1964, ['Satire', 'Comedy']],
+  ['Eyes Wide Shut', 1999, ['Drama', 'Mystery']]
+];
+```
+
+**The Challenge (functions to write)**
+
+`getMoviesByGenre(genre, movies)`
+
+Return a new array containing only the titles of the movies that belong to a specific genre.
+
+`getMoviesAfterYear(year, movies)`
+
+Return a new array containing all the movies released after the specified year. This array should be sorted in ascending order by release year.
+
+`getUniqueGenres(movies)`
+
+Return a new array containing all the unique genres from all movies. The genres should be sorted alphabetically.
+
+`findMostProductiveDecade(movies)`
+
+Find the decade in which the most movies were filmed. Return a string that describes that decade, e.g., '1960s'.
+
+<details>
+  <summary><strong>🧪 Test Implementation: Tarantino's Filmography</strong></summary>
+
+After you write the functions for the Kubrick movies, run this test to see how the same functions behave with new data.
+
+```javascript
+// Data for the test
+let tarantinoMovies = [
+  ['Reservoir Dogs', 1992, ['Crime', 'Thriller']],
+  ['Pulp Fiction', 1994, ['Crime', 'Drama']],
+  ['Kill Bill: Vol. 1', 2003, ['Action', 'Thriller']],
+  ['Inglourious Basterds', 2009, ['War', 'Drama']],
+  ['Django Unchained', 2012, ['Western', 'Drama']],
+  ['The Hateful Eight', 2015, ['Western', 'Mystery']],
+  ['Once Upon a Time in Hollywood', 2019, ['Comedy', 'Drama']]
+];
+
+// Testing code
+console.log('--- Testing Tarantino filmography ---');
+console.log('Original movie list:');
+console.table(tarantinoMovies);
+
+console.log('\nMovies by genre - crime:');
+console.log(getMoviesByGenre('Crime', tarantinoMovies)); 
+
+console.log('\nMovies filmed after 2000. (sorted):');
+console.table(getMoviesAfterYear(2000, tarantinoMovies)); 
+
+console.log('\nUnique Genres:');
+console.log(getUniqueGenres(tarantinoMovies));
+
+console.log('\nMost productive decade:');
+console.log(findMostProductiveDecade(tarantinoMovies));
+
+Expected output:
+
+--- Testing Tarantino filmography ---
+Original movie list:
+┌─────────┬────────────────────────────────────┬──────┬───────────────────────────────────┐
+│ (index) │                 0                  │  1   │                 2                 │
+├─────────┼────────────────────────────────────┼──────┼───────────────────────────────────┤
+│    0    │ 'Reservoir Dogs'                   │ 1992 │ ['Crime', 'Thriller']             │
+│    1    │ 'Pulp Fiction'                     │ 1994 │ ['Crime', 'Drama']                │
+│    2    │ 'Kill Bill: Vol. 1'                │ 2003 │ ['Action', 'Thriller']            │
+│    3    │ 'Inglourious Basterds'             │ 2009 │ ['War', 'Drama']                  │
+│    4    │ 'Django Unchained'                 │ 2012 │ ['Western', 'Drama']              │
+│    5    │ 'The Hateful Eight'                │ 2015 │ ['Western', 'Mystery']            │
+│    6    │ 'Once Upon a Time in Hollywood'    │ 2019 │ ['Comedy', 'Drama']               │
+└─────────┴────────────────────────────────────┴──────┴───────────────────────────────────┘
+
+Movies by genre - crime:
+[ 'Reservoir Dogs', 'Pulp Fiction' ]
+
+Movies filmed after 2000. (sorted):
+┌─────────┬───────────────────────────────────┬──────┬─────────────────────────────────┐
+│ (index) │                 0                 │  1   │                2                │
+├─────────┼───────────────────────────────────┼──────┼─────────────────────────────────┤
+│    0    │ 'Kill Bill: Vol. 1'               │ 2003 │ ['Action', 'Thriller']          │
+│    1    │ 'Inglourious Basterds'            │ 2009 │ ['War', 'Drama']                │
+│    2    │ 'Django Unchained'                │ 2012 │ ['Western', 'Drama']            │
+│    3    │ 'The Hateful Eight'               │ 2015 │ ['Western', 'Mystery']          │
+│    4    │ 'Once Upon a Time in Hollywood'   │ 2019 │ ['Comedy', 'Drama']             │
+└─────────┴───────────────────────────────────┴──────┴─────────────────────────────────┘
+
+Unique Genres:
+[ 'Action', 'Comedy', 'Crime', 'Drama', 'Mystery', 'Thriller', 'War', 'Western' ]
+
+Most productive decade:
+'2010s'
+```
+</details>
+
+</details>
+
+---
+<details id="exercise-arr-19-literature-analysis">
+  <summary><strong>Literature Analysis</strong></summary>
+
+You are a digital librarian building functions to analyze a collection of classic literature. The data is stored in an array, where each element contains: `[Title, Author, Year, Pages, [Genres], Country]`.
+
+**Rules and Edge Cases**
+
+Your functions must work with all authors, regardless of their country.
+
+Pay attention to duplicates if the same author appears in multiple books.
+
+Some books can have multiple genres, which must be taken into account.
+
+**Write functions:**
+
+**1. `getAllRussianAuthors()`**
+
+- returns an array of all unique Russian author names (only those whose 'Country' is 'Russia') from the collection.
+
+**2. `getAveragePageCountByGenre()`**
+
+- takes a 'genre' as an argument and returns the average number of pages for all books belonging to that genre.
+
+**3. `getBooksWrittenBefore()`**
+
+- returns an array of book titles that were written before a specific 'year', sorted alphabetically by title.
+
+**Initial data**
+
+```javascript
+const classicBooks = [
+  ['War and Peace', 'Leo Tolstoy', 1869, 1225, ['Epic', 'Historical'], 'Russia'],
+  ['Crime and Punishment', 'Fyodor Dostoevsky', 1866, 520, ['Philosophical', 'Crime'], 'Russia'],
+  ['The Brothers Karamazov', 'Fyodor Dostoevsky', 1880, 824, ['Philosophical', 'Psychological'], 'Russia'],
+  ['Anna Karenina', 'Leo Tolstoy', 1878, 864, ['Realism', 'Romance'], 'Russia'],
+  ['One Hundred Years of Solitude', 'Gabriel García Márquez', 1967, 417, ['Magical Realism'], 'Colombia'],
+  ['1984', 'George Orwell', 1949, 328, ['Dystopian', 'Sci-Fi'], 'England'],
+  ['Hamlet', 'William Shakespeare', 1603, 275, ['Tragedy'], 'England']
+];
+```
+<details>
+  <summary><strong>🧪 Test Implementation </strong></summary>
+
+```javascript
+
+// Testing Data
+const testLibrary = [
+  ['The Master and Margarita', 'Mikhail Bulgakov', 1967, 384, ['Fantasy', 'Satire'], 'Russia'],
+  ['The Idiot', 'Fyodor Dostoevsky', 1869, 656, ['Philosophical'], 'Russia'],
+  ['Don Quixote', 'Miguel de Cervantes', 1605, 863, ['Adventure', 'Comedy'], 'Spain']
+];
+
+// Testing Code
+console.log('--- Test 1: All Russian Authors ---');
+const allRussianAuthors = getAllRussianAuthors(testLibrary);
+console.log(allRussianAuthors);
+
+console.log('--- Test 2: Average Page Count by Genre ---');
+const avgPagesFantasy = getAveragePageCountByGenre('Fantasy', testLibrary);
+console.log(`Average pages for genre 'Fantasy':`, avgPagesFantasy);
+
+console.log('--- Test 3: Books written before a specific year ---');
+const booksBefore1900 = getBooksWrittenBefore(testLibrary, 1900);
+console.log(`Books written before 1900:`, booksBefore1900);
+
+// Expected Output
+ --- Test 1: All Russian Authors ---
+  ['Mikhail Bulgakov', 'Fyodor Dostoevsky']
+  --- Test 2: Average Page Count by Genre ---
+  Average pages for genre 'Fantasy': 384
+  --- Test 3: Books written before a specific year ---
+  Books written before 1900: ['Don Quixote', 'The Idiot', 'The Master and Margarita']
+```
+</details>
+
+</details>
+
+---
+
+<details id="exercise-arr-20-space-missions">
+  <summary><strong>Space Missions</strong></summary>
+
+Write some functions to analyze historical space mission data. 
+The mission data is provided as a nested array, where each element represents a single mission.
+The structure for each mission is: `[Mission Name, Year, Status, [Crew Members]]`.
+
+**Rules**
+
+Your goal is to complete the following three functions. Remember to use array methods instead of traditional `for` loops.
+
+**Write functions:**
+
+**1. `getAllSuccessfulMissions()`**
+
+Create a function that quickly identifies all missions that have been a 'Success'. The function should return an array containing only the names of these missions.
+
+**2.`getAverageCrewSizeByDecade()`**
+
+Write a function that calculates the average number of crew members per mission for each decade. 
+
+The function must return a new, nested array where each inner array contains the decade and the average crew size, e.g., [['1960s', 3], ['1970s', 3], ...].
+
+**3. `findUniqueCrewMembers()`**
+
+Get a list of all unique astronauts who have participated in a mission. Write a function that returns a new array with the names of every crew member. Make sure there are no duplicates and that you filter out any placeholder values like 'N/A'.
+
+**Initial data**
+
+```javascript
+const missions = [
+  ['Apollo 11', 1969, 'Success', ['Neil Armstrong', 'Buzz Aldrin']],
+  ['Voyager 1', 1977, 'Success', ['N/A']],
+  ['Hubble Telescope', 1990, 'Success', ['N/A']],
+  ['Mars Rover', 2003, 'Success', ['N/A']],
+  ['ISS Expedition 1', 2000, 'Success', ['William Shepherd', 'Yuri Gidzenko', 'Sergei Krikalev']],
+  ['Artemis I', 2022, 'Success', ['N/A']],
+  ['Starship Launch', 2023, 'Failed', ['N/A']],
+  ['Mars Sample Return', 2027, 'In Progress', ['N/A', 'N/A']]
+];
+```
+<details>
+  <summary><strong>🧪 Test Implementation </strong></summary>
+
+```javascript
+// Testing Data
+const testMissions = [
+  ['Apollo 13', 1970, 'Failed', ['Jim Lovell', 'Jack Swigert', 'Fred Haise']],
+  ['Falcon Heavy Test', 2018, 'Success', ['N/A']],
+  ['Apollo 8', 1968, 'Success', ['Frank Borman', 'Jim Lovell', 'William Anders']],
+  ['Crew Dragon Demo', 2019, 'In Progress', ['Doug Hurley', 'Bob Behnken']]
+];
+
+// Testing Code
+console.log('--- Test 1: Successful Missions ---');
+const successfulMissions = getAllSuccessfulMissions(testMissions);
+console.log(successfulMissions);
+
+console.log('--- Test 2: Average Crew Size by Decade ---');
+const crewSizeByDecade = getAverageCrewSizeByDecade(testMissions);
+console.log(crewSizeByDecade);
+
+console.log('--- Test 3: Unique Crew Members ---');
+const uniqueCrewMembers = findUniqueCrewMembers(testMissions);
+console.log(`Unique crew members:`, uniqueCrewMembers);
+
+// Expected Output
+--- Test 1: Successful Missions ---
+  ['Falcon Heavy Test', 'Apollo 8']
+  --- Test 2: Average Crew Size by Decade ---
+  [['1960s', 3], ['1970s', 3], ['2010s', 1.6666666666666667]]
+  --- Test 3: Unique Crew Members ---
+  Unique crew members: ['Jim Lovell', 'Jack Swigert', 'Fred Haise', 'Frank Borman', 'William Anders', 'Doug Hurley', 'Bob Behnken']
+```
+</details>
+
+</details>
+
 
 ---
 
