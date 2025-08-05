@@ -288,15 +288,15 @@ These exercises were developed as part of:
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  **01-07**
-  * Started:   June 2025
-  * Completed: June 2025
+  * Started:   July 2025
+  * Completed: July 2025
 
 **II. Additional Practice Exercises**
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-  * Exercises  **08-18**
-  * Started:   June 2025
+  * Exercises  **08-20**
+  * Started:   July 2025
   * Completed: 
 
 ---
@@ -325,7 +325,7 @@ These exercises were developed as part of:
 | 17  | [Game Inventory](#exercise-arr-17-game-inventory) |  ✔️ 🧪| [Solution](./array-exercises/17_gameInventory.js) |   
 | 18 | [Kubrick Filmography](#exercise-arr-18-kubrick-filmography) | ✔️ 🧪 |  [Solution](./array-exercises/18_kubrickFilmography.js)   |  
 | 19 | [Literature Analysis](#exercise-arr-19-literature-analysis) | ✔️ 🧪 |  [Solution](./array-exercises/19_literatureAnalysis.js)   |  
-| 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | 
+| 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
 
 
 
