@@ -326,6 +326,7 @@ These exercises were developed as part of:
 | 18 | [Kubrick Filmography](#exercise-arr-18-kubrick-filmography) | ✔️ 🧪 |  [Solution](./array-exercises/18_kubrickFilmography.js)   |  
 | 19 | [Literature Analysis](#exercise-arr-19-literature-analysis) | ✔️ 🧪 |  [Solution](./array-exercises/19_literatureAnalysis.js)   |  
 | 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
+| 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) |  | [Solution](./array-exercises/21_manipulationChallenges.js)   |  
 
 
 
@@ -924,7 +925,7 @@ My Adventure Inventory: Final State
 ---
 
 <details id="exercise-arr-18-kubrick-filmography">
-  <summary><strong>Kubrick Filmography</strong></summary>
+  <summary><strong>Exercise 18: Kubrick Filmography</strong></summary>
 Create a system for managing and analyzing Stanley Kubrick's filmography using only arrays.
 
 **Rules**
@@ -1042,7 +1043,7 @@ Most productive decade:
 
 ---
 <details id="exercise-arr-19-literature-analysis">
-  <summary><strong>Literature Analysis</strong></summary>
+  <summary><strong>Exercise 19: Literature Analysis</strong></summary>
 
 You are a digital librarian building functions to analyze a collection of classic literature. The data is stored in an array, where each element contains: `[Title, Author, Year, Pages, [Genres], Country]`.
 
@@ -1118,7 +1119,7 @@ const booksBefore1900 = getBooksWrittenBefore(testLibrary, 1900);
 ---
 
 <details id="exercise-arr-20-space-missions">
-  <summary><strong>Space Missions</strong></summary>
+  <summary><strong>Exercise 20: Space Missions</strong></summary>
 
 Write some functions to analyze historical space mission data. 
 The mission data is provided as a nested array, where each element represents a single mission.
@@ -1190,6 +1191,239 @@ const uniqueCrewMembers = findUniqueCrewMembers(testMissions);
   --- Test 3: Unique Crew Members ---
   Unique crew members: ['Jim Lovell', 'Jack Swigert', 'Fred Haise', 'Frank Borman', 'William Anders', 'Doug Hurley', 'Bob Behnken']
 ```
+</details>
+
+</details>
+
+---
+
+<details id="exercise-arr-21-manipulation-challenge">
+  <summary><strong>Exercise 21: Array Manipulation Challenges</strong></summary>
+ 
+This comprehensive suite of exercises progresses from basic usage to complex scenarios where you'll need to strategically choose and combine methods to solve problems efficiently.
+
+<details>
+ <summary><strong>[🔥]  Warm-up Exercise</strong></summary>
+
+*The task is to double every number in the following array using two different methods.*
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+```
+**Method 1: `for loop`**
+
+Write a for loop that iterates through the numbers array and creates a new array called doubledFor with each number doubled.
+
+**Method 2: `.map() method`**
+
+Write a single line of code using the .map() method to create a new array called doubledMap with each number doubled.
+</details>
+
+<details>
+<summary><strong>[🟢] Basic Array Operations </strong></summary>
+
+*For this challenge, goal is to use the specified array methods to perform basic transformations and calculations.*
+
+Here is the initial array:
+```javascript
+const mixedArray = [10, 'apple', 25, 42, 'banana', 15, 30, 'cherry'];
+```
+
+**Part 1: Filtering and Mapping**
+
+* Filter: Use the `.filter()` method to create a new array called filteredNumbers that contains only the numbers from mixedArray.
+
+* Map: Use the `.map()` method on filteredNumbers to create a new array called mappedStrings where each number is converted into a string (e.g., 10 becomes 'Number: 10').
+
+**Part 2: Reduction and Calculation**
+
+* Reduce: Use the `.reduce()` method on filteredNumbers to calculate the sum of all the numbers. Store the result in a variable called totalSum.
+
+* Reduce (Alternative Use): Use the `.reduce()` method on filteredNumbers to find the largest number. Store the result in a variable called largestNumber.
+</details>
+
+<details>
+<summary><strong>[🟡] Intermediate Array Operations </strong></summary>
+
+*These tasks introduce more complex logic and method chaining.*
+
+```javascript
+const mixedArray = [10, 'apple', 25, 42, 'banana', 15, 30, 'cherry'];
+```
+
+**Part 3: forEach and Conditional Logic**
+
+* forEach: Use the `.forEach()` method on mixedArray to iterate through each element. For each element, print a message to the console:
+
+  * If the element is a number and is greater than 20, print:
+  ```javascript 
+  The number [number] is greater than 20.
+  ```
+  
+  *If the element is a string, print:
+  ```javascript
+  The string is [string].
+  ```
+*  Otherwise, print:
+ ```javascript
+ The value [value] is not a large number or a string.
+```
+
+**Part 4: Combining Methods**
+
+* Chain Methods: In a single line of code, chain the `.filter()` and `.map()` methods on mixedArray to get an array of strings like ['Number: 25', 'Number: 42', 'Number: 15', 'Number: 30']. Store the result in a variable called chainedResult.
+</details>
+
+<details>
+<summary><strong>[🟠] Choose & Use Challenge </strong></summary>
+
+*These challenges require selecting the most appropriate array method(s) to solve the given problems.*
+
+**Challenge 1: Value Count**
+
+* Problem: Determine the number of numeric values present in the mixedArray.
+
+* Expected result: An integer representing the total number of numbers in the array (in this case, 5).
+
+**Challenge 2: Descending Order**
+
+* Problem: Create a new array from filteredNumbers with its elements arranged from the highest value to the lowest.
+
+* Expected result: [42, 30, 25, 15, 10]
+
+**Challenge 3: Unique Collection**
+
+* Problem: Transform the array ['a', 'b', 'c', 'a', 'd', 'b'] into a new array that contains each element only once.
+
+* Expected result: ['a', 'b', 'c', 'd']
+
+**Challenge 4: Mixed Transformation**
+
+* Problem: Process the mixedArray to produce a new array where all numeric values are squared, and all string values are in uppercase.
+
+* Expected result: [100, 'APPLE', 625, 1764, 'BANANA', 225, 900, 'CHERRY']
+
+</details>
+
+<details>
+<summary><strong>[🔴] Score Analytics </strong></summary>
+
+*This challenge require combining multiple array methods and logical thinking to solve problems efficiently. Aim for concise solutions.*
+
+Here is the array for this challenge:
+```javascript
+const scores = [15, 25, 15, 50, 45, 25, 15, 60, 5, 25, 10];
+```
+
+**Challenge 1: Filtering and Summation**
+
+* Problem: From the scores array, extract all scores greater than 20 and calculate their sum.
+
+* Expected result: 230
+
+**Challenge 2: Counting Occurrences**
+
+* Problem: From the scores array, find out how many times the score 25 was achieved.
+
+* Expected result: 3
+
+**Challenge 3: Transformation and Uniqueness**
+
+* Problem: From the scores array, create a new array containing only unique values (no duplicates), sorted from highest to lowest.
+
+* Expected result: [60, 50, 45, 25, 15, 10, 5]
+</details>
+
+<details>
+<summary><strong>[🧪] Test Cases</strong></summary>
+
+
+
+**I. Place Your Code**
+
+ Write your JavaScript solutions for each challenge directly above these "Test Cases" in the same file or script block. Ensure that your results are stored in the variable names specified in the comments (e.g., doubledFor, filteredNumbers, totalSum, etc.).
+
+**II. Run Your Code**
+
+ Open this HTML file (or run the JavaScript) in a web browser.
+
+**III. Check the Console**
+
+ Open your browser's developer console ( press F12 or right-clicking and selecting 'Inspect' -> 'Console').
+
+**Interpret Results:**
+
+✅ PASS: Means your code produced the expected output for that specific test.
+
+❌ FAIL: Means your code produced an output that did not match the expected result. 
+
+The console will show you both what was expected and what your code returned, helping you debug.
+
+
+```javascript
+// Helper function for asserting equality
+function assertEqual(actual, expected, testName) {
+    const areArraysEqual = (arr1, arr2) => {
+        if (!Array.isArray(arr1) || !Array.isArray(arr2)) return actual === expected;
+        if (arr1.length !== arr2.length) return false;
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] !== arr2[i]) return false;
+        }
+        return true;
+    };
+
+    if (areArraysEqual(actual, expected)) {
+        console.log(`✅ PASS: ${testName}`);
+    } else {
+        console.error(`❌ FAIL: ${testName} - Expected: ${JSON.stringify(expected)}, Got: ${JSON.stringify(actual)}`);
+    }
+}
+
+// --- Warm-up Exercise Tests ---
+// Assuming you store the results in `doubledFor` and `doubledMap`
+// Example: const doubledFor = [2, 4, 6, 8, 10];
+// Example: const doubledMap = [2, 4, 6, 8, 10];
+assertEqual(doubledFor, [2, 4, 6, 8, 10], "Warm-up: doubledFor using for loop");
+assertEqual(doubledMap, [2, 4, 6, 8, 10], "Warm-up: doubledMap using .map()");
+
+// --- Easy Challenge Tests ---
+// Assuming you store the results in `filteredNumbers`, `mappedStrings`, `totalSum`, `largestNumber`
+// Example: const filteredNumbers = [10, 25, 42, 15, 30];
+// Example: const mappedStrings = ['Number: 10', 'Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'];
+// Example: const totalSum = 122;
+// Example: const largestNumber = 42;
+assertEqual(filteredNumbers, [10, 25, 42, 15, 30], "Easy Challenge: filteredNumbers");
+assertEqual(mappedStrings, ['Number: 10', 'Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'], "Easy Challenge: mappedStrings");
+assertEqual(totalSum, 122, "Easy Challenge: totalSum");
+assertEqual(largestNumber, 42, "Easy Challenge: largestNumber");
+
+// --- Medium Challenge Tests ---
+// Assuming you store the result in `chainedResult`
+// Example: const chainedResult = ['Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'];
+assertEqual(chainedResult, ['Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'], "Medium Challenge: chainedResult");
+// Note: Part 3 (forEach) involves console logging, which is visually verified.
+
+// --- Choose & Use Challenge Tests ---
+// Assuming you store the results in `numericCount`, `sortedDescending`, `uniqueElements`, `transformedMixedArray`
+// Example: const numericCount = 5;
+// Example: const sortedDescending = [42, 30, 25, 15, 10];
+// Example: const uniqueElements = ['a', 'b', 'c', 'd'];
+// Example: const transformedMixedArray = [100, 'APPLE', 625, 1764, 'BANANA', 225, 900, 'CHERRY'];
+assertEqual(numericCount, 5, "Choose & Use: Challenge 1 (Value Count)");
+assertEqual(sortedDescending, [42, 30, 25, 15, 10], "Choose & Use: Challenge 2 (Descending Order)");
+assertEqual(uniqueElements, ['a', 'b', 'c', 'd'], "Choose & Use: Challenge 3 (Unique Collection)");
+assertEqual(transformedMixedArray, [100, 'APPLE', 625, 1764, 'BANANA', 225, 900, 'CHERRY'], "Choose & Use: Challenge 4 (Mixed Transformation)");
+
+// --- Advanced Challenge Tests ---
+// Assuming you store the results in `sumOfFilteredScores`, `countOf25`, `uniqueSortedScores`
+// Example: const sumOfFilteredScores = 230;
+// Example: const countOf25 = 3;
+// Example: const uniqueSortedScores = [60, 50, 45, 25, 15, 10, 5];
+assertEqual(sumOfFilteredScores, 230, "Advanced Challenge: Challenge 1 (Filtering and Summation)");
+assertEqual(countOf25, 3, "Advanced Challenge: Challenge 2 (Counting Occurrences)");
+assertEqual(uniqueSortedScores, [60, 50, 45, 25, 15, 10, 5], "Advanced Challenge: Challenge 3 (Transformation and Uniqueness)");
+```
+
 </details>
 
 </details>
