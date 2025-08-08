@@ -142,7 +142,49 @@ if (typeof(element) =='number'){
     return element.toUpperCase();
 }
 });
-
 console.log ('Transformed mixed array \n(strings to uppercase, numbers squared):');
 console.log(transformedMixedAray);
+console.groupEnd();
+
+// <--- SCORE ANALYSIS --->
+
+console.groupCollapsed(`[🔴] Score Analysis`);
+
+// Challenge 1: Filtering & Summation
+
+const scores = [15, 25, 15, 50, 45, 25, 15, 60, 5, 25, 10];
+console.log(`✨ Original score array: `,scores);
+
+let sumOfFilteredScores=
+scores.filter((score) => score>20)
+      .reduce((acc,current)=>acc+current,0);
+console.log(`Sum of all scores greater than 20: `,sumOfFilteredScores);
+
+// Challenge 2: Counting Occurrences
+
+let countOf25 = 0;
+scores.forEach((item) =>{
+    if (item === 25){
+    countOf25++;
+    }
+});
+console.log(`.forEach() method:`)
+console.log(`Score 25 was achieved ${countOf25} times.`);
+
+const count25 = scores.reduce((count, score) => (score === 25 ? count + 1 : count), 0);
+console.log(`.reduce() method:`);
+console.log(`Score 25 was achieved ${count25} times.`);
+
+// Challenge 3: Transformation & Uniqueness
+
+let uniqueSortedScores = scores.reduce((acc,numb)=> {
+    if (!acc.includes(numb)) {
+        acc.push(numb);
+    }
+    return acc;
+},[]);
+
+uniqueSortedScores.sort((a,b)=>b-a);
+console.log(`Only uniques values (from highest to lowest): `, uniqueSortedScores);
+
 console.groupEnd();

@@ -326,7 +326,7 @@ These exercises were developed as part of:
 | 18 | [Kubrick Filmography](#exercise-arr-18-kubrick-filmography) | ✔️ 🧪 |  [Solution](./array-exercises/18_kubrickFilmography.js)   |  
 | 19 | [Literature Analysis](#exercise-arr-19-literature-analysis) | ✔️ 🧪 |  [Solution](./array-exercises/19_literatureAnalysis.js)   |  
 | 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
-| 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) |  | [Solution](./array-exercises/21_manipulationChallenges.js)   |  
+| 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ | [Solution](./array-exercises/21_manipulationChallenges.js)   |  
 
 
 
