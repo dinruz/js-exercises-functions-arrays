@@ -31,8 +31,8 @@ const filteredNumbers = mixedArray.filter((item) => (typeof(item) == 'number'));
 console.log('Only numbers from mixed array:',filteredNumbers);
 
 
-const mappedString = filteredNumbers.map((number) => number=('Number:'+number.toString()));
-console.log(' Numbers converted to a string:', mappedString);
+const mappedStrings = filteredNumbers.map((number) => number=('Number: '+number.toString()));
+console.log(' Numbers converted to a string:', mappedStrings);
 
 // Part II -  Reduction & Calculation
 
@@ -68,7 +68,7 @@ mixedArray.forEach((item) => {
 
 let chainedResult = 
 mixedArray.filter((item) => typeof(item)==='number')
-          .map((item) => 'Number: '+item);
+          .map((item) => 'Number: '+ item);
 console.log(`Array of numbers converted to strings (by chaining methods):`,chainedResult);
 
 console.groupEnd();
@@ -107,7 +107,8 @@ console.log('Total number of numbers in the array \n- with .reduce(): ',countNum
 
 
 console.log('✨  Original filtered numbers:',filteredNumbers);
-const sortedDescending=filteredNumbers.sort((a,b)=> (b-a));
+const filterNumbers=[...filteredNumbers]
+const sortedDescending=filterNumbers.sort((a,b)=> (b-a));
 console.log(`Filtered numbers in descending order: `,sortedDescending);
 
 // 3 - Unique Collection
@@ -135,7 +136,7 @@ console.log('Unique elements - with reduce():\n',uniqueE);
 
 console.log('✨  Original mixed array:',mixedArray);
 
-const transformedMixedAray = mixedArray.map((element)=> {
+const transformedMixedArray = mixedArray.map((element)=> {
 if (typeof(element) =='number'){
     return element * element;
 }else{
@@ -143,7 +144,7 @@ if (typeof(element) =='number'){
 }
 });
 console.log ('Transformed mixed array \n(strings to uppercase, numbers squared):');
-console.log(transformedMixedAray);
+console.log(transformedMixedArray);
 console.groupEnd();
 
 // <--- SCORE ANALYSIS --->
@@ -188,3 +189,70 @@ uniqueSortedScores.sort((a,b)=>b-a);
 console.log(`Only uniques values (from highest to lowest): `, uniqueSortedScores);
 
 console.groupEnd();
+
+// <--- TEST CASES --->
+
+console.log('Test Cases');
+
+// Helper function for asserting equality
+function assertEqual(actual, expected, testName) {
+    const areArraysEqual = (arr1, arr2) => {
+        if (!Array.isArray(arr1) || !Array.isArray(arr2)) return actual === expected;
+        if (arr1.length !== arr2.length) return false;
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] !== arr2[i]) return false;
+        }
+        return true;
+    };
+
+    if (areArraysEqual(actual, expected)) {
+        console.log(`✅ PASS: ${testName}`);
+    } else {
+        console.error(`❌ FAIL: ${testName} - Expected: ${JSON.stringify(expected)}, Got: ${JSON.stringify(actual)}`);
+    }
+}
+
+// --- Warm-up Exercise Tests ---
+// Assuming you store the results in `doubledFor` and `doubledMap`
+// Example: const doubledFor = [2, 4, 6, 8, 10];
+// Example: const doubledMap = [2, 4, 6, 8, 10];
+assertEqual(doubledFor, [2, 4, 6, 8, 10], "Warm-up: doubledFor using for loop");
+assertEqual(doubledMap, [2, 4, 6, 8, 10], "Warm-up: doubledMap using .map()");
+
+// --- Easy Challenge Tests ---
+// Assuming you store the results in `filteredNumbers`, `mappedStrings`, `totalSum`, `largestNumber`
+// Example: const filteredNumbers = [10, 25, 42, 15, 30];
+// Example: const mappedStrings = ['Number: 10', 'Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'];
+// Example: const totalSum = 122;
+// Example: const largestNumber = 42;
+assertEqual(filteredNumbers, [10, 25, 42, 15, 30], "Easy Challenge: filteredNumbers");
+assertEqual(mappedStrings, ['Number: 10', 'Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'], "Easy Challenge: mappedStrings");
+assertEqual(totalSum, 122, "Easy Challenge: totalSum");
+assertEqual(largestNumber, 42, "Easy Challenge: largestNumber");
+
+// --- Medium Challenge Tests ---
+// Assuming you store the result in `chainedResult`
+// Example: const chainedResult = ['Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'];
+assertEqual(chainedResult, ['Number: 10', 'Number: 25', 'Number: 42', 'Number: 15', 'Number: 30'], "Medium Challenge: chainedResult");
+// Note: Part 3 (forEach) involves console logging, which is visually verified.
+
+// --- Choose & Use Challenge Tests ---
+// Assuming you store the results in `numericCount`, `sortedDescending`, `uniqueElements`, `transformedMixedArray`
+// Example: const numericCount = 5;
+// Example: const sortedDescending = [42, 30, 25, 15, 10];
+// Example: const uniqueElements = ['a', 'b', 'c', 'd'];
+// Example: const transformedMixedArray = [100, 'APPLE', 625, 1764, 'BANANA', 225, 900, 'CHERRY'];
+assertEqual(numericCount, 5, "Choose & Use: Challenge 1 (Value Count)");
+assertEqual(sortedDescending, [42, 30, 25, 15, 10], "Choose & Use: Challenge 2 (Descending Order)");
+assertEqual(uniqueElements, ['a', 'b', 'c', 'd'], "Choose & Use: Challenge 3 (Unique Collection)");
+assertEqual(transformedMixedArray, [100, 'APPLE', 625, 1764, 'BANANA', 225, 900, 'CHERRY'], "Choose & Use: Challenge 4 (Mixed Transformation)");
+
+// --- Advanced Challenge Tests ---
+// Assuming you store the results in `sumOfFilteredScores`, `countOf25`, `uniqueSortedScores`
+// Example: const sumOfFilteredScores = 230;
+// Example: const countOf25 = 3;
+// Example: const uniqueSortedScores = [60, 50, 45, 25, 15, 10, 5];
+assertEqual(sumOfFilteredScores, 230, "Advanced Challenge: Challenge 1 (Filtering and Summation)");
+assertEqual(countOf25, 3, "Advanced Challenge: Challenge 2 (Counting Occurrences)");
+assertEqual(uniqueSortedScores, [60, 50, 45, 25, 15, 10, 5], "Advanced Challenge: Challenge 3 (Transformation and Uniqueness)");
+
