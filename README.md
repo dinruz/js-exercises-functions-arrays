@@ -295,7 +295,7 @@ These exercises were developed as part of:
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-  * Exercises  **08-20**
+  * Exercises  **08-**
   * Started:   July 2025
   * Completed: 
 
@@ -326,7 +326,9 @@ These exercises were developed as part of:
 | 18 | [Kubrick Filmography](#exercise-arr-18-kubrick-filmography) | ✔️ 🧪 |  [Solution](./array-exercises/18_kubrickFilmography.js)   |  
 | 19 | [Literature Analysis](#exercise-arr-19-literature-analysis) | ✔️ 🧪 |  [Solution](./array-exercises/19_literatureAnalysis.js)   |  
 | 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
-| 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |  
+| 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |    
+| 22 |[Log Files](#exercise-arr-22-log-files>)  |    ⏳       |             |
+| 23 | [User Messages](#exercise-arr-24-user-messages) | ⏳  |                  |
 
 
 
@@ -1425,8 +1427,177 @@ assertEqual(uniqueSortedScores, [60, 50, 45, 25, 15, 10, 5], "Advanced Challenge
 ```
 
 </details>
+</details>
+
+---
+
+<details id="exercise-arr-22-log-files">
+  <summary><strong>Exercise 22: Log Files</strong></summary>
+This exercise simulates processing data from a simple log file. Your goal is to extract useful information and summarize it.
+
+```javascript
+
+const logLines = [
+  "INFO: User 'john' logged in.",
+  "WARN: Disk space low.",
+  "INFO: User 'sarah' logged out.",
+  "INFO: User 'john' logged out.",
+  "ERROR: Database connection failed.",
+  "INFO: User 'mike' logged in.",
+  "WARN: High CPU usage.",
+  "INFO: User 'john' logged in."
+];
+```
+
+* From the 'logLines' array, create a new array containing only the lines that start with "INFO".
+
+Expected outcome:
+
+```javascript
+[
+  "INFO: User 'john' logged in.",
+  "INFO: User 'sarah' logged out.",
+  "INFO: User 'john' logged out.",
+  "INFO: User 'mike' logged in.",
+  "INFO: User 'john' logged in."
+]
+```
+
+* Create a variable that holds the total number of "logged in" actions in the 'logLines' array.
+
+Expected outcome: 3
+
+* From the 'logLines' array, create an array of strings that contain only the unique usernames (e.g., 'john', 'sarah', 'mike'). Then, sort them in alphabetical order.
+
+Expected outcome:
+
+```javascript
+['john', 'mike', 'sarah']
+```
+
+* Create a data structure that maps each unique username to the number of times they logged in. The keys should be the usernames and the values should be the login counts.
+
+Expected outcome:
+
+```javascript
+
+// The data structure can be an object or array
+
+{
+  john: 2,
+  sarah: 0,
+  mike: 1
+}
+```
+</details>
+</details>
+</details>
+
+---
+
+<details id="exercise-arr-24-user-messages">
+  <summary><strong>Exercise 23: Challenge - User Messages</strong></summary>
+This challenge is designed to test  understanding of array methods (map, filter, reduce) and their combination with various string methods. The task is to process a set of raw user messages and extract meaningful information.
+
+Starting Array:
+```javaScript
+
+const rawMessages = [
+  "   @johnny_b: Hello, everyone! #intro",
+  "  @sara_h: What a beautiful day! #nature",
+  "   @johnny_b: I'm really enjoying this project. #coding",
+  "    @mike_m: New ideas are coming. #brainstorm",
+  "  @sara_h: Another #nature walk. #outdoors",
+  " @mike_m: Let's meet up soon. #plans",
+  " @johnny_b: Looking forward to the #weekend",
+  " @johnny_b: #coding is fun! #intro",
+];
+```
+
+<details>
+<summary><strong>1. Cleaning Messages and Extracting Tags</strong></summary>
+* Create a new array called 'cleanedMessages' that contains only the message text, with leading/trailing whitespace removed and the username (everything starting with '@' up to the first space) stripped out.
+
+* From 'cleanedMessages', create a new array called 'allTags' that contains all the hashtags (without the # symbol) from every message. Be careful with messages that contain multiple hashtags.
+
+```javascript
+cleanedMessages: [
+  "Hello, everyone! #intro",
+  "What a beautiful day! #nature",
+  "I'm really enjoying this project. #coding",
+  "New ideas are coming. #brainstorm",
+  "Another #nature walk. #outdoors",
+  "Let's meet up soon. #plans",
+  "Looking forward to the #weekend",
+  "#coding is fun! #intro"
+]
+
+allTags: [
+  "intro",
+  "nature",
+  "coding",
+  "brainstorm",
+  "nature",
+  "outdoors",
+  "plans",
+  "weekend",
+  "coding",
+  "intro"
+]
+```
 
 </details>
+<details>
+<summary><strong>2. Analyzing Tag Frequency</strong></summary>
+Based on the 'allTags' array, create an array of strings called 'tagFrequencies' where each element is in the format "tag: count". The tags should be unique, and the counts should represent how many times they appeared.
+
+Expected Outcome:
+
+```javascript
+
+tagFrequencies: [
+  "intro: 2",
+  "nature: 2",
+  "coding: 2",
+  "brainstorm: 1",
+  "outdoors: 1",
+  "plans: 1",
+  "weekend: 1"
+]
+```
+
+</details>
+<details>
+<summary><strong>3. Filtering and Ranking Tags</strong></summary>
+
+Using 'tagFrequencies', create a new array called 'topTags' that contains only the tags which appeared more than once, sorted from most frequent to least frequent. The tags should be a simple string (e.g., "tag"), without the count.
+
+Expected Outcome:
+
+```javaScript
+
+topTags: [
+  "intro",
+  "nature",
+  "coding"
+]
+```
+📌 **Note:** 
+
+In this specific case, "intro," "nature," and "coding" all have the same frequency, so the order among them can vary. The crucial part is that they all appeared more than once.
+</details>
+
+
+</details>
+
+
+
+
+
+
+
+
+
 
 ---
 
