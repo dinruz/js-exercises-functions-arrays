@@ -327,7 +327,7 @@ These exercises were developed as part of:
 | 19 | [Literature Analysis](#exercise-arr-19-literature-analysis) | ✔️ 🧪 |  [Solution](./array-exercises/19_literatureAnalysis.js)   |  
 | 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
 | 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |    
-| 22 |[Log Files](#exercise-arr-22-log-files>)  |    ⏳       |    [Solution](./array-exercises/22_logFiles.js)            |
+| 22 |[Log Files](#exercise-arr-22-log-files>)  |     ✔️      |    [Solution](./array-exercises/22_logFiles.js)            |
 | 23 | [User Messages](#exercise-arr-24-user-messages) | ⏳  |                  |
 
 
@@ -1495,7 +1495,7 @@ Expected outcome:
 
 ---
 
-<details id="exercise-arr-24-user-messages">
+<details id="exercise-arr-23-user-messages">
   <summary><strong>Exercise 23: Challenge - User Messages</strong></summary>
 This challenge is designed to test  understanding of array methods (map, filter, reduce) and their combination with various string methods. The task is to process a set of raw user messages and extract meaningful information.
 
