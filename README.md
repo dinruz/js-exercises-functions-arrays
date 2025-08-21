@@ -328,7 +328,7 @@ These exercises were developed as part of:
 | 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
 | 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |    
 | 22 |[Log Files](#exercise-arr-22-log-files>)  |     ✔️      |    [Solution](./array-exercises/22_logFiles.js)            |
-| 23 | [User Messages](#exercise-arr-24-user-messages) | ⏳  |                  |
+| 23 | [Functional Array Processing](#exercise-arr-23-processing) | ✔️  | [Solution](./array-exercises/23_arrayProcessing.js)                  |
 
 
 
@@ -1495,109 +1495,38 @@ Expected outcome:
 
 ---
 
-<details id="exercise-arr-23-user-messages">
-  <summary><strong>Exercise 23: Challenge - User Messages</strong></summary>
-This challenge is designed to test  understanding of array methods (map, filter, reduce) and their combination with various string methods. The task is to process a set of raw user messages and extract meaningful information.
+<details id="exercise-arr-23-processing">
+  <summary><strong>Exercise 23: Functional Array Processing</strong></summary>
 
-Starting Array:
-```javaScript
+You are given an array of numbers. Your task is to process this array by chaining a variety of built-in array methods to accomplish the following goals. 
 
-const rawMessages = [
-  "   @johnny_b: Hello, everyone! #intro",
-  "  @sara_h: What a beautiful day! #nature",
-  "   @johnny_b: I'm really enjoying this project. #coding",
-  "    @mike_m: New ideas are coming. #brainstorm",
-  "  @sara_h: Another #nature walk. #outdoors",
-  " @mike_m: Let's meet up soon. #plans",
-  " @johnny_b: Looking forward to the #weekend",
-  " @johnny_b: #coding is fun! #intro",
-];
-```
+Do not use any traditional loops (for, while)!
 
-<details>
-<summary><strong>1. Cleaning Messages and Extracting Tags</strong></summary>
-* Create a new array called 'cleanedMessages' that contains only the message text, with leading/trailing whitespace removed and the username (everything starting with '@' up to the first space) stripped out.
+**Input Data**
 
-* From 'cleanedMessages', create a new array called 'allTags' that contains all the hashtags (without the # symbol) from every message. Be careful with messages that contain multiple hashtags.
+const numbers = [12, 5, 28, 15, 7, 34, 11, 40, 9];
 
-```javascript
-cleanedMessages: [
-  "Hello, everyone! #intro",
-  "What a beautiful day! #nature",
-  "I'm really enjoying this project. #coding",
-  "New ideas are coming. #brainstorm",
-  "Another #nature walk. #outdoors",
-  "Let's meet up soon. #plans",
-  "Looking forward to the #weekend",
-  "#coding is fun! #intro"
-]
+**Task Requirements**
 
-allTags: [
-  "intro",
-  "nature",
-  "coding",
-  "brainstorm",
-  "nature",
-  "outdoors",
-  "plans",
-  "weekend",
-  "coding",
-  "intro"
-]
-```
+I. **Transform and Filter**
+
+* Multiply every number by 2.
+* Then, from this new set of numbers, keep only those that are greater than 50.
+* Store the final result in a new array called 'filteredAndTransformed'.
+
+II. **Analyze and Sum**
+
+* Use the original numbers array. Find all odd numbers.
+* From those odd numbers, calculate their sum.
+* Store the result in a variable called 'sumOfOddNumbers'.
+
+III. **Conditional Check**
+
+* Again, use the original numbers array.
+* Check if every single number is greater than 4.
+* Store the final boolean result (true or false) in a variable called 'allNumbersAreValid'.
 
 </details>
-<details>
-<summary><strong>2. Analyzing Tag Frequency</strong></summary>
-Based on the 'allTags' array, create an array of strings called 'tagFrequencies' where each element is in the format "tag: count". The tags should be unique, and the counts should represent how many times they appeared.
-
-Expected Outcome:
-
-```javascript
-
-tagFrequencies: [
-  "intro: 2",
-  "nature: 2",
-  "coding: 2",
-  "brainstorm: 1",
-  "outdoors: 1",
-  "plans: 1",
-  "weekend: 1"
-]
-```
-
-</details>
-<details>
-<summary><strong>3. Filtering and Ranking Tags</strong></summary>
-
-Using 'tagFrequencies', create a new array called 'topTags' that contains only the tags which appeared more than once, sorted from most frequent to least frequent. The tags should be a simple string (e.g., "tag"), without the count.
-
-Expected Outcome:
-
-```javaScript
-
-topTags: [
-  "intro",
-  "nature",
-  "coding"
-]
-```
-📌 **Note:** 
-
-In this specific case, "intro," "nature," and "coding" all have the same frequency, so the order among them can vary. The crucial part is that they all appeared more than once.
-</details>
-
-
-</details>
-
-
-
-
-
-
-
-
-
 
 ---
 
