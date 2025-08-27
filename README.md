@@ -328,7 +328,8 @@ These exercises were developed as part of:
 | 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
 | 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |    
 | 22 |[Log Files](#exercise-arr-22-log-files>)  |     ✔️      |    [Solution](./array-exercises/22_logFiles.js)            |
-| 23 | [Functional Array Processing](#exercise-arr-23-processing) | ✔️  | [Solution](./array-exercises/23_arrayProcessing.js)                  |
+| 23 | [Functional Array Processing](#exercise-arr-23-processing) | ✔️  | [Solution](./array-exercises/23_arrayProcessing.js)     
+ 24  |[Square of even numbers](#exercise-arr-24) |  ✔️   |[Solution](./array-exercises/24_squareEven)
 
 
 
@@ -1526,6 +1527,19 @@ III. **Conditional Check**
 * Check if every single number is greater than 4.
 * Store the final boolean result (true or false) in a variable called 'allNumbersAreValid'.
 
+</details>
+
+--- 
+
+<details id="exercise-arr-24">
+  <summary><strong>Exercise 24: Sum of Squares of Even Numbers</strong></summary>
+
+Write a function sumOfSquaresOfEvenNumbers(arr) that takes an array of numbers arr. The function should return the sum of the squares of all the even numbers in the array.
+
+```javascript
+let numbers = [1, 2, 3, 4, 5, 6];
+sumOfSquaresOfEvenNumbers(numbers); // Should return 56
+```
 </details>
 
 ---
