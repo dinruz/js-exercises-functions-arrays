@@ -329,7 +329,9 @@ These exercises were developed as part of:
 | 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |    
 | 22 |[Log Files](#exercise-arr-22-log-files>)  |     ✔️      |    [Solution](./array-exercises/22_logFiles.js)            |
 | 23 | [Functional Array Processing](#exercise-arr-23-processing) | ✔️  | [Solution](./array-exercises/23_arrayProcessing.js)     
- 24  |[Square of even numbers](#exercise-arr-24) |  ✔️   |[Solution](./array-exercises/24_squareEven)
+ 24  |[Square of even numbers](#exercise-arr-24) |  ✔️   |[Solution](./array-exercises/24_squareEven.js)
+ 
+ 25  |[Employee Data Analysis](#exercise-arr-25) |  ✔️   |[Solution](./array-exercises/25_employeeData.js)
 
 
 
@@ -1540,6 +1542,100 @@ Write a function sumOfSquaresOfEvenNumbers(arr) that takes an array of numbers a
 let numbers = [1, 2, 3, 4, 5, 6];
 sumOfSquaresOfEvenNumbers(numbers); // Should return 56
 ```
+</details>
+
+---
+
+<details id="exercise-arr-25">
+  <summary><strong>Exercise 25: Employee Data Analysis</strong></summary>
+
+Create a set of functions to analyze a list of employee data. 
+The data is provided as a nested array. Each inner array represents an employee with the following format: [name, department, salary, yearsOfExperience].
+
+**Rules:**
+
+* All functions must be pure, meaning they should not modify the original data array.
+
+* Use `map`, `filter`, `reduce` and other modern array methods as appropriate.
+
+* Log clear messages for the output of each function.
+
+**Initial Data:**
+
+```javascript
+
+const employees = [
+  ['Alice', 'Engineering', 95000, 5],
+  ['Bob', 'Sales', 70000, 3],
+  ['Charlie', 'Engineering', 120000, 10],
+  ['Diana', 'Marketing', 85000, 7],
+  ['Eve', 'Sales', 60000, 2],
+  ['Frank', 'Engineering', 110000, 8],
+  ['Grace', 'Marketing', 90000, 6]
+];
+```
+
+**The Challenges (functions to write):**
+
+<details>
+<summary><strong>1. getHighSalaryEmployees(minSalary)</strong></summary>
+
+
+**Purpose:** 
+
+Filters the employees array and returns a new array containing the names and salaries of all employees who earn more than the specified minSalary.
+
+**Return Value:**
+
+ The array should contain strings formatted as 'Name ($Salary)'.
+
+**Example Output:**
+
+```javascript
+ getHighSalaryEmployees(80000) //should return ['Alice ($95000)', 'Charlie ($120000)', 'Diana ($85000)', 'Frank ($110000)', 'Grace ($90000)'].
+```
+</details>
+
+<details>
+<summary><strong>2. calculateTotalSalaryByDepartment()</strong></summary>
+
+
+**Purpose:** 
+
+Calculates the total salary expenditure for each department.
+
+**Return Value:** 
+
+Returns a new nested array where each inner array is in the format
+ ['Department', totalSalary].
+
+**Example Output:**
+
+```javascript
+// Should return a nested array like [['Engineering', 325000], ['Sales', 130000], ['Marketing', 175000]].
+ ```
+
+</details>
+
+<details>
+<summary><strong>3. getSeniorEmployees()</strong></summary>
+
+
+**Purpose:** 
+
+Returns a new array containing the names and departments of all employees with 5 or more years of experience.
+
+**Return Value:** 
+
+The array should be a flat list of strings, formatted as 'Name (Department)', sorted alphabetically by the employee's name.
+
+**Example Output:**
+
+```javascript
+ getSeniorEmployees()// should return ['Alice (Engineering)', 'Charlie (Engineering)', 'Diana (Marketing)', 'Frank (Engineering)', 'Grace (Marketing)'].
+```
+</details>
+
 </details>
 
 ---
