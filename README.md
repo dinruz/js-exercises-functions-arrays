@@ -329,9 +329,9 @@ These exercises were developed as part of:
 | 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |    
 | 22 |[Log Files](#exercise-arr-22-log-files>)  |     ✔️      |    [Solution](./array-exercises/22_logFiles.js)            |
 | 23 | [Functional Array Processing](#exercise-arr-23-processing) | ✔️  | [Solution](./array-exercises/23_arrayProcessing.js)     
- 24  |[Square of even numbers](#exercise-arr-24) |  ✔️   |[Solution](./array-exercises/24_squareEven.js)
- 
- 25  |[Employee Data Analysis](#exercise-arr-25) |  ✔️   |[Solution](./array-exercises/25_employeeData.js)
+ 24  |[Square of even numbers](#exercise-arr-24) |  ✔️  |[Solution](./array-exercises/24_squareEven.js) 
+| 25 | [Employee Data Analysis](#exercise-arr-25) |  ✔️   |[Solution](./array-exercises/25_employeeData.js)       
+
 
 
 
