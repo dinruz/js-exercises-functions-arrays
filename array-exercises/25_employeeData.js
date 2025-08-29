@@ -54,7 +54,23 @@ const seniorEmployees = employees
 
   return seniorEmployees;
 }
-
 console.log(getSeniorEmployees());
-// Očekivani izlaz: ['Alice (Engineering)', 'Charlie (Engineering)', 'Diana (Marketing)', 'Frank (Engineering)', 'Grace (Marketing)', 'Jane Doe (Sales)']
-// Primijeti da 'Jane Doe' iz mog originalnog niza također ima 6 godina iskustva i uvrštena je.
+
+// 4 - Finding High-Paid Employees
+
+ let highPaid = employees
+      .filter((employee)=> employee[2]>70000)
+      .map ((employee)=> employee[0])
+      .sort()
+console.log (`Names of employees with salary greather than 70.000$ (in alphabetical order):`);
+console.table(highPaid);
+
+// 5 - Find and Sort Experienced Marketing Professionals
+
+const marketing = employees
+        .filter((employee)=> ((employee[1] =='Marketing') && (employee[3]>= '5')))
+        .sort()
+console.log('Employees from marketing department with 5+ years experience (alph.):');
+console.table(marketing);
+
+

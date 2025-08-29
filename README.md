@@ -295,9 +295,9 @@ These exercises were developed as part of:
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-  * Exercises  **08-**
+  * Exercises  **08-25**
   * Started:   July 2025
-  * Completed: 
+  * Completed: August 2025
 
 ---
 
@@ -331,8 +331,6 @@ These exercises were developed as part of:
 | 23 | [Functional Array Processing](#exercise-arr-23-processing) | ✔️  | [Solution](./array-exercises/23_arrayProcessing.js)     
  24  |[Square of even numbers](#exercise-arr-24) |  ✔️  |[Solution](./array-exercises/24_squareEven.js) 
 | 25 | [Employee Data Analysis](#exercise-arr-25) |  ✔️   |[Solution](./array-exercises/25_employeeData.js)       
-
-
 
 
 ### Detailed Array Exercises Descriptions
@@ -1634,6 +1632,22 @@ The array should be a flat list of strings, formatted as 'Name (Department)', so
 ```javascript
  getSeniorEmployees()// should return ['Alice (Engineering)', 'Charlie (Engineering)', 'Diana (Marketing)', 'Frank (Engineering)', 'Grace (Marketing)'].
 ```
+</details>
+
+<details>
+<summary><strong>4. Finding High-Paid Employees</strong></summary>
+
+Create a new array that contains only the names of all employees who have a salary greater than 70,000, and sort them alphabetically.
+
+</details>
+
+<details>
+<summary><strong>5. Find and Sort Experienced Marketing Professionals</strong></summary>
+
+Create a new array that contains the names of all employees from the 'Marketing' department who have 5 or more years of experience. 
+
+Sort the resulting array alphabetically.
+
 </details>
 
 </details>
