@@ -1,0 +1,24 @@
+{
+  "name": "js-exercises-functions-arrays",
+  "version": "1.0.0",
+  "description": "A collection of JavaScript exercises focusing on basic functions and arrays.",
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinruz/js-exercises-functions-arrays.git"
+  },
+  "keywords": [
+    "javascript",
+    "exercises",
+    "learning",
+    "web development"
+  ],
+  "author": "dinruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dinruz/js-exercises-functions-arrays/issues"
+  },
+  "homepage": "https://github.com/dinruz/js-exercises-functions-arrays#readme"
+}
