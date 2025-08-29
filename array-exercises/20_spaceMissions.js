@@ -11,7 +11,7 @@ const missions = [
   ['Mars Sample Return', 2027, 'In Progress', ['N/A', 'N/A']]
 ];
 
-console.groupCollapsed(`List of space missions`);
+console.groupCollapsed(`List of space missions 🚀`);
 function displayMissions (spaceMissions){
     console.log(`🚀 Original list of space missions: `);
     console.table(spaceMissions);
@@ -32,6 +32,48 @@ console.groupEnd();
 
 // 2 - Get Average Crew Size By Decade
 
+console.groupCollapsed('II. Get Average Crew Size by Decade');
+
+function getAverageCrewSizeByDecade(missions) {
+  const decadesData = missions.map(mission => {
+    const year = mission[1];
+    const crew = mission[3];
+    const decade = Math.floor(year / 10) * 10;
+    const crewSize = crew.filter(member => member !== 'N/A').length;
+    return {
+      decade: `${decade}s`,
+      crewSize: crewSize
+    };
+  });
+  const decadeTotals = decadesData.reduce((acc, current) => {
+    const existingDecade = acc.find(item => item.decade === current.decade);
+
+    if (existingDecade) {
+      existingDecade.totalCrew += current.crewSize;
+      existingDecade.missionCount += 1;
+    } else {
+      acc.push({
+        decade: current.decade,
+        totalCrew: current.crewSize,
+        missionCount: 1
+      });
+    }
+    return acc;
+  }, []);
+
+  const result = decadeTotals.map(item => {
+    const average = item.totalCrew / item.missionCount;
+    return [item.decade, average];
+  });
+
+  return result;
+}
+
+const averageCrewSize = getAverageCrewSizeByDecade(missions);
+console.log('👩‍🚀 Average Crew Size by Decade:');
+console.table(averageCrewSize);
+console.groupEnd();
+
 // 3 - Find Unique Crew Members
 
 console.groupCollapsed('III. Find Unique Crew Members')
@@ -40,7 +82,7 @@ function findUniqueCrewMembers(spaceMissions){
   const flattenedCrew = onlyCrew.flat((Infinity));            
   const filteredMembers = flattenedCrew.filter(member => member !== 'N/A'); // filter - not 'N/A'
   const uniqueMembers = [...new Set(filteredMembers)];  // remove potential duplicates [...new Set()]
-  console.log(`👨‍🚀 Unique crew members are: : ${uniqueMembers}.`); 
+  console.log(`👨‍🚀 Unique crew members are: \n ${uniqueMembers}.`); 
 return uniqueMembers;
 }
 findUniqueCrewMembers(missions);

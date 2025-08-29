@@ -90,7 +90,7 @@ These exercises were developed as part of:
 
 **III. Additional Practice Exercises**
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  **05 - 09, 12**
   * Started:   June 2025 
@@ -293,7 +293,7 @@ These exercises were developed as part of:
 
 **II. Additional Practice Exercises**
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  **08-25**
   * Started:   July 2025
@@ -325,7 +325,7 @@ These exercises were developed as part of:
 | 17  | [Game Inventory](#exercise-arr-17-game-inventory) |  ✔️ 🧪| [Solution](./array-exercises/17_gameInventory.js) |   
 | 18 | [Kubrick Filmography](#exercise-arr-18-kubrick-filmography) | ✔️ 🧪 |  [Solution](./array-exercises/18_kubrickFilmography.js)   |  
 | 19 | [Literature Analysis](#exercise-arr-19-literature-analysis) | ✔️ 🧪 |  [Solution](./array-exercises/19_literatureAnalysis.js)   |  
-| 20 | [Space Missions](#exercise-arr-20-space-missions) | ⏳  | [Solution](./array-exercises/20_spaceMissions.js)   |  
+| 20 | [Space Missions](#exercise-arr-20-space-missions) | ✔️  | [Solution](./array-exercises/20_spaceMissions.js)   |  
 | 21 | [Manipulation Challenges](#exercise-arr-21-manipulation-challenge) | ✔️ 🧪 | [Solution](./array-exercises/21_manipulationChallenges.js)   |    
 | 22 |[Log Files](#exercise-arr-22-log-files>)  |     ✔️      |    [Solution](./array-exercises/22_logFiles.js)            |
 | 23 | [Functional Array Processing](#exercise-arr-23-processing) | ✔️  | [Solution](./array-exercises/23_arrayProcessing.js)     
