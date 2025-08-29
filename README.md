@@ -18,11 +18,12 @@
 
 ## Overview 🌱
 
-This repository contains various Javascript exercises and challenges with my solutions (which are currently untested).
+This repository contains my solutions to various JavaScript exercises and challenges, focused on fundamental concepts such as **string manipulation**, **loops**, **functions** and **array methods**.
 
-Focus is on fundamental concepts like **string manipulation**, **loops**, **functions** and **array methods**.
 
-This repo will be continuously updated with new exercises from various sources.
+ All solutions are the result of self-study and learning.
+
+The content is divided into two main sections: **Function Exercises** and **Array Exercises**.
 
 ---
 
