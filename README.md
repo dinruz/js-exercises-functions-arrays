@@ -1,6 +1,8 @@
 # Javascript Exercises: Functions and Arrays (Foundations)
 
-## Table of Contents 📖
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+
+## Table of Contents 
 
 - [Overview](#overview-)
 - [Installation & Usage](#installation-and-usage-)
@@ -14,30 +16,20 @@
   - [Detailed Array Exercises Descriptions](#detailed-array-exercises-descriptions)
 - [Resources](#resources-)
 
----
 
 ## Overview 🌱
 
-This repository contains my solutions to various JavaScript exercises and challenges, focused on fundamental concepts such as **string manipulation**, **loops**, **functions** and **array methods**.
-
-
- All solutions are the result of self-study and learning.
+This repository contains my solutions to various JavaScript exercises and challenges, focused on fundamental concepts such as **string manipulation**, **loops**, **functions** and **array methods**. All solutions are the result of self-study and learning.
 
 The content is divided into two main sections: **Function Exercises** and **Array Exercises**.
 
----
+* 📅 Jun -Aug 2025
+
 
 ## Installation & Usage 
 
-1.  **Fork the repository**
-
-  Begin by forking this repository to your own GitHub account. 
-  
-  Click the 'Fork' button on the top right of this page.
-
-2.  **Clone it**
-
-  Open your terminal or command prompt and run the following command to clone the repository to your local machine:
+  1. Begin by forking this repository to your own GitHub account. Click the `Fork` button on the top right of this page.
+  2. Open your terminal or command prompt and run the following command to clone the repository to your local machine:
 
   ```bash
     git clone https://github.com/dinruz/js-exercises-functions-arrays.git
@@ -65,7 +57,7 @@ node 01_camelize.js
 ```
 </details>
 
----
+
 
 ## Functions exercises 🧩
 
@@ -78,25 +70,19 @@ These exercises were developed as part of:
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  **01-04**
-  * Started:   June 2025 
-  * Completed: June 2025
-
+  * 📅 June 2025 
+  
 **II. Chris Pine: *Learn to Program***, [Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) | Exercises in section 'A Few Things To Try'
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-
   * Exercises  **10 - 11**
-  * Started:   July 2025 
-  * Completed: July 2025
+  * 📅 July 2025 
 
 **III. Additional Practice Exercises**
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  **05 - 09, 12**
-  * Started:   June 2025 
-  * Completed: July 2025
-
+  * * 📅 Aug 2025 
 
 
 ### List of Functions exercises ✨
@@ -286,19 +272,14 @@ These exercises were developed as part of:
 
 **I. The Odin Project assignment** - challenges sourced from [javascript.info](https://javascript.info/array-methods#tasks).
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-
   * Exercises  **01-07**
-  * Started:   July 2025
-  * Completed: July 2025
+  * 📅 July 2025  
+  
 
 **II. Additional Practice Exercises**
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-
   * Exercises  **08-25**
-  * Started:   July 2025
-  * Completed: August 2025
+  * 📅 July - Aug 2025 
 
 ---
 
@@ -1653,7 +1634,6 @@ Sort the resulting array alphabetically.
 
 </details>
 
----
 
 ## Resources 📚
 
