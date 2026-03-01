@@ -1,31 +1,44 @@
-# Javascript Exercises: Functions and Arrays (Foundations)
+# Javascript Exercises: Functions and Arrays 
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen) 
 
-## Table of Contents 
+## Table of Contents
 
-- [Overview](#overview-)
-- [Installation & Usage](#installation-and-usage-)
+- [Overview](#overview)
+- [Repo Structure](#repo-structure)
+- [Installation & Usage](#installation--usage)
 - [Functions exercises](#functions-exercises-)
   - [About Functions exercises](#about-function-exercises)
-  - [List of Functions exercises](#list-of-functions-exercises-)
+  - [List of Functions exercises](#list-of-functions-exercises)
   - [Detailed Function Exercises Descriptions](#detailed-function-exercises-descriptions)
 - [Array exercises](#array-exercises-)
   - [About Array exercises](#about-array-exercises)
-  - [List of Array exercises](#list-of-array-exercises-)
+  - [List of Array exercises](#list-of-array-exercises)
   - [Detailed Array Exercises Descriptions](#detailed-array-exercises-descriptions)
-- [Resources](#resources-)
-
-
-## Overview 🌱
+- [Resources](#resources)
+  
+## Overview
 
 This repository contains my solutions to various JavaScript exercises and challenges, focused on fundamental concepts such as **string manipulation**, **loops**, **functions** and **array methods**. All solutions are the result of self-study and learning.
 
-The content is divided into two main sections: **Function Exercises** and **Array Exercises**.
-
 * 📅 Jun -Aug 2025
 
+## Repo Structure
 
+📁 The content is divided into two main sections: **Function Exercises** and **Array Exercises**.
+
+```text
+.
+├── array-exercises/        
+│   ├── 01_camelize.js
+│   ├── 02_filterRange.js
+│   └── ... 
+├── functions-exercises/     
+│   ├── 01-04_basicFn.js
+│   └── ...
+├── package.json                 
+└── README.md                
+```
 ## Installation & Usage 
 
   1. Begin by forking this repository to your own GitHub account. Click the `Fork` button on the top right of this page.
@@ -57,8 +70,6 @@ node 01_camelize.js
 ```
 </details>
 
-
-
 ## Functions exercises 🧩
 
 ### About Function exercises
@@ -66,8 +77,6 @@ node 01_camelize.js
 These exercises were developed as part of:
 
 **I. The Odin Project learning** - [Function Basics: Assignments](https://www.theodinproject.com/lessons/foundations-function-basics#assignment) | Foundations Course
-
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
   * Exercises  **01-04**
   * 📅 June 2025 
@@ -79,13 +88,10 @@ These exercises were developed as part of:
 
 **III. Additional Practice Exercises**
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-
   * Exercises  **05 - 09, 12**
-  * * 📅 Aug 2025 
+  * 📅 Aug 2025 
 
-
-### List of Functions exercises ✨
+### List of Functions exercises
 
 | No. | Exercise Name          | Status      | Solution Link       |
 | :-- | :--------------------- | :---------- | :------------------ |
@@ -268,14 +274,13 @@ Write a program which prints out the lyrics to that beloved classic, that field-
 
 ### About Array exercises
 
-These exercises were developed as part of:
+ These exercises were developed as part of:
 
 **I. The Odin Project assignment** - challenges sourced from [javascript.info](https://javascript.info/array-methods#tasks).
 
   * Exercises  **01-07**
   * 📅 July 2025  
   
-
 **II. Additional Practice Exercises**
 
   * Exercises  **08-25**
@@ -283,7 +288,7 @@ These exercises were developed as part of:
 
 ---
 
-### List of Array exercises ✨
+### List of Array exercises
 
 
 | No. | Exercise Name          | Status      | Solution Link       |
@@ -1635,13 +1640,14 @@ Sort the resulting array alphabetically.
 </details>
 
 
-## Resources 📚
+## Resources
 
 This repository contains exercises & assignments with some content sourced from the following resources:
 
 * [The Odin Project](https://www.theodinproject.com/)
 * [javascript.info](https://javascript.info/) 
-* [Pine, C.: 'Learn to Program' | Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html) 
+* [Pine, C.: 'Learn to Program' | Chapter VI: Flow control](https://pine.fm/LearnToProgram/chap_06.html)
+* [MDN Web Docs - JavaScript Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 
 
