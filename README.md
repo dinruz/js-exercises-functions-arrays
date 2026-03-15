@@ -1,4 +1,4 @@
-# Javascript Exercises: Functions and Arrays 
+# Javascript Exercises: Fundamentals
 
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen) 
 
@@ -20,7 +20,7 @@
   
 ## Overview 🌱
 
-This repository is a collection of JavaScript exercises and solutions, documenting my learning path from fundamentals to more complex logic.
+This repository is a collection of fundamental JavaScript exercises and solutions, documenting my learning path from fundamentals to more complex logic.
 
 🧠 **Key Concepts:**
 
