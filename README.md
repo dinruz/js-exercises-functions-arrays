@@ -53,7 +53,7 @@ Project content is organized by complexity and specialized JS topics:
 💻 Step 2: Open your terminal and run the following command to clone the repository to your local machine:
 
 ```Bash
-git clone [https://github.com/dinruz/js-exercises.git](https://github.com/dinruz/js-exercises.git)]
+git clone [https://github.com/dinruz/js-exercises.git](https://github.com/dinruz/js-exercises.git)
 ```
 
 <details>
