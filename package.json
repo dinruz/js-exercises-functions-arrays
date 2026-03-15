@@ -1,0 +1,30 @@
+{
+  "name": "js-exercises",
+  "version": "1.0.0",
+  "description": "Fundamental JavaScript exercises: strings, loops, functions, array methods,  DOM manipulation, event listeners.",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinruz/js-exercises.git"
+  },
+  "keywords": [
+    "javascript",
+    "exercises",
+    "learning",
+    "arrays",
+    "functions",
+    "dom-manipulation",
+    "event-listeners",
+    "web-development",
+    "front-end-development"
+  ],
+  "author": "dinruz (https://github.com/dinruz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dinruz/js-exercises/issues"
+  },
+  "homepage": "https://github.com/dinruz/js-exercises#readme"
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="10-3-buttons.js" defer></script>
+    <title>Three buttons & three methods</title>
+</head>
+<body>
+    <h1>Event Handler Showcase</h1>
+    <button id="btn1" onclick="document.getElementById('message-display').
+     textContent = 'You clicked Button 1 using an inline handler!'">Button 1</button>
+    <button id="btn2">Button 2</button>
+    <button id="btn3">Button 3</button>
+
+    <p id="message-display">Messages will appear here!</p>
+
+</body>
+</html>
+
+<!-- note for btn1:
+  - onclick + reach for <p> by its ID and then add new text content with '.textContent' -->

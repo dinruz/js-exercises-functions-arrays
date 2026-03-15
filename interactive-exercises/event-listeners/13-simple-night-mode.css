@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+
+.night-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+#modeBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #333;
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.night-mode #modeBtn {
+    background-color: #f1f1f1;
+    color: #333;
+    border-color: #f1f1f1;
+}

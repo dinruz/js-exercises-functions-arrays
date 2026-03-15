@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="11-style-buttons.js" defer></script>
+    <title>The Three-Button Stylist</title>
+    <style>
+        #color-box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change the Color</h1>
+    <button id="btn1" onclick="document.getElementById('color-box')
+     .style.backgroundColor='red'">Change to Red</button>
+    <button id="btn2">Change to Blue</button>
+    <button id="btn3">Change to Green</button>
+
+    <div id="color-box"></div>
+
+</body>
+</html>
+
+<!-- NOTE: onclick + reaching for node + .style.backgroundColor ='[color]'  -->
