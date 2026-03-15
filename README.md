@@ -29,10 +29,7 @@ This repository is a collection of JavaScript exercises and solutions, documenti
 * **Code Architecture:** Modular functions and clean code principles.
 * **Interactivity:** DOM manipulation and event-driven programming.
 
-🟢 **Status:** Completed
-
 📅 **Timeline:** Jun - Aug 2025
-
 
 ## Repo Structure 📁
 
@@ -49,7 +46,6 @@ Project content is organized by complexity and specialized JS topics:
 └── README.md
 ```
 
-
 ## Installation & Usage 
 
  🍴 Step 1: Begin by forking this repository to your own GitHub account. Click the Fork button on the top right of this page.
@@ -57,7 +53,7 @@ Project content is organized by complexity and specialized JS topics:
 💻 Step 2: Open your terminal and run the following command to clone the repository to your local machine:
 
 ```Bash
-git clone [https://github.com/dinruz/js-exercises.git](https://github.com/dinruz/js-exercises.git)
+git clone [https://github.com/dinruz/js-exercises.git](https://github.com/dinruz/js-exercises.git)]
 ```
 
 <details>
@@ -99,8 +95,6 @@ git clone [https://github.com/dinruz/js-exercises.git](https://github.com/dinruz
 | 10  | [Song '99 Bottles of Beer'](#exercise-fn-10-song-99-bottles)|  ✔️  | [Solution](./functions-exercises/10_song99bottles.js) |
 | 11  | [Deaf Grandma](#exercise-fn-11-deaf-grandma)|  ✔️ | [Solution](./functions-exercises/11_deafGrandma.js) |
 | 12  | [Deaf Grandma **Pro**](#exercise-fn-12-deaf-grandma-pro) |  ✔️  | [Solution](./functions-exercises/12_deafGrandmaPro.js) | 
-
-
 
 
 ### Detailed Function Exercises Descriptions
@@ -2721,8 +2715,6 @@ Create an HTML file with the following code. It's important that the `<ul>` elem
 🔗 [MDN Web Docs - JavaScript Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ---
-
-
 
 ### 🚀 Roadmap for JS Fundamentals
 
